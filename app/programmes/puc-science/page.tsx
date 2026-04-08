@@ -60,7 +60,7 @@ const HeroSection = () => {
               Top PU Science Colleges Bangalore
             </h1>
             <Link
-              href="/admissions"
+              href="/#admissions"
               className="inline-block bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
             >
               ENQUIRE NOW

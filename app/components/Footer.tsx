@@ -12,9 +12,9 @@ const Footer = () => {
             <Image
               src="/images/JAIN_College_International_White.png"
               alt="JAIN College - Centre for International Studies"
-              width={160}
-              height={44}
-              className="h-11 w-auto mb-4"
+              width={260}
+              height={54}
+              className="h-24 w-auto mb-4"
             />
             <h3 className="text-[#F8C300] font-bold text-lg mb-4">Address</h3>
             <p className="text-sm leading-relaxed">

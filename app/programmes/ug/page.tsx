@@ -59,7 +59,7 @@ const HeroSection = () => {
               Undergraduate Courses at JAIN College
             </h1>
             <Link
-              href="/admissions"
+              href="/#admissions"
               className="inline-block bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
             >
               ENQUIRE NOW
@@ -214,7 +214,7 @@ const UGCoursesSection = () => {
               </p>
               <p className="text-gray-600 text-sm">{course.description}</p>
               <Link
-                href="/admissions"
+                href="/#enquiry"
                 className="inline-block mt-4 text-[#001C54] font-semibold hover:underline"
               >
                 Learn More →
@@ -434,7 +434,7 @@ const CTASection = () => {
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/admissions"
+            href="/#admissions"
             className="bg-[#001C54] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
           >
             Apply Now

@@ -78,7 +78,7 @@ export default function NotFound() {
             </Link>
             <span className="text-white/20">|</span>
             <Link
-              href="/admissions"
+              href="/#admissions"
               className="text-[#F8C300] hover:text-[#dfb82d] text-sm font-medium transition-colors"
             >
               Admissions

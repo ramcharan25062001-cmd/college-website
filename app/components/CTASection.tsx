@@ -19,7 +19,7 @@ const CTASection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-end">
             <Link
-              href="/admissions"
+              href="/#admissions"
               className="bg-[#001C54] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#16336e] transition-colors shadow-lg"
             >
               Apply Now

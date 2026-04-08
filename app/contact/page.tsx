@@ -298,7 +298,7 @@ const AdmissionsCTASection = () => {
         </h2>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/admissions"
+            href="/#admissions"
             className="bg-white text-[#001C54] border-2 border-[#001C54] px-8 py-3 rounded-lg font-semibold hover:bg-[#001C54] hover:text-white transition-colors"
           >
             Apply Now
