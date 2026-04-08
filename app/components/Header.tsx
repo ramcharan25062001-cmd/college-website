@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -196,17 +197,14 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center border-2 border-[#F8C300]">
-              <span className="text-[#001C54] font-bold text-sm">JGI</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-white font-bold text-sm leading-tight tracking-wide">
-                JAIN COLLEGE
-              </h1>
-              <p className="text-[#F8C300] text-xs font-medium">
-                Centre for International Studies
-              </p>
-            </div>
+            <Image
+              src="/images/JAIN_College_International_White.png"
+              alt="JAIN College - Centre for International Studies"
+              width={240}
+              height={64}
+              className="h-24 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

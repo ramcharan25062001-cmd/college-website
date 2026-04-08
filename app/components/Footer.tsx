@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,6 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Address Section */}
           <div className="lg:col-span-1">
+            <Image
+              src="/images/JAIN_College_International_White.png"
+              alt="JAIN College - Centre for International Studies"
+              width={160}
+              height={44}
+              className="h-11 w-auto mb-4"
+            />
             <h3 className="text-[#F8C300] font-bold text-lg mb-4">Address</h3>
             <p className="text-sm leading-relaxed">
               NH-209, Jain Global Campus

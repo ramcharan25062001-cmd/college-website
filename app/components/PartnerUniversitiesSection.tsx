@@ -1,19 +1,22 @@
+import Image from "next/image";
+
 const universities = [
-  { name: "Bangkok University", country: "Thailand", flag: "🇹🇭" },
-  { name: "VIC University", country: "Spain", flag: "🇪🇸" },
-  { name: "Frankfurt School", country: "Germany", flag: "🇩🇪" },
-  { name: "Bordeaux Montaigne University", country: "France", flag: "🇫🇷" },
-  { name: "Taylor's University", country: "Malaysia", flag: "🇲🇾" },
-  { name: "Charles Sturt University", country: "Australia", flag: "🇦🇺" },
+  { name: "Bangkok University", country: "Thailand", flag: "🇹🇭", logo: "/Partner university logo/Bangkok_University_(logo).png" },
+  { name: "VIC University", country: "Spain", flag: "🇪🇸", logo: "/Partner university logo/logo_3linies_uvic_color.jpg" },
+  { name: "Frankfurt School", country: "Germany", flag: "🇩🇪", logo: "/Partner university logo/Logo_der_Frankfurt_School_of_Finance_&_Management.jpg" },
+  { name: "Bordeaux Montaigne University", country: "France", flag: "🇫🇷", logo: "/Partner university logo/Université_Bordeaux_Montaigne_Logo.svg.png" },
+  { name: "Taylor's University", country: "Malaysia", flag: "🇲🇾", logo: "/Partner university logo/Taylor's_University.png" },
+  { name: "Charles Sturt University", country: "Australia", flag: "🇦🇺", logo: "/Partner university logo/Charles Sturt University.png" },
   {
     name: "University of Economics and Finance",
     country: "Vietnam",
     flag: "🇻🇳",
+    logo: "/Partner university logo/Ho_Chi_Minh_City_University_of_Economics_and_Finance_UEF_Logo.png",
   },
-  { name: "University of York", country: "UK", flag: "🇬🇧" },
-  { name: "Lincoln University", country: "Malaysia", flag: "🇲🇾" },
-  { name: "University of Limoges", country: "France", flag: "🇫🇷" },
-  { name: "EM Normandie", country: "France", flag: "🇫🇷" },
+  { name: "University of York", country: "UK", flag: "🇬🇧", logo: "/Partner university logo/University of York.jpeg" },
+  { name: "Lincoln University", country: "Malaysia", flag: "🇲🇾", logo: "/Partner university logo/ea-inst-logo-lincoln-uc.png" },
+  { name: "University of Limoges", country: "France", flag: "🇫🇷", logo: "/Partner university logo/University of Limoges.png" },
+  { name: "EM Normandie", country: "France", flag: "🇫🇷", logo: "/Partner university logo/EM_Normandie-Logo.jpg" },
 ];
 
 const PartnerUniversitiesSection = () => {
@@ -45,7 +48,15 @@ const PartnerUniversitiesSection = () => {
               key={index}
               className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/20 transition-all hover:-translate-y-1 text-center"
             >
-              <div className="text-4xl mb-3">{uni.flag}</div>
+              <div className="w-full h-16 mb-3 flex items-center justify-center">
+                <Image
+                  src={uni.logo}
+                  alt={uni.name}
+                  width={120}
+                  height={64}
+                  className="max-h-16 w-auto object-contain rounded bg-white/90 p-1"
+                />
+              </div>
               <h3 className="text-white font-semibold text-sm lg:text-base mb-1 leading-tight">
                 {uni.name}
               </h3>
