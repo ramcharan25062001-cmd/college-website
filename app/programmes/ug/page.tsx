@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import EnquiryPopup from "../../components/EnquiryPopup";
 import Link from "next/link";
 
 // Hero Section
@@ -59,7 +60,7 @@ const HeroSection = () => {
               Undergraduate Courses at JAIN College
             </h1>
             <Link
-              href="/#admissions"
+              href="/#enquiry"
               className="inline-block bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
             >
               ENQUIRE NOW
@@ -157,38 +158,73 @@ const UGCoursesSection = () => {
   const courses = [
     {
       name: "B.Com (Bachelor of Commerce)",
+      slug: "bcom",
       duration: "3 Years",
       description:
         "Comprehensive commerce education with specializations in Accounting, Finance, and Taxation.",
     },
     {
+      name: "B.Com (Business Data Analytics)",
+      slug: "bcom-bda",
+      duration: "3 Years",
+      description:
+        "Commerce education combined with advanced data analytics skills.",
+    },
+    {
+      name: "B.Com (ACCA)",
+      slug: "bcom-acca",
+      duration: "3 Years",
+      description:
+        "Integrated ACCA qualification with a Bachelor of Commerce degree.",
+    },
+    {
+      name: "B.Com (Logistics & Supply Chain)",
+      slug: "bcom-lscm",
+      duration: "3 Years",
+      description:
+        "Commerce with specialised logistics and supply chain management.",
+    },
+    {
       name: "BBA (Bachelor of Business Administration)",
+      slug: "bba",
       duration: "3 Years",
       description:
         "Develop management and leadership skills for a successful business career.",
     },
     {
-      name: "BCA (Bachelor of Computer Applications)",
-      duration: "3 Years",
-      description:
-        "Build expertise in software development, programming, and IT solutions.",
-    },
-    {
-      name: "BBA Aviation",
+      name: "BBA (Aviation Management)",
+      slug: "bba-aviation",
       duration: "3 Years",
       description:
         "Specialized programme for careers in airport management and aviation industry.",
     },
     {
-      name: "B.Com (Honors)",
+      name: "BBA (Business Analytics)",
+      slug: "bba-analytics",
       duration: "3 Years",
       description:
-        "Advanced commerce programme with research-oriented curriculum.",
+        "Business administration with data analytics and decision-making skills.",
     },
     {
-      name: "B.A. (Bachelor of Arts)",
+      name: "BBA (Digital Marketing)",
+      slug: "bba-digital-marketing",
       duration: "3 Years",
-      description: "Liberal arts education with diverse subject combinations.",
+      description:
+        "Business administration with digital marketing specialisation.",
+    },
+    {
+      name: "BCA (Bachelor of Computer Applications)",
+      slug: "bca",
+      duration: "3 Years",
+      description:
+        "Build expertise in software development, programming, and IT solutions.",
+    },
+    {
+      name: "BCA (AI & Machine Learning)",
+      slug: "bca-aiml",
+      duration: "3 Years",
+      description:
+        "Computer applications with artificial intelligence and machine learning specialisation.",
     },
   ];
 
@@ -203,7 +239,7 @@ const UGCoursesSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course) => (
             <div
-              key={course.name}
+              key={course.slug}
               className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
             >
               <h3 className="text-xl font-bold text-[#001C54] mb-2">
@@ -214,7 +250,7 @@ const UGCoursesSection = () => {
               </p>
               <p className="text-gray-600 text-sm">{course.description}</p>
               <Link
-                href="/#enquiry"
+                href={`/programmes/ug/${course.slug}`}
                 className="inline-block mt-4 text-[#001C54] font-semibold hover:underline"
               >
                 Learn More →
@@ -434,7 +470,7 @@ const CTASection = () => {
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/#admissions"
+            href="/#enquiry"
             className="bg-[#001C54] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
           >
             Apply Now
@@ -466,6 +502,7 @@ export default function UGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
+      <EnquiryPopup delayMs={8000} />
     </>
   );
 }

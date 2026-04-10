@@ -385,11 +385,24 @@ const ContactFormSection = () => {
                   <option value="" disabled>
                     Select a programme
                   </option>
-                  <option value="puc-science">PUC Science</option>
-                  <option value="puc-commerce">PUC Commerce</option>
-                  <option value="puc-arts">PUC Arts/Humanities</option>
-                  <option value="ug">Undergraduate Courses</option>
-                  <option value="pg">Postgraduate Courses</option>
+                  <optgroup label="Undergraduate (UG)">
+                    <option value="bcom">B.Com (Bachelor of Commerce)</option>
+                    <option value="bcom-bda">B.Com (Business Data Analytics)</option>
+                    <option value="bcom-acca">B.Com (ACCA)</option>
+                    <option value="bcom-lscm">B.Com (Logistics &amp; Supply Chain Management)</option>
+                    <option value="bba">BBA (Bachelor of Business Administration)</option>
+                    <option value="bba-aviation">BBA (Aviation Management)</option>
+                    <option value="bba-analytics">BBA (Business Analytics)</option>
+                    <option value="bba-digital-marketing">BBA (Digital Marketing)</option>
+                    <option value="bca">BCA (Bachelor of Computer Applications)</option>
+                    <option value="bca-aiml">BCA (AI &amp; Machine Learning)</option>
+                  </optgroup>
+                  <optgroup label="Postgraduate (PG)">
+                    <option value="mcom">M.Com (Master of Commerce)</option>
+                    <option value="ma-economics">MA Economics</option>
+                    <option value="mba">MBA (Master of Business Administration)</option>
+                    <option value="mca">MCA (Master of Computer Applications)</option>
+                  </optgroup>
                 </select>
               </div>
 

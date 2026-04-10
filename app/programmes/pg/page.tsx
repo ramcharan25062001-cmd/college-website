@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import EnquiryPopup from "../../components/EnquiryPopup";
 import Link from "next/link";
 
 // Hero Section
@@ -59,7 +60,7 @@ const HeroSection = () => {
               Postgraduate Courses at JAIN College
             </h1>
             <Link
-              href="/#admissions"
+              href="/#enquiry"
               className="inline-block bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
             >
               ENQUIRE NOW
@@ -157,24 +158,28 @@ const PGCoursesSection = () => {
   const courses = [
     {
       name: "M.Com (Master of Commerce)",
+      slug: "mcom",
       duration: "2 Years",
       description:
         "Advanced commerce education with specializations in Finance, Accounting, and Business Management.",
     },
     {
       name: "MA Economics",
+      slug: "ma-economics",
       duration: "2 Years",
       description:
         "In-depth study of economic theories, policies, and their applications in the modern world.",
     },
     {
       name: "MBA (Master of Business Administration)",
+      slug: "mba",
       duration: "2 Years",
       description:
         "Comprehensive management programme with various specializations for future business leaders.",
     },
     {
       name: "MCA (Master of Computer Applications)",
+      slug: "mca",
       duration: "2 Years",
       description:
         "Advanced IT programme for developing expertise in software development and technology management.",
@@ -192,7 +197,7 @@ const PGCoursesSection = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {courses.map((course) => (
             <div
-              key={course.name}
+              key={course.slug}
               className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
             >
               <h3 className="text-xl font-bold text-[#001C54] mb-2">
@@ -203,7 +208,7 @@ const PGCoursesSection = () => {
               </p>
               <p className="text-gray-600 text-sm">{course.description}</p>
               <Link
-                href="/#enquiry"
+                href={`/programmes/pg/${course.slug}`}
                 className="inline-block mt-4 text-[#001C54] font-semibold hover:underline"
               >
                 Learn More →
@@ -420,7 +425,7 @@ const CTASection = () => {
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/#admissions"
+            href="/#enquiry"
             className="bg-[#001C54] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
           >
             Apply Now
@@ -452,6 +457,7 @@ export default function PGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
+      <EnquiryPopup delayMs={8000} />
     </>
   );
 }
