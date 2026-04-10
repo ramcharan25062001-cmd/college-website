@@ -11,9 +11,29 @@ const EnquirySection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, source: "Enquiry Section" }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Submission failed");
+      setSubmitted(true);
+      setFormData({ name: "", email: "", phone: "", programme: "", message: "" });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -143,10 +163,17 @@ const EnquirySection = () => {
                 />
                 <button
                   type="submit"
-                  className="w-full bg-[#F8C300] text-[#001C54] py-3.5 rounded-lg font-bold hover:bg-[#dfb82d] transition-all hover:shadow-lg text-sm"
+                  disabled={submitting}
+                  className="w-full bg-[#F8C300] text-[#001C54] py-3.5 rounded-lg font-bold hover:bg-[#dfb82d] transition-all hover:shadow-lg text-sm disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Submit Enquiry
+                  {submitting ? "Submitting..." : "Submit Enquiry"}
                 </button>
+                {error && (
+                  <p className="text-red-300 text-xs mt-2 text-center">{error}</p>
+                )}
+                {submitted && (
+                  <p className="text-green-300 text-sm mt-2 text-center font-semibold">Thank you! We&apos;ll get back to you soon.</p>
+                )}
               </form>
               <p className="text-gray-400 text-xs mt-3 text-center">
                 We&apos;ll get back to you within 24 hours

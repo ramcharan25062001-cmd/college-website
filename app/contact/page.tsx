@@ -315,6 +315,46 @@ const AdmissionsCTASection = () => {
 
 // Contact Form Section
 const ContactFormSection = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    programme: "",
+    message: "",
+  });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`.trim(),
+          email: formData.email,
+          phone: formData.phone,
+          programme: formData.programme,
+          message: formData.message,
+          source: "Contact Page",
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Submission failed");
+      setSubmitted(true);
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", programme: "", message: "" });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -329,7 +369,7 @@ const ContactFormSection = () => {
               to you as soon as possible.
             </p>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -337,6 +377,9 @@ const ContactFormSection = () => {
                   </label>
                   <input
                     type="text"
+                    required
+                    value={formData.firstName}
+                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#001C54] focus:ring-2 focus:ring-[#001C54]/20"
                     placeholder="Enter your first name"
                   />
@@ -347,6 +390,9 @@ const ContactFormSection = () => {
                   </label>
                   <input
                     type="text"
+                    required
+                    value={formData.lastName}
+                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#001C54] focus:ring-2 focus:ring-[#001C54]/20"
                     placeholder="Enter your last name"
                   />
@@ -359,6 +405,9 @@ const ContactFormSection = () => {
                 </label>
                 <input
                   type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#001C54] focus:ring-2 focus:ring-[#001C54]/20"
                   placeholder="Enter your email"
                 />
@@ -370,6 +419,9 @@ const ContactFormSection = () => {
                 </label>
                 <input
                   type="tel"
+                  required
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#001C54] focus:ring-2 focus:ring-[#001C54]/20"
                   placeholder="Enter your phone number"
                 />
@@ -380,8 +432,9 @@ const ContactFormSection = () => {
                   Interested In
                 </label>
                 <select
+                  value={formData.programme}
+                  onChange={(e) => setFormData({ ...formData, programme: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#001C54] focus:ring-2 focus:ring-[#001C54]/20 bg-white"
-                  defaultValue=""
                 >
                   <option value="" disabled>
                     Select a programme
@@ -410,6 +463,8 @@ const ContactFormSection = () => {
                 </label>
                 <textarea
                   rows={4}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#001C54] focus:ring-2 focus:ring-[#001C54]/20 resize-none"
                   placeholder="Write your message here..."
                 ></textarea>
@@ -417,10 +472,19 @@ const ContactFormSection = () => {
 
               <button
                 type="submit"
-                className="w-full bg-[#001C54] text-white py-4 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
+                disabled={submitting}
+                className="w-full bg-[#001C54] text-white py-4 rounded-lg font-semibold hover:bg-[#16336e] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send Message
+                {submitting ? "Sending..." : "Send Message"}
               </button>
+              {error && (
+                <p className="text-red-500 text-sm text-center">{error}</p>
+              )}
+              {submitted && (
+                <p className="text-green-600 text-sm text-center font-semibold">
+                  Message sent successfully! We&apos;ll get back to you soon.
+                </p>
+              )}
             </form>
           </div>
 

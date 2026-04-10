@@ -37,14 +37,38 @@ const HeroSection = () => {
     confirmPassword: "",
   });
 
+  const [submitting, setSubmitting] = useState(false);
+  const [registerSuccess, setRegisterSuccess] = useState(false);
+  const [formError, setFormError] = useState("");
+
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
-    console.log("Login:", loginData);
+    // Login logic — not connected to sheets
+    setFormError("Login functionality coming soon.");
   };
 
-  const handleRegister = (e: FormEvent) => {
+  const handleRegister = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Register:", registerData);
+    if (registerData.password !== registerData.confirmPassword) {
+      setFormError("Passwords do not match.");
+      return;
+    }
+    setSubmitting(true);
+    setFormError("");
+    try {
+      const res = await fetch("/api/admission", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(registerData),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Registration failed");
+      setRegisterSuccess(true);
+    } catch (err) {
+      setFormError(err instanceof Error ? err.message : "Something went wrong");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -156,7 +180,20 @@ const HeroSection = () => {
 
               {/* Forms */}
               <div className="px-6 pb-8">
-                {activeTab === "login" ? (
+                {formError && (
+                  <p className="text-red-500 text-sm text-center mb-4">{formError}</p>
+                )}
+                {registerSuccess ? (
+                  <div className="text-center py-8">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">Registration Successful!</h3>
+                    <p className="text-gray-600 text-sm">Our admissions team will contact you shortly.</p>
+                  </div>
+                ) : activeTab === "login" ? (
                   <form onSubmit={handleLogin} className="space-y-4">
                     <input
                       type="email"
@@ -295,9 +332,10 @@ const HeroSection = () => {
                     />
                     <button
                       type="submit"
-                      className="w-full bg-[#001C54] text-white py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
+                      disabled={submitting}
+                      className="w-full bg-[#001C54] text-white py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Register
+                      {submitting ? "Registering..." : "Register"}
                     </button>
                   </form>
                 )}
