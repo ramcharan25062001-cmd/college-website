@@ -748,38 +748,38 @@ export const ugPrograms: ProgramData[] = [
 
 export const pgPrograms: ProgramData[] = [
   {
-    slug: "mcom",
+    slug: "mcom-acca",
     category: "pg",
     parentCategory: "Postgraduate Courses",
-    programTitle: "M.Com (Master of Commerce)",
-    programSubtitle: "Postgraduate Programme in Commerce",
+    programTitle: "M.Com (ACCA)",
+    programSubtitle: "Postgraduate Programme in Commerce with ACCA",
     duration: "2 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "120",
     overview:
-      "The M.Com programme provides advanced knowledge in commerce, accounting, and finance. It is designed for graduates who want to deepen their understanding of business practices and pursue academic or professional careers.",
+      "The M.Com (ACCA) programme integrates the globally recognised ACCA qualification with a Master of Commerce degree. It is designed for graduates who want to deepen their understanding of accounting, finance, and business practices while earning an internationally respected professional certification.",
     overviewDetails:
-      "The programme encourages research-oriented thinking and provides opportunities for publishing papers and attending academic conferences.",
+      "Students receive exemptions from multiple ACCA papers, accelerating their path to becoming globally certified accountants. The programme encourages research-oriented thinking and provides opportunities for professional growth.",
     programStructureIntro:
-      "The M.Com programme covers advanced accounting, finance, taxation, and research methodology across two years.",
+      "The M.Com (ACCA) programme covers advanced accounting, ACCA strategic professional papers, and research methodology across two years.",
     levels: [
       {
         name: "Year 1",
         modules: [
           { title: "Advanced Financial Accounting", credits: 20 },
-          { title: "Business Research Methods", credits: 20 },
-          { title: "Managerial Economics", credits: 20 },
+          { title: "Strategic Business Reporting (ACCA SBR)", credits: 20 },
+          { title: "Advanced Audit & Assurance (ACCA AAA)", credits: 20 },
           { title: "Corporate Governance", credits: 20 },
-          { title: "Advanced Cost Accounting", credits: 20 },
+          { title: "Business Research Methods", credits: 20 },
         ],
       },
       {
         name: "Year 2",
         modules: [
-          { title: "International Business", credits: 20 },
-          { title: "Strategic Management", credits: 20 },
-          { title: "Advanced Taxation", credits: 20 },
-          { title: "Financial Markets & Institutions", credits: 20 },
+          { title: "Advanced Financial Management (ACCA AFM)", credits: 20 },
+          { title: "Advanced Performance Management (ACCA APM)", credits: 20 },
+          { title: "Strategic Business Leader (ACCA SBL)", credits: 20 },
+          { title: "Advanced Taxation (ACCA ATX)", credits: 20 },
           { title: "Dissertation", credits: 20 },
         ],
       },
@@ -789,235 +789,30 @@ export const pgPrograms: ProgramData[] = [
         id: "direct",
         title: "Direct Entry",
         content:
-          "Entry is open to students who have completed B.Com or equivalent Bachelor's degree with minimum 50% aggregate.",
+          "Entry is open to students who have completed B.Com or equivalent Bachelor's degree with minimum 50% aggregate. ACCA Fundamentals level completion is preferred.",
       },
       {
         id: "case-basis",
         title: "Case by Case Basis Entry",
         content:
-          "Graduates from other disciplines with relevant work experience may be considered.",
+          "Graduates from other disciplines with relevant work experience or partial ACCA qualification may be considered.",
       },
       {
         id: "language",
         title: "Language Requirement",
         content:
-          "English proficiency required. IELTS minimum 6.0 or equivalent.",
+          "Strong English proficiency required as ACCA papers are in English. IELTS minimum 6.0 or equivalent.",
       },
     ],
-    feesLabel: "M.Com (Master of Commerce)",
-    feesAmount: "₹75,000 per year*",
-    feesNote:
-      "*Merit-based scholarships available. Applicable for batch 2026/27.",
-    progressionTitle: "Progression Opportunities",
-    progressionContent:
-      "M.Com graduates can pursue Ph.D., UGC NET/SET for teaching, or enter the workforce in roles such as financial analyst, accounts manager, tax consultant, and academic researcher.",
-    progressionNote:
-      "Strong academic track record provides foundation for doctoral and professional certifications.",
-  },
-  {
-    slug: "ma-economics",
-    category: "pg",
-    parentCategory: "Postgraduate Courses",
-    programTitle: "MA Economics",
-    programSubtitle: "Postgraduate Programme in Economics",
-    duration: "2 Years",
-    modeOfStudy: "On-Campus",
-    creditsAwarded: "120",
-    overview:
-      "The MA Economics programme offers an in-depth study of economic theories, policies, and their applications. Students develop strong analytical and quantitative skills for both academic and professional careers.",
-    overviewDetails:
-      "The programme integrates classical and modern economic thought with practical applications in policy analysis, development economics, and international trade.",
-    programStructureIntro:
-      "The curriculum covers microeconomics, macroeconomics, econometrics, and specialised electives across two years.",
-    levels: [
-      {
-        name: "Year 1",
-        modules: [
-          { title: "Microeconomic Theory", credits: 20 },
-          { title: "Macroeconomic Theory", credits: 20 },
-          { title: "Quantitative Methods", credits: 20 },
-          { title: "Indian Economy", credits: 20 },
-          { title: "International Economics", credits: 20 },
-        ],
-      },
-      {
-        name: "Year 2",
-        modules: [
-          { title: "Econometrics", credits: 20 },
-          { title: "Development Economics", credits: 20 },
-          { title: "Public Finance", credits: 20 },
-          { title: "Environmental Economics", credits: 20 },
-          { title: "Research Dissertation", credits: 20 },
-        ],
-      },
-    ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to students who have completed any Bachelor's degree with Economics as a subject.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Graduates without Economics may be considered with relevant quantitative aptitude.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 6.0 or equivalent.",
-      },
-    ],
-    feesLabel: "MA Economics",
-    feesAmount: "₹60,000 per year*",
-    feesNote:
-      "*Merit and need-based scholarships available. Applicable for batch 2026/27.",
-    progressionTitle: "Progression Opportunities",
-    progressionContent:
-      "Graduates can pursue Ph.D. in Economics, prepare for civil services (UPSC), or join think tanks, research organisations, banks, and consulting firms as economists or analysts.",
-    progressionNote:
-      "Strong foundation for competitive examinations like RBI Grade B, SEBI, and Indian Economic Service.",
-  },
-  {
-    slug: "mba",
-    category: "pg",
-    parentCategory: "Postgraduate Courses",
-    programTitle: "MBA (Master of Business Administration)",
-    programSubtitle: "Postgraduate Management Programme",
-    duration: "2 Years",
-    modeOfStudy: "On-Campus",
-    creditsAwarded: "120",
-    overview:
-      "The MBA programme at JAIN College is a comprehensive management programme with various specialisations for future business leaders. Students develop strategic thinking, leadership, and functional expertise.",
-    overviewDetails:
-      "The programme features case-based learning, industry projects, guest lectures from CXOs, and mandatory internships to bridge the theory-practice gap.",
-    programStructureIntro:
-      "Year 1 covers core management subjects while Year 2 offers specialisation tracks and a capstone project.",
-    levels: [
-      {
-        name: "Year 1 (Core)",
-        modules: [
-          { title: "Organisational Behaviour", credits: 15 },
-          { title: "Marketing Management", credits: 15 },
-          { title: "Financial Management", credits: 15 },
-          { title: "Human Resource Management", credits: 15 },
-          { title: "Operations Management", credits: 15 },
-          { title: "Business Analytics", credits: 15 },
-          { title: "Strategic Management", credits: 15 },
-          { title: "Summer Internship", credits: 15 },
-        ],
-      },
-      {
-        name: "Year 2 (Specialisation)",
-        modules: [
-          { title: "Specialisation Elective 1", credits: 15 },
-          { title: "Specialisation Elective 2", credits: 15 },
-          { title: "Specialisation Elective 3", credits: 15 },
-          { title: "Specialisation Elective 4", credits: 15 },
-          { title: "Industry Project", credits: 15 },
-          { title: "Dissertation", credits: 15 },
-        ],
-      },
-    ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to students with a recognised Bachelor's degree (any discipline) with minimum 50% aggregate. Valid CAT/MAT/CMAT/KMAT score required.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Working professionals with 2+ years experience may be considered with relaxed entrance exam requirements.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Strong English proficiency required. IELTS minimum 6.0 or equivalent for international students.",
-      },
-    ],
-    feesLabel: "MBA (Master of Business Administration)",
-    feesAmount: "₹3.00 Lakhs per year*",
-    feesNote:
-      "*Scholarships based on entrance exam scores. Applicable for batch 2026/27.",
-    progressionTitle: "Progression Opportunities",
-    progressionContent:
-      "MBA graduates enter leadership roles in marketing, finance, consulting, IT, operations, and entrepreneurship. Average placement packages are highly competitive.",
-    progressionNote:
-      "200+ recruiting companies participate in campus placements annually.",
-  },
-  {
-    slug: "mca",
-    category: "pg",
-    parentCategory: "Postgraduate Courses",
-    programTitle: "MCA (Master of Computer Applications)",
-    programSubtitle: "Postgraduate Programme in Computer Applications",
-    duration: "2 Years",
-    modeOfStudy: "On-Campus",
-    creditsAwarded: "120",
-    overview:
-      "The MCA programme develops advanced expertise in software development, system design, and technology management. Students become proficient in modern programming frameworks and enterprise technologies.",
-    overviewDetails:
-      "The programme includes hands-on labs, industry-mentored projects, and a mandatory internship to ensure job readiness.",
-    programStructureIntro:
-      "The curriculum covers advanced computing subjects with emphasis on practical implementation and research.",
-    levels: [
-      {
-        name: "Year 1",
-        modules: [
-          { title: "Advanced Data Structures", credits: 20 },
-          { title: "Software Architecture", credits: 20 },
-          { title: "Cloud Computing", credits: 20 },
-          { title: "Advanced Database Systems", credits: 20 },
-          { title: "Web Application Development", credits: 20 },
-        ],
-      },
-      {
-        name: "Year 2",
-        modules: [
-          { title: "Mobile Application Development", credits: 20 },
-          { title: "Cyber Security", credits: 20 },
-          { title: "DevOps & Agile Methods", credits: 20 },
-          { title: "Elective (AI/ML/IoT/Blockchain)", credits: 20 },
-          { title: "Capstone Project", credits: 20 },
-        ],
-      },
-    ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to students with BCA/B.Sc (CS/IT) or equivalent degree with Mathematics at 10+2 level.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Graduates from other backgrounds with substantial programming experience may be considered after an aptitude test.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 6.0 or equivalent for international applicants.",
-      },
-    ],
-    feesLabel: "MCA (Master of Computer Applications)",
+    feesLabel: "M.Com (ACCA)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:
-      "*Includes lab and computing infrastructure fees. Applicable for batch 2026/27.",
+      "*ACCA registration and exam fees are additional. Merit-based scholarships available. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "MCA graduates enter the IT industry as software engineers, architects, DevOps engineers, or data engineers. Further specialisation through M.Tech or Ph.D. is also popular.",
+      "Graduates can complete remaining ACCA papers to become fully qualified ACCA members. Career paths include chartered accountancy, financial consulting, audit, corporate finance, and global leadership roles in accounting and finance.",
     progressionNote:
-      "Strong alumni network in top IT companies facilitates referral-based placements.",
+      "ACCA qualification is recognised in over 180 countries, opening doors to international career opportunities.",
   },
 ];
 

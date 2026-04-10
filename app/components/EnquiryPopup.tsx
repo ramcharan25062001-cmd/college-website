@@ -150,10 +150,7 @@ const EnquiryPopup = ({ programName, delayMs = 5000 }: EnquiryPopupProps) => {
                   <option value="BCA (AI/ML)">BCA (AI & Machine Learning)</option>
                 </optgroup>
                 <optgroup label="Postgraduate">
-                  <option value="M.Com">M.Com</option>
-                  <option value="MA Economics">MA Economics</option>
-                  <option value="MBA">MBA</option>
-                  <option value="MCA">MCA</option>
+                  <option value="M.Com (ACCA)">M.Com (ACCA)</option>
                 </optgroup>
               </select>
               <textarea

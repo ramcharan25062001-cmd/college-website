@@ -398,10 +398,7 @@ const ContactFormSection = () => {
                     <option value="bca-aiml">BCA (AI &amp; Machine Learning)</option>
                   </optgroup>
                   <optgroup label="Postgraduate (PG)">
-                    <option value="mcom">M.Com (Master of Commerce)</option>
-                    <option value="ma-economics">MA Economics</option>
-                    <option value="mba">MBA (Master of Business Administration)</option>
-                    <option value="mca">MCA (Master of Computer Applications)</option>
+                    <option value="mcom-acca">M.Com (ACCA)</option>
                   </optgroup>
                 </select>
               </div>

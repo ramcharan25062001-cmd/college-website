@@ -157,32 +157,11 @@ const PGOverviewSection = () => {
 const PGCoursesSection = () => {
   const courses = [
     {
-      name: "M.Com (Master of Commerce)",
-      slug: "mcom",
+      name: "M.Com (ACCA)",
+      slug: "mcom-acca",
       duration: "2 Years",
       description:
-        "Advanced commerce education with specializations in Finance, Accounting, and Business Management.",
-    },
-    {
-      name: "MA Economics",
-      slug: "ma-economics",
-      duration: "2 Years",
-      description:
-        "In-depth study of economic theories, policies, and their applications in the modern world.",
-    },
-    {
-      name: "MBA (Master of Business Administration)",
-      slug: "mba",
-      duration: "2 Years",
-      description:
-        "Comprehensive management programme with various specializations for future business leaders.",
-    },
-    {
-      name: "MCA (Master of Computer Applications)",
-      slug: "mca",
-      duration: "2 Years",
-      description:
-        "Advanced IT programme for developing expertise in software development and technology management.",
+        "Advanced commerce education integrated with the globally recognised ACCA qualification for international accounting and finance careers.",
     },
   ];
 
@@ -194,7 +173,7 @@ const PGCoursesSection = () => {
         </h2>
         <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12"></div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="max-w-md mx-auto">
           {courses.map((course) => (
             <div
               key={course.slug}

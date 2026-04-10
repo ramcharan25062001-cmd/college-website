@@ -87,7 +87,7 @@ const ProgramsSection = () => {
         <div className="max-w-md">
           <div className="bg-[#16336e] rounded-2xl p-6 text-white hover:shadow-2xl transition-all hover:-translate-y-1">
             <h4 className="text-xl font-bold mb-4 text-[#F8C300]">
-              M.Com Program
+              M.Com (ACCA) Program
             </h4>
             <div className="flex items-start gap-2 text-sm">
               <svg
