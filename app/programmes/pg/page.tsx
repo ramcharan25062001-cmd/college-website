@@ -436,7 +436,7 @@ export default function PGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
-      <EnquiryPopup delayMs={8000} />
+      <EnquiryPopup />
     </>
   );
 }

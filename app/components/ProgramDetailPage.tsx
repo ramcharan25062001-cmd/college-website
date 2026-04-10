@@ -345,7 +345,7 @@ export default function ProgramDetailPage({ program, relatedPrograms }: ProgramD
         <InlineEnquiryCTA program={program} />
       </main>
       <Footer />
-      <EnquiryPopup programName={program.programTitle} delayMs={5000} />
+      <EnquiryPopup programName={program.programTitle} />
     </>
   );
 }

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import EnquiryPopup from "../components/EnquiryPopup";
 import Link from "next/link";
 
 // Campus data
@@ -662,6 +663,7 @@ export default function ContactPage() {
         <ContactFormSection />
       </main>
       <Footer />
+      <EnquiryPopup />
     </>
   );
 }

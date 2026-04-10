@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import EnquiryPopup from "../components/EnquiryPopup";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -446,6 +447,7 @@ export default function AboutPage() {
       <LeadershipSection />
       <FacilitiesSection />
       <Footer />
+      <EnquiryPopup />
     </main>
   );
 }

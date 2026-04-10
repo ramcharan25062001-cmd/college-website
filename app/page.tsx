@@ -12,6 +12,7 @@ import FAQSection from "./components/FAQSection";
 import CTASection from "./components/CTASection";
 import EnquirySection from "./components/EnquirySection";
 import Footer from "./components/Footer";
+import EnquiryPopup from "./components/EnquiryPopup";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <CTASection />
       <EnquirySection />
       <Footer />
+      <EnquiryPopup />
     </main>
   );
 }

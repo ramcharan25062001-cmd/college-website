@@ -1,14 +1,13 @@
 "use client";
 
-import { useState, useEffect, FormEvent } from "react";
+import { useState, FormEvent } from "react";
 
 interface EnquiryPopupProps {
   programName?: string;
-  delayMs?: number;
 }
 
-const EnquiryPopup = ({ programName, delayMs = 5000 }: EnquiryPopupProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
+  const [isOpen, setIsOpen] = useState(true);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -18,26 +17,8 @@ const EnquiryPopup = ({ programName, delayMs = 5000 }: EnquiryPopupProps) => {
     message: "",
   });
 
-  useEffect(() => {
-    const key = programName
-      ? `enquiry_popup_dismissed_${programName}`
-      : "enquiry_popup_dismissed";
-    const dismissed = sessionStorage.getItem(key);
-    if (dismissed) return;
-
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-    }, delayMs);
-
-    return () => clearTimeout(timer);
-  }, [delayMs, programName]);
-
   const handleClose = () => {
     setIsOpen(false);
-    const key = programName
-      ? `enquiry_popup_dismissed_${programName}`
-      : "enquiry_popup_dismissed";
-    sessionStorage.setItem(key, "true");
   };
 
   const handleSubmit = (e: FormEvent) => {

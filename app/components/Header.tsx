@@ -186,7 +186,7 @@ const Header = () => {
     { name: "About", href: "/#about" },
     { name: "Programmes", href: "/programmes/ug", hasMegaMenu: true },
     { name: "Pathways", href: "/#pathways", hasMegaMenu: true },
-    { name: "Admissions", href: "/#admissions" },
+    { name: "Admissions", href: "/admissions" },
     { name: "FAQ", href: "/#faq" },
     { name: "Contact Us", href: "/contact" },
   ];

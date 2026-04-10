@@ -502,7 +502,7 @@ export default function UGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
-      <EnquiryPopup delayMs={8000} />
+      <EnquiryPopup />
     </>
   );
 }
