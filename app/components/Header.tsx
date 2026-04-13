@@ -18,52 +18,84 @@ const Header = () => {
             UG Programmes
           </h3>
           <ul className="space-y-2 text-sm text-gray-600">
-            <li>
+             <li>
               <Link
-                href="/programmes/ug"
+                href="/programmes/ug/bcom"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com (International Accounting & Finance)
+                › B.Com 
               </Link>
             </li>
             <li>
               <Link
-                href="/programmes/ug"
+                href="/programmes/ug/bcom-acca"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com (International Finance & Accounting)
+                › B.Com (ACCA)
+              </Link>
+            </li>
+             <li>
+              <Link
+                href="/programmes/ug/bcom-bda"
+                className="hover:text-[#F8C300] flex items-center gap-1"
+              >
+                › B.Com (Business Data Analytics)
               </Link>
             </li>
             <li>
               <Link
-                href="/programmes/ug"
+                href="/programmes/ug/bcom-lscm"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BBA (International Business & Finance)
+                › B.Com (Logistics & Supply Chain Management)
               </Link>
             </li>
             <li>
               <Link
-                href="/programmes/ug"
+                href="/programmes/ug/bba"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BBA (Digital Marketing & E-Commerce)
+                › BBA 
               </Link>
             </li>
             <li>
               <Link
-                href="/programmes/ug"
+                href="/programmes/ug/bba-aviation"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BCA (Cloud Computing & Cyber Security)
+                › BBA (Aviation Management)
               </Link>
             </li>
             <li>
               <Link
-                href="/programmes/ug"
+                href="/programmes/ug/bba-analytics"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BCA (AI & Data Science)
+                › BBA (Business Analytics)
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/programmes/ug/bba-digital-marketing"
+                className="hover:text-[#F8C300] flex items-center gap-1"
+              >
+                › BBA (Digital Marketing)
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/programmes/ug/bca"
+                className="hover:text-[#F8C300] flex items-center gap-1"
+              >
+                › BCA 
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/programmes/ug/bca-aiml"
+                className="hover:text-[#F8C300] flex items-center gap-1"
+              >
+                › BCA (Artificial Intelligence & Machine Learning)
               </Link>
             </li>
           </ul>
@@ -75,7 +107,7 @@ const Header = () => {
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
               <Link
-                href="/programmes/pg"
+                href="/programmes/pg/mcom-acca"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
                 › M.Com (International Finance with ACCA, UK)
@@ -324,29 +356,78 @@ const Header = () => {
                   <div className="pl-4 mt-2 space-y-2 text-sm">
                     <p className="text-[#F8C300] font-semibold">UG Programmes</p>
                     <Link
-                      href="/programmes/ug"
+                      href="/programmes/ug/bcom"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › B.Com (International Accounting & Finance)
+                      › B.Com
                     </Link>
                     <Link
-                      href="/programmes/ug"
+                      href="/programmes/ug/bcom-acca"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BBA (International Business & Finance)
+                      › B.Com (ACCA)
                     </Link>
                     <Link
-                      href="/programmes/ug"
+                      href="/programmes/ug/bcom-bda"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BCA (Cloud Computing & Cyber Security)
+                      › B.Com (Business Data Analytics)
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bcom-lscm"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › B.Com (Logistics & Supply Chain Management)
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bba"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › BBA
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bba-aviation"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › BBA (Aviation Management)
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bba-analytics"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › BBA (Business Analytics)
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bba-digital-marketing"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › BBA (Digital Marketing)
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bca"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › BCA
+                    </Link>
+                    <Link
+                      href="/programmes/ug/bca-aiml"
+                      className="block text-white/70"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      › BCA (AI & Machine Learning)
                     </Link>
                     <p className="text-[#F8C300] font-semibold mt-3">PG Programme</p>
                     <Link
-                      href="/programmes/pg"
+                      href="/programmes/pg/mcom-acca"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
