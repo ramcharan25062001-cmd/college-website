@@ -1,29 +1,35 @@
-import { google } from "googleapis";
+import { google, sheets_v4 } from "googleapis";
 
-// Validate required environment variables at import time
-const GOOGLE_SERVICE_ACCOUNT_EMAIL =
-  process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || "";
-const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || "").replace(
-  /\\n/g,
-  "\n"
-);
 export const ENQUIRY_SHEET_ID = process.env.GOOGLE_ENQUIRY_SHEET_ID || "";
 export const ADMISSION_SHEET_ID = process.env.GOOGLE_ADMISSION_SHEET_ID || "";
 
-if (!GOOGLE_SERVICE_ACCOUNT_EMAIL || !GOOGLE_PRIVATE_KEY) {
-  console.warn(
-    "Google Sheets env variables not set. Form submissions will fail."
-  );
+// Lazy singleton — created on first API call, not at module load time.
+// This avoids issues on Vercel where env vars may not be ready at import time.
+let sheetsClient: sheets_v4.Sheets | null = null;
+
+function getSheetsClient(): sheets_v4.Sheets {
+  if (sheetsClient) return sheetsClient;
+
+  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  const rawKey = process.env.GOOGLE_PRIVATE_KEY;
+
+  if (!email || !rawKey) {
+    throw new Error(
+      "Missing GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY env variables"
+    );
+  }
+
+  const key = rawKey.replace(/\\n/g, "\n");
+
+  const auth = new google.auth.JWT({
+    email,
+    key,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
+
+  sheetsClient = google.sheets({ version: "v4", auth });
+  return sheetsClient;
 }
-
-// Create auth client (cached singleton)
-const auth = new google.auth.JWT({
-  email: GOOGLE_SERVICE_ACCOUNT_EMAIL,
-  key: GOOGLE_PRIVATE_KEY,
-  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-});
-
-const sheets = google.sheets({ version: "v4", auth });
 
 /**
  * Append a row to a specific sheet tab.
@@ -35,8 +41,10 @@ export async function appendToSheet(
   headers: string[],
   values: string[]
 ) {
+  const sheets = getSheetsClient();
+
   // Ensure the sheet tab exists, create it if missing
-  await ensureSheetTab(spreadsheetId, sheetName);
+  await ensureSheetTab(sheets, spreadsheetId, sheetName);
 
   // Check if sheet has headers already
   const existing = await sheets.spreadsheets.values.get({
@@ -66,7 +74,11 @@ export async function appendToSheet(
 /**
  * Check if a sheet tab exists; create it if not.
  */
-async function ensureSheetTab(spreadsheetId: string, sheetName: string) {
+async function ensureSheetTab(
+  sheets: sheets_v4.Sheets,
+  spreadsheetId: string,
+  sheetName: string
+) {
   const spreadsheet = await sheets.spreadsheets.get({
     spreadsheetId,
   });

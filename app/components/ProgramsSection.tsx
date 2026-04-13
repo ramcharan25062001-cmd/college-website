@@ -7,7 +7,7 @@ const ProgramsSection = () => {
       color: "bg-[#001C54]",
       image: "/images/programs/bcom.jpg",
       programs: [
-        "B.Com (Regular)",
+        "Bachelor of Commerce ",
         "B.Com (Business Data Analytics – BDA)",
         "B.Com (ACCA)",
         "B.Com (Logistics & Supply Chain Management – LSCM)",
@@ -18,7 +18,7 @@ const ProgramsSection = () => {
       color: "bg-[#16336e]",
       image: "/images/programs/bba.jpg",
       programs: [
-        "BBA (Regular)",
+        "Bachelor of Business Administration ",
         "BBA (Aviation Management)",
         "BBA (Business Analytics)",
         "BBA (Digital Marketing)",
@@ -28,7 +28,7 @@ const ProgramsSection = () => {
       category: "Computer Applications",
       color: "bg-[#001C54]",
       image: "/images/programs/bca.jpg",
-      programs: ["BCA", "BCA (Artificial Intelligence & Machine Learning)"],
+      programs: ["Bachelor of Computer Applications ", "BCA (Artificial Intelligence & Machine Learning)"],
     },
   ];
 

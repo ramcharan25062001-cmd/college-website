@@ -67,7 +67,8 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Enquiry submission error:", error);
+    console.error("Enquiry submission error:", error instanceof Error ? error.message : error);
+    console.error("Full error:", JSON.stringify(error, Object.getOwnPropertyNames(error as object)));
     return NextResponse.json(
       { error: "Failed to submit enquiry. Please try again." },
       { status: 500 }
