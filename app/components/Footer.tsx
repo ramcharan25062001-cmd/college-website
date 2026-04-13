@@ -18,15 +18,15 @@ const Footer = () => {
             />
             <h3 className="text-[#F8C300] font-bold text-lg mb-4">Address</h3>
             <p className="text-sm leading-relaxed">
-              NH-209, Jain Global Campus
+              Jain College CGS, 
               <br />
-              Jakkasandra Post
+              15, Vasavi Temple St,
               <br />
-              Kanakapura Main Road
+              opposite to Axis Bank
               <br />
-              Ramanagara District - 562 112
+              Vishweshwarapura, Basavangudi,
               <br />
-              Karnataka, India
+              Bengaluru, Karnataka 560004
             </p>
             <h3 className="text-[#F8C300] font-bold text-lg mt-6 mb-4">
               Contact for Admissions:
@@ -51,7 +51,7 @@ const Footer = () => {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                info@jaincollege.ac.in
+                jccisglobal@gmail.com
               </span>
             </p>
             {/* Social Icons */}

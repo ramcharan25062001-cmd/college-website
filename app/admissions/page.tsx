@@ -37,38 +37,14 @@ const HeroSection = () => {
     confirmPassword: "",
   });
 
-  const [submitting, setSubmitting] = useState(false);
-  const [registerSuccess, setRegisterSuccess] = useState(false);
-  const [formError, setFormError] = useState("");
-
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
-    // Login logic — not connected to sheets
-    setFormError("Login functionality coming soon.");
+    console.log("Login:", loginData);
   };
 
-  const handleRegister = async (e: FormEvent) => {
+  const handleRegister = (e: FormEvent) => {
     e.preventDefault();
-    if (registerData.password !== registerData.confirmPassword) {
-      setFormError("Passwords do not match.");
-      return;
-    }
-    setSubmitting(true);
-    setFormError("");
-    try {
-      const res = await fetch("/api/admission", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(registerData),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Registration failed");
-      setRegisterSuccess(true);
-    } catch (err) {
-      setFormError(err instanceof Error ? err.message : "Something went wrong");
-    } finally {
-      setSubmitting(false);
-    }
+    console.log("Register:", registerData);
   };
 
   return (
@@ -76,7 +52,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/campus-building.jpg"
+          src="/images/admissions-hero.jpg"
           alt="JAIN College Students"
           fill
           className="object-cover"
@@ -180,20 +156,7 @@ const HeroSection = () => {
 
               {/* Forms */}
               <div className="px-6 pb-8">
-                {formError && (
-                  <p className="text-red-500 text-sm text-center mb-4">{formError}</p>
-                )}
-                {registerSuccess ? (
-                  <div className="text-center py-8">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">Registration Successful!</h3>
-                    <p className="text-gray-600 text-sm">Our admissions team will contact you shortly.</p>
-                  </div>
-                ) : activeTab === "login" ? (
+                {activeTab === "login" ? (
                   <form onSubmit={handleLogin} className="space-y-4">
                     <input
                       type="email"
@@ -332,10 +295,9 @@ const HeroSection = () => {
                     />
                     <button
                       type="submit"
-                      disabled={submitting}
-                      className="w-full bg-[#001C54] text-white py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="w-full bg-[#001C54] text-white py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
                     >
-                      {submitting ? "Registering..." : "Register"}
+                      Register
                     </button>
                   </form>
                 )}
@@ -362,9 +324,9 @@ const ProgrammesSection = () => (
       <div className="max-w-3xl mx-auto">
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
           {/* Campus Image */}
-          <div className="relative h-56 bg-gray-100">
+          <div className="relative h-100 bg-gray-100">
             <Image
-              src="/images/campus-building.jpg"
+              src="/images/about-us.jpg"
               alt="Vasavi Road Campus"
               fill
               className="object-cover"

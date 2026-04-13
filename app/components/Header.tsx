@@ -271,7 +271,7 @@ const Header = () => {
           {/* Apply Now Button */}
           <div className="hidden lg:block">
             <Link
-              href="/#enquiry"
+              href="/admissions"
               className="bg-[#F8C300] text-[#001C54] px-5 py-2 rounded-md font-semibold hover:bg-[#dfb82d] transition-colors text-sm"
             >
               Apply Now
@@ -389,7 +389,7 @@ const Header = () => {
               </div>
             ))}
             <Link
-              href="/#enquiry"
+              href="/admissions"
               className="inline-block mt-4 bg-[#F8C300] text-[#001C54] px-6 py-2.5 rounded-md font-semibold"
               onClick={() => setIsMenuOpen(false)}
             >

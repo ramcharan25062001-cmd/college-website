@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import EnquiryPopup from "../../components/EnquiryPopup";
@@ -9,64 +10,33 @@ import Link from "next/link";
 // Hero Section
 const HeroSection = () => {
   return (
-    <section className="bg-[#001C54] py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left - Banner Image Placeholder */}
-          <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-            <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-              <div className="text-center p-8">
-                <div className="bg-[#001C54] text-white p-6 rounded-lg mb-4">
-                  <h3 className="text-xl font-bold mb-2">
-                    Advance Your Career at JAIN College
-                  </h3>
-                  <p className="text-sm text-gray-300 mb-4">
-                    Industry-Ready Postgraduate Programmes
-                  </p>
-                  <div className="flex justify-center gap-4 mb-4">
-                    <div className="bg-[#16336e] px-3 py-2 rounded">
-                      <span className="text-2xl font-bold text-[#F8C300]">
-                        5+
-                      </span>
-                      <p className="text-xs">PG Courses</p>
-                    </div>
-                    <div className="bg-[#16336e] px-3 py-2 rounded">
-                      <span className="text-2xl font-bold text-[#F8C300]">
-                        100%
-                      </span>
-                      <p className="text-xs">Placement Support</p>
-                    </div>
-                    <div className="bg-[#16336e] px-3 py-2 rounded">
-                      <span className="text-2xl font-bold text-[#F8C300]">
-                        30+
-                      </span>
-                      <p className="text-xs">Years Legacy</p>
-                    </div>
-                  </div>
-                  <div className="bg-[#F8C300] text-[#001C54] px-4 py-2 rounded font-semibold text-sm inline-block">
-                    Elevate Your Expertise!
-                  </div>
-                </div>
-                <p className="text-gray-500 text-sm">
-                  Banner Image Placeholder
-                </p>
-              </div>
-            </div>
-          </div>
+    <section className="relative min-h-[400px] lg:min-h-[500px] flex items-center overflow-hidden">
+      {/* Full Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/programmes-hero.jpg"
+          alt="Postgraduate Programmes at JAIN College"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#001C54]/85 via-[#001C54]/70 to-[#001C54]/50" />
+      </div>
 
-          {/* Right - Content */}
-          <div className="text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Postgraduate Courses at JAIN College
-            </h1>
-            <Link
-              href="/#enquiry"
-              className="inline-block bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
-            >
-              ENQUIRE NOW
-            </Link>
-          </div>
-        </div>
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-2xl">
+          Postgraduate Courses at JAIN College
+        </h1>
+        <p className="text-white/80 text-lg mb-8 max-w-xl">
+          Advance your career with specialised postgraduate programmes and global exposure.
+        </p>
+        <Link
+          href="/#enquiry"
+          className="inline-block bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
+        >
+          ENQUIRE NOW
+        </Link>
       </div>
     </section>
   );
@@ -103,24 +73,14 @@ const PGOverviewSection = () => {
         <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12"></div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left - Image Placeholder */}
-          <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center border-4 border-[#001C54]">
-            <div className="text-center text-gray-500">
-              <svg
-                className="w-16 h-16 mx-auto mb-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-              <p>Campus Image Placeholder</p>
-            </div>
+          {/* Left - Overview Image */}
+          <div className="aspect-[4/3] rounded-lg overflow-hidden border-4 border-[#001C54] relative">
+            <Image
+              src="/images/about-us.jpg"
+              alt="Postgraduate Programmes at JAIN College"
+              fill
+              className="object-cover"
+            />
           </div>
 
           {/* Right - Content */}
@@ -362,27 +322,13 @@ const WhyChooseSection = () => {
             </ul>
           </div>
 
-          <div className="aspect-video bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-            <div className="text-center text-white/60">
-              <svg
-                className="w-16 h-16 mx-auto mb-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-              <p>
-                Research & Learning
-                <br />
-                Image Placeholder
-              </p>
-            </div>
+          <div className="aspect-video rounded-lg overflow-hidden relative">
+            <Image
+              src="/images/ug-programmes-hero.jpg"
+              alt="Research & Learning at JAIN College"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

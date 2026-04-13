@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import EnquiryPopup from "../components/EnquiryPopup";
+import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -36,43 +37,16 @@ const AboutContent = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Images */}
           <div className="flex gap-6">
-            {/* First Image */}
-            <div className="relative w-1/2">
+            {/* About Image */}
+            <div className="relative w-full">
               <div className="absolute -bottom-4 -left-4 w-full h-full bg-[#F8C300] rounded-lg -z-10"></div>
-              <div className="w-full h-80 bg-gradient-to-br from-[#001C54] to-[#16336e] rounded-lg flex items-center justify-center">
-                <div className="text-center text-white/50">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <p className="text-xs">Students in Library</p>
-                </div>
-              </div>
-            </div>
-            {/* Second Image */}
-            <div className="relative w-1/2 mt-12">
-              <div className="w-full h-80 bg-gradient-to-br from-[#16336e] to-[#001C54] rounded-lg flex items-center justify-center">
-                <div className="text-center text-white/50">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <p className="text-xs">Students Studying</p>
-                </div>
+              <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/about-us.jpg"
+                  alt="About Jain College Global Campus"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

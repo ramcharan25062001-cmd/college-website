@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 const ProgramsSection = () => {
   const ugPrograms = [
     {
       category: "B.Com Programs",
       color: "bg-[#001C54]",
+      image: "/images/programs/bcom.jpg",
       programs: [
         "B.Com (Regular)",
         "B.Com (Business Data Analytics – BDA)",
@@ -13,6 +16,7 @@ const ProgramsSection = () => {
     {
       category: "BBA Programs",
       color: "bg-[#16336e]",
+      image: "/images/programs/bba.jpg",
       programs: [
         "BBA (Regular)",
         "BBA (Aviation Management)",
@@ -23,6 +27,7 @@ const ProgramsSection = () => {
     {
       category: "Computer Applications",
       color: "bg-[#001C54]",
+      image: "/images/programs/bca.jpg",
       programs: ["BCA", "BCA (Artificial Intelligence & Machine Learning)"],
     },
   ];
@@ -53,11 +58,21 @@ const ProgramsSection = () => {
           {ugPrograms.map((group, index) => (
             <div
               key={index}
-              className={`${group.color} rounded-2xl p-6 text-white hover:shadow-2xl transition-all hover:-translate-y-1`}
+              className={`${group.color} rounded-2xl overflow-hidden text-white hover:shadow-2xl transition-all hover:-translate-y-1`}
             >
-              <h4 className="text-xl font-bold mb-4 text-[#F8C300]">
-                {group.category}
-              </h4>
+              <div className="relative h-44">
+                <Image
+                  src={group.image}
+                  alt={group.category}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <h4 className="absolute bottom-4 left-6 text-xl font-bold text-[#F8C300]">
+                  {group.category}
+                </h4>
+              </div>
+              <div className="p-6">
               <ul className="space-y-3">
                 {group.programs.map((program, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm">
@@ -76,6 +91,7 @@ const ProgramsSection = () => {
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
           ))}
         </div>
@@ -85,10 +101,20 @@ const ProgramsSection = () => {
           Postgraduate Programs
         </h3>
         <div className="max-w-md">
-          <div className="bg-[#16336e] rounded-2xl p-6 text-white hover:shadow-2xl transition-all hover:-translate-y-1">
-            <h4 className="text-xl font-bold mb-4 text-[#F8C300]">
-              M.Com (ACCA) Program
-            </h4>
+          <div className="bg-[#16336e] rounded-2xl overflow-hidden text-white hover:shadow-2xl transition-all hover:-translate-y-1">
+            <div className="relative h-44">
+              <Image
+                src="/images/programs/bcom-acca.jpg"
+                alt="M.Com (ACCA) Program"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <h4 className="absolute bottom-4 left-6 text-xl font-bold text-[#F8C300]">
+                M.Com (ACCA) Program
+              </h4>
+            </div>
+            <div className="p-6">
             <div className="flex items-start gap-2 text-sm">
               <svg
                 className="w-5 h-5 text-[#F8C300] flex-shrink-0 mt-0.5"
@@ -102,6 +128,7 @@ const ProgramsSection = () => {
                 />
               </svg>
               <span className="text-white/90">M.Com (ACCA)</span>
+            </div>
             </div>
           </div>
         </div>

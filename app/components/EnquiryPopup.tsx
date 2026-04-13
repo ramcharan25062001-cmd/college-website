@@ -21,31 +21,14 @@ const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
     setIsOpen(false);
   };
 
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setSubmitting(true);
-    setError("");
-    try {
-      const res = await fetch("/api/enquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, source: "Popup" }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Submission failed");
-      setSubmitted(true);
-      setTimeout(() => {
-        handleClose();
-        setSubmitted(false);
-      }, 2000);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong");
-    } finally {
-      setSubmitting(false);
-    }
+    console.log("Enquiry submitted:", formData);
+    setSubmitted(true);
+    setTimeout(() => {
+      handleClose();
+      setSubmitted(false);
+    }, 2000);
   };
 
   if (!isOpen) return null;
@@ -160,14 +143,10 @@ const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
               />
               <button
                 type="submit"
-                disabled={submitting}
-                className="w-full bg-[#F8C300] text-[#001C54] py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors text-sm disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full bg-[#F8C300] text-[#001C54] py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors text-sm"
               >
-                {submitting ? "Submitting..." : "Submit Enquiry"}
+                Submit Enquiry
               </button>
-              {error && (
-                <p className="text-center text-red-500 text-xs">{error}</p>
-              )}
               <p className="text-center text-gray-400 text-xs">
                 By submitting, you agree to our privacy policy and terms.
               </p>

@@ -15,10 +15,10 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Placeholder */}
           <div className="relative">
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-lg">
               <div className="absolute top-4 left-4 w-full h-full bg-[#F8C300] rounded-2xl -z-10"></div>
               <Image
-                src="/images/campus-building.jpg"
+                src="/images/about-us.jpg"
                 alt="JAIN College campus building"
                 fill
                 className="object-cover"

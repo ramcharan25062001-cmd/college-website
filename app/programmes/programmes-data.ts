@@ -28,6 +28,7 @@ export interface ProgramData {
   slug: string;
   category: "ug" | "pg";
   parentCategory: string;
+  image: string;
   programTitle: string;
   programSubtitle: string;
   duration: string;
@@ -51,6 +52,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bcom",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bcom.jpg",
     programTitle: "B.Com (Bachelor of Commerce)",
     programSubtitle: "International Graduate Programme in Business",
     duration: "3 Years",
@@ -127,6 +129,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bcom-bda",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bcom-bda.jpg",
     programTitle: "B.Com (Business Data Analytics)",
     programSubtitle: "Commerce with Data Analytics Specialisation",
     duration: "3 Years",
@@ -196,6 +199,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bcom-acca",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bcom-acca.jpg",
     programTitle: "B.Com (ACCA)",
     programSubtitle: "Commerce with ACCA Integrated Programme",
     duration: "3 Years",
@@ -265,6 +269,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bcom-lscm",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bcom-lscm.jpg",
     programTitle: "B.Com (Logistics & Supply Chain Management)",
     programSubtitle: "Commerce with Logistics Specialisation",
     duration: "3 Years",
@@ -334,6 +339,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bba",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bba.jpg",
     programTitle: "BBA (Bachelor of Business Administration)",
     programSubtitle: "Business Administration Programme",
     duration: "3 Years",
@@ -403,6 +409,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bba-aviation",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bba-aviation.jpg",
     programTitle: "BBA (Aviation Management)",
     programSubtitle: "Business Administration in Aviation",
     duration: "3 Years",
@@ -472,6 +479,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bba-analytics",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bba-analytics.jpg",
     programTitle: "BBA (Business Analytics)",
     programSubtitle: "Business Administration with Analytics",
     duration: "3 Years",
@@ -541,6 +549,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bba-digital-marketing",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bba-digital-marketing.jpg",
     programTitle: "BBA (Digital Marketing)",
     programSubtitle: "Business Administration in Digital Marketing",
     duration: "3 Years",
@@ -610,6 +619,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bca",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bca.jpg",
     programTitle: "BCA (Bachelor of Computer Applications)",
     programSubtitle: "Computer Applications Programme",
     duration: "3 Years",
@@ -679,6 +689,7 @@ export const ugPrograms: ProgramData[] = [
     slug: "bca-aiml",
     category: "ug",
     parentCategory: "Undergraduate Courses",
+    image: "/images/programs/bca-aiml.jpg",
     programTitle: "BCA (Artificial Intelligence & Machine Learning)",
     programSubtitle: "Computer Applications with AI/ML Specialisation",
     duration: "3 Years",
@@ -751,6 +762,7 @@ export const pgPrograms: ProgramData[] = [
     slug: "mcom-acca",
     category: "pg",
     parentCategory: "Postgraduate Courses",
+    image: "/images/programs/bcom-acca.jpg",
     programTitle: "M.Com (ACCA)",
     programSubtitle: "Postgraduate Programme in Commerce with ACCA",
     duration: "2 Years",

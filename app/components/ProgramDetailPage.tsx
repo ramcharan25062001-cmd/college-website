@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,11 +11,15 @@ import { ProgramData, ProgramLevel } from "../programmes/programmes-data";
 // Hero Banner
 const ProgramHero = ({ program }: { program: ProgramData }) => (
   <section className="relative bg-[#001C54] overflow-hidden">
-    {/* Background overlay image placeholder */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#001C54]/95 to-[#16336e]/80" />
-    <div className="absolute inset-0 opacity-10">
-      <div className="w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.3%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]" />
-    </div>
+    {/* Background program image */}
+    <Image
+      src={program.image}
+      alt={program.programTitle}
+      fill
+      className="object-cover"
+      priority
+    />
+    <div className="absolute inset-0 bg-gradient-to-r from-[#001C54]/90 to-[#16336e]/70" />
 
     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
       <p className="text-white/70 text-sm mb-2">{program.programSubtitle}</p>
@@ -253,11 +258,14 @@ const RelatedProgramsSection = ({
             key={prog.slug}
             className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]"
           >
-            {/* Image placeholder */}
-            <div className="aspect-[4/3] bg-gradient-to-br from-[#001C54] to-[#16336e] flex items-center justify-center">
-              <svg className="w-12 h-12 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+            {/* Program image */}
+            <div className="aspect-[4/3] relative">
+              <Image
+                src={prog.image}
+                alt={prog.programTitle}
+                fill
+                className="object-cover"
+              />
             </div>
 
             <div className="p-4">
