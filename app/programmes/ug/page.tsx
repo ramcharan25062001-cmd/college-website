@@ -416,7 +416,7 @@ const CTASection = () => {
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/#enquiry"
+            href="/admissions"
             className="bg-[#001C54] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
           >
             Apply Now
@@ -448,7 +448,7 @@ export default function UGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
-      <EnquiryPopup />
+      <EnquiryPopup alwaysShow />
     </>
   );
 }

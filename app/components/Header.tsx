@@ -101,9 +101,9 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* PG Programme */}
+        {/* Master's Programme */}
         <div className="min-w-48">
-          <h3 className="font-bold text-[#001C54] mb-3">PG Programme</h3>
+          <h3 className="font-bold text-[#001C54] mb-3">Master&apos;s Programme</h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
               <Link
@@ -129,7 +129,7 @@ const Header = () => {
                 href="/programmes/pg"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › All PG Programmes
+                › All Master&apos;s Programmes
               </Link>
             </li>
           </ul>
@@ -234,7 +234,7 @@ const Header = () => {
               alt="JAIN College - Centre for International Studies"
               width={240}
               height={64}
-              className="h-24 w-auto"
+              className="h-28 w-auto"
               priority
             />
           </Link>
@@ -425,7 +425,7 @@ const Header = () => {
                     >
                       › BCA (AI & Machine Learning)
                     </Link>
-                    <p className="text-[#F8C300] font-semibold mt-3">PG Programme</p>
+                    <p className="text-[#F8C300] font-semibold mt-3">Master&apos;s Programme</p>
                     <Link
                       href="/programmes/pg/mcom-acca"
                       className="block text-white/70"
@@ -442,28 +442,28 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › 1+2/3 Pathway
+                      › 1+2/3 Pathway Progression
                     </Link>
                     <Link
                       href="/#pathways"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › 2+1 Pathway
+                      › 2+1 Pathway Progression
                     </Link>
                     <Link
                       href="/#pathways"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › 2+2 Pathway
+                      › 2+2 Pathway Progression
                     </Link>
                     <Link
                       href="/#pathways"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › 1+1 PG Pathway
+                      › 1+1 Master&apos;s Pathway Progression
                     </Link>
                   </div>
                 )}

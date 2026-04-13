@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <Image
           src="/images/Hero page_images-02.jpg"
-          alt="Postgraduate Programmes at JAIN College"
+          alt="Masters Programmes at JAIN College"
           fill
           className="object-cover"
           priority
@@ -26,10 +26,10 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-2xl">
-          Postgraduate Courses at JAIN College
+          Masters Courses at JAIN College
         </h1>
         <p className="text-white/80 text-lg mb-8 max-w-xl">
-          Advance your career with specialised postgraduate programmes and global exposure.
+          Advance your career with specialised Masters programmes and global exposure.
         </p>
         <Link
           href="/#enquiry"
@@ -52,7 +52,7 @@ const Breadcrumb = () => {
             Home
           </Link>
           <span className="text-gray-400">›</span>
-          <span className="text-gray-600">Postgraduate Courses</span>
+          <span className="text-gray-600">Masters Courses</span>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@ const PGOverviewSection = () => {
           DISCOVER EXCELLENCE AT JAIN COLLEGE
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
-          Postgraduate Programmes
+          Masters Programmes
         </h2>
         <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12"></div>
 
@@ -77,7 +77,7 @@ const PGOverviewSection = () => {
           <div className="aspect-[4/3] rounded-lg overflow-hidden border-4 border-[#001C54] relative">
             <Image
               src="/images/about-us.jpg"
-              alt="Postgraduate Programmes at JAIN College"
+              alt="Masters Programmes at JAIN College"
               fill
               className="object-cover"
             />
@@ -86,7 +86,7 @@ const PGOverviewSection = () => {
           {/* Right - Content */}
           <div>
             <p className="text-gray-700 mb-4">
-              Welcome to JAIN College&apos;s Postgraduate programmes, designed
+              Welcome to JAIN College&apos;s Masters programmes, designed
               for professionals and graduates seeking to advance their careers
               and deepen their expertise. Part of the prestigious{" "}
               <Link href="#" className="text-blue-600 hover:underline">
@@ -95,7 +95,7 @@ const PGOverviewSection = () => {
               , founded by Dr. Chenraj Roychand.
             </p>
             <p className="text-gray-700 mb-4">
-              Our postgraduate courses combine advanced academic knowledge with
+              Our Masters courses combine advanced academic knowledge with
               practical industry exposure, preparing students for leadership
               roles in their chosen fields. With experienced faculty and modern
               infrastructure, we provide an environment conducive to research
@@ -103,7 +103,7 @@ const PGOverviewSection = () => {
             </p>
             <p className="text-gray-700">
               Whether you&apos;re interested in Commerce, Economics, or
-              Management, JAIN College offers specialized postgraduate
+              Management, JAIN College offers specialized Masters
               programmes to elevate your career.
             </p>
           </div>
@@ -129,7 +129,7 @@ const PGCoursesSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
-          Our Postgraduate Courses
+          Our Masters Courses
         </h2>
         <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12"></div>
 
@@ -345,12 +345,12 @@ const CTASection = () => {
           Ready to Advance Your Career?
         </h2>
         <p className="text-gray-600 mb-8">
-          Join our prestigious postgraduate programmes and take the next step in
+          Join our prestigious Masters programmes and take the next step in
           your professional journey.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/#enquiry"
+            href="/admissions"
             className="bg-[#001C54] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors"
           >
             Apply Now
@@ -382,7 +382,7 @@ export default function PGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
-      <EnquiryPopup />
+      <EnquiryPopup alwaysShow />
     </>
   );
 }

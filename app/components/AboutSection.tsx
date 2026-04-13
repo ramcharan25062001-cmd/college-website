@@ -49,7 +49,7 @@ const AboutSection = () => {
                 70+ educational institutions, 60+ campuses and centres, 75,000+
                 students, and 10,000+ faculty and staff
               </span>{" "}
-              across India.
+              across India. JAIN institutions are widely recognised for their commitment to academic excellence, innovation in education, and holistic student development.
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -63,32 +63,6 @@ const AboutSection = () => {
               opportunities alongside their academic studies.
             </p>
 
-            {/* Features */}
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              {[
-                "70+ Educational Institutions",
-                "60+ Campuses & Centres",
-                "75,000+ Students",
-                "10,000+ Faculty & Staff",
-              ].map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#F8C300] flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg
-                      className="w-4 h-4 text-[#001C54]"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-[#001C54] font-medium">{feature}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
@@ -103,13 +77,16 @@ const AboutSection = () => {
 
           <div className="max-w-4xl mx-auto space-y-6">
             <p className="text-lg text-gray-600 leading-relaxed text-center">
-              The Centre for International Studies at JAIN College enables
-              students to begin their academic journey in India and progress to
-              partner universities across the world. Through structured
-              international pathways, students can seamlessly transfer abroad and
+              The{" "}
+              <span className="font-semibold text-[#001C54]">
+                Centre for International Studies at JAIN College
+              </span>{" "}
+              enables students to begin their academic journey in India and progress to
+              partner universities across the globe. Through structured
+              international tracks, students can seamlessly transfer abroad and
               graduate with{" "}
               <span className="font-semibold text-[#001C54]">
-                internationally recognised degrees
+                globally recognised degrees
               </span>
               .
             </p>
@@ -121,9 +98,12 @@ const AboutSection = () => {
                 career-focused learning
               </span>
               , the Centre prepares students to succeed in an increasingly
-              globalised world. JAIN College also maintains a strong
-              international student network across the SAARC region and Africa,
-              creating a diverse and globally connected learning environment.
+              globalized world. JAIN College also maintains a strong
+              international student network across the{" "}
+              <span className="font-semibold text-[#001C54]">
+                SAARC region and Africa
+              </span>
+              , creating a diverse and globally connected learning environment.
             </p>
 
             {/* Highlight Box */}
@@ -131,12 +111,20 @@ const AboutSection = () => {
               <h3 className="text-[#F8C300] font-bold text-xl mb-4">
                 Program Overview
               </h3>
+              <p className="text-white/90 leading-relaxed mb-4">
+                JAIN College&apos;s Centre for International Studies is a globally focused learning program designed to support students who aspire to pursue international education. Students start their academic journey at JAIN College, building a strong foundational curriculum before transferring approved academic credits to a recognised partner university abroad to complete their (UG/PG) degree and gain valuable global exposure.
+              </p>
               <p className="text-white/90 leading-relaxed">
-                Students start their academic journey at JAIN College, building
-                a strong foundational curriculum before transferring approved
-                academic credits to a recognised partner university abroad to
-                complete their (UG/PG) degree and gain valuable international
-                exposure.
+                The program offers a diverse range of Bachelor pathways including{" "}
+                <span className="text-[#F8C300] font-semibold">Global B.Com programs</span>{" "}
+                such as B.Com (Regular), B.Com (ACCA), B.Com (Business Data Analytics – BDA), and B.Com (Logistics &amp; Supply Chain Management – LSCM);{" "}
+                <span className="text-[#F8C300] font-semibold">Global BBA programs</span>{" "}
+                including BBA (Regular), BBA (Aviation Management), BBA (Business Analytics), and BBA (Digital Marketing);{" "}
+                <span className="text-[#F8C300] font-semibold">Global Computer Science &amp; IT programs</span>{" "}
+                such as BCA and BCA (Artificial Intelligence &amp; Machine Learning); It also includes a{" "}
+                <span className="text-[#F8C300] font-semibold">Master&apos;s</span> pathway,{" "}
+                <span className="text-[#F8C300] font-semibold">M.Com (ACCA)</span>.
+                These programs are designed to develop strong business knowledge, analytical thinking, and employability skills required to succeed in a global workplace.
               </p>
             </div>
           </div>

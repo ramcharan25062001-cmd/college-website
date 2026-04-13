@@ -240,7 +240,7 @@ const HeroSection = () => {
                       <option value="bca">BCA</option>
                       <option value="bca-aiml">BCA (AI &amp; ML)</option>
                     </optgroup>
-                    <optgroup label="Postgraduate">
+                    <optgroup label="Masters Programs">
                       <option value="mcom-acca">M.Com (ACCA)</option>
                     </optgroup>
                   </select>

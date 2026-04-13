@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useEffect, FormEvent } from "react";
 
 interface EnquiryPopupProps {
   programName?: string;
+  alwaysShow?: boolean;
 }
 
-const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
-  const [isOpen, setIsOpen] = useState(true);
+const EnquiryPopup = ({ programName, alwaysShow = false }: EnquiryPopupProps) => {
+  const [isOpen, setIsOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -16,6 +17,20 @@ const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
     programme: programName || "",
     message: "",
   });
+
+  useEffect(() => {
+    if (alwaysShow) {
+      // Programme pages: always show
+      setIsOpen(true);
+      return;
+    }
+    // Home page: show once per full page load, skip on client-side hash navigations
+    const w = window as unknown as { __enquiryPopupShown?: boolean };
+    if (!w.__enquiryPopupShown) {
+      setIsOpen(true);
+      w.__enquiryPopupShown = true;
+    }
+  }, [alwaysShow]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -140,7 +155,7 @@ const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
                   <option value="BCA">BCA</option>
                   <option value="BCA (AI/ML)">BCA (AI & Machine Learning)</option>
                 </optgroup>
-                <optgroup label="Postgraduate">
+                <optgroup label="Masters Programs">
                   <option value="M.Com (ACCA)">M.Com (ACCA)</option>
                 </optgroup>
               </select>

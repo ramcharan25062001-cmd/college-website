@@ -49,7 +49,7 @@ const ProgramHero = ({ program }: { program: ProgramData }) => (
         </div>
         <div className="ml-auto">
           <Link
-            href="#enquiry-section"
+            href="/admissions"
             className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#001C54] transition-all"
           >
             Apply Now
@@ -315,7 +315,7 @@ const InlineEnquiryCTA = ({ program }: { program: ProgramData }) => (
       </p>
       <div className="flex flex-wrap gap-4 justify-center">
         <Link
-          href="/#enquiry"
+          href="/admissions"
           className="bg-[#F8C300] text-[#001C54] px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
         >
           Apply Now
@@ -353,7 +353,7 @@ export default function ProgramDetailPage({ program, relatedPrograms }: ProgramD
         <InlineEnquiryCTA program={program} />
       </main>
       <Footer />
-      <EnquiryPopup programName={program.programTitle} />
+      <EnquiryPopup programName={program.programTitle} alwaysShow />
     </>
   );
 }

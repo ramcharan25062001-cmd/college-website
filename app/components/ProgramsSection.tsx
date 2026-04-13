@@ -43,7 +43,7 @@ const ProgramsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-[#001C54] mx-auto rounded-full"></div>
           <p className="mt-6 text-[#001C54]/80 max-w-3xl mx-auto">
-            The program offers a diverse range of undergraduate and postgraduate
+            The program offers a diverse range of undergraduate and Masters
             pathways designed to develop strong business knowledge, analytical
             thinking, and employability skills required to succeed in a global
             workplace.
@@ -98,7 +98,7 @@ const ProgramsSection = () => {
 
         {/* PG Program */}
         <h3 className="text-2xl font-bold text-[#001C54] mb-6">
-          Postgraduate Programs
+          Masters Programs
         </h3>
         <div className="max-w-md">
           <div className="bg-[#16336e] rounded-2xl overflow-hidden text-white hover:shadow-2xl transition-all hover:-translate-y-1">

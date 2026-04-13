@@ -74,7 +74,7 @@ export default function NotFound() {
               href="/programmes/pg"
               className="text-[#F8C300] hover:text-[#dfb82d] text-sm font-medium transition-colors"
             >
-              PG Programmes
+              Master&apos;s Programmes
             </Link>
             <span className="text-white/20">|</span>
             <Link

@@ -1,7 +1,7 @@
 const pathways = [
   {
     id: 1,
-    label: "Pathway 1",
+    label: "Pathway Progression",
     title: "1 + 2/3 International Pathway",
     structure: "1 Year – JAIN College → 2–3 Years at a partner university abroad",
     description:
@@ -15,7 +15,7 @@ const pathways = [
   },
   {
     id: 2,
-    label: "Pathway 2",
+    label: "Pathway Progression",
     title: "2 + 1 International Pathway",
     structure: "2 Years – JAIN College → 1 Year at a partner university abroad",
     description:
@@ -29,7 +29,7 @@ const pathways = [
   },
   {
     id: 3,
-    label: "Pathway 3",
+    label: "Pathway Progression",
     title: "2 + 2 International Pathway",
     structure: "2 Years – JAIN College → 2 Years at a partner university abroad",
     description:
@@ -43,27 +43,27 @@ const pathways = [
   },
   {
     id: 4,
-    label: "Master's Pathway",
+    label: "Master's Pathway Progression - I",
     title: "1 + 1 International Pathway",
     structure:
       "1 Year – JAIN College → 1 Year at a partner university abroad",
     description:
-      "A postgraduate pathway where students complete one year of study at JAIN College before transferring to a partner university abroad for the final year to earn an internationally recognised Master's degree.",
+      "A Masters pathway where students complete one year of study at JAIN College before transferring to a partner university abroad for the final year to earn an internationally recognised Master's degree.",
     benefits: [
       "Accelerated Master's pathway",
-      "International postgraduate degree",
+      "International Masters degree",
       "Multiple country options: UK, USA, Canada, Europe, Australia",
     ],
     popular: false,
   },
   {
     id: 5,
-    label: "Master's Pathway",
+    label: "Master's Pathway Progression - II",
     title: "Bachelor's in India + Master's Abroad",
     structure:
       "Undergraduate – JAIN College → Master's at a partner university abroad",
     description:
-      "Students complete their undergraduate degree at JAIN College India and then progress to a postgraduate program abroad at partner universities in the UK, USA, Canada, Europe, or Australia.",
+      "Students complete their undergraduate degree at JAIN College India and then progress to a Masters program abroad at partner universities in the UK, USA, Canada, Europe, or Australia.",
     benefits: [
       "Complete UG in India",
       "Master's degree from abroad",

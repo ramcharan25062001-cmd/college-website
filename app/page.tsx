@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import VisionMissionSection from "./components/VisionMissionSection";
 import ProgramsSection from "./components/ProgramsSection";
 import PathwaysSection from "./components/PathwaysSection";
+import HighlightsSection from "./components/HighlightsSection";
 import WhyJAINSection from "./components/WhyJAINSection";
 import PartnerUniversitiesSection from "./components/PartnerUniversitiesSection";
 import AdmissionProcedureSection from "./components/AdmissionProcedureSection";
@@ -13,7 +14,6 @@ import CTASection from "./components/CTASection";
 import EnquirySection from "./components/EnquirySection";
 import Footer from "./components/Footer";
 import EnquiryPopup from "./components/EnquiryPopup";
-
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -24,6 +24,7 @@ export default function Home() {
       <VisionMissionSection />
       <ProgramsSection />
       <PathwaysSection />
+      <HighlightsSection />
       <WhyJAINSection />
       <PartnerUniversitiesSection />
       <AdmissionProcedureSection />

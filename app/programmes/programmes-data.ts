@@ -121,7 +121,7 @@ export const ugPrograms: ProgramData[] = [
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Pursuing the B.Com programme from JAIN College will enable you to gain direct entry into postgraduate programmes such as M.Com, MBA, or professional certifications like CA, CMA, and ACCA, providing you with a host of benefits such as high academic standards, global exposure, and a vast network of industry contacts.",
+      "Pursuing the B.Com programme from JAIN College will enable you to gain direct entry into Masters programmes such as M.Com, MBA, or professional certifications like CA, CMA, and ACCA, providing you with a host of benefits such as high academic standards, global exposure, and a vast network of industry contacts.",
     progressionNote:
       "Upon successful graduation, the learner will be eligible for campus placement opportunities with leading companies.",
   },
@@ -191,7 +191,7 @@ export const ugPrograms: ProgramData[] = [
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can pursue careers in business analytics, data science, financial analysis, or continue with postgraduate studies in M.Com, MBA (Business Analytics), or specialised data science programmes.",
+      "Graduates can pursue careers in business analytics, data science, financial analysis, or continue with Masters studies in M.Com, MBA (Business Analytics), or specialised data science programmes.",
     progressionNote:
       "Strong industry partnerships ensure excellent placement opportunities in analytics and consulting firms.",
   },
@@ -541,7 +541,7 @@ export const ugPrograms: ProgramData[] = [
       "*Includes software licenses and analytics lab access. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can pursue careers in business analytics, data science, consulting, and management. MBA (Business Analytics) is a popular postgraduate choice.",
+      "Graduates can pursue careers in business analytics, data science, consulting, and management. MBA (Business Analytics) is a popular Masters choice.",
     progressionNote:
       "High demand for analytics professionals ensures excellent placement rates.",
   },
@@ -761,10 +761,10 @@ export const pgPrograms: ProgramData[] = [
   {
     slug: "mcom-acca",
     category: "pg",
-    parentCategory: "Postgraduate Courses",
+    parentCategory: "Masters Courses",
     image: "/images/programs/bcom-acca.jpg",
     programTitle: "M.Com (ACCA)",
-    programSubtitle: "Postgraduate Programme in Commerce with ACCA",
+    programSubtitle: "Masters Programme in Commerce with ACCA",
     duration: "2 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "120",

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import EnquiryPopup from "../components/EnquiryPopup";
 import Link from "next/link";
 
 // Campus data
@@ -94,9 +93,11 @@ const GetInTouchSection = () => {
                   />
                 </svg>
                 <div className="text-gray-600 text-sm whitespace-pre-line">
-                  #44 / 4, District Fund Road{"\n"}
-                  Jayanagar 9th Block{"\n"}
-                  Bengaluru – 560069
+                  Jain College CGS,{"\n"}
+                    15, Vasavi Temple St,{"\n"}
+                    opposite to Axis Bank{"\n"}
+                    Vishweshwarapura, Basavangudi,{"\n"}
+                    Bengaluru, Karnataka 560004{"\n"}
                 </div>
               </div>
 
@@ -156,7 +157,7 @@ const GetInTouchSection = () => {
                   href="mailto:puc.enquiry@jaincollege.ac.in"
                   className="text-[#001C54] hover:underline text-sm"
                 >
-                  puc.enquiry@jaincollege.ac.in
+                  jccisglobal@gmail.com
                 </a>
               </div>
             </div>
@@ -299,7 +300,7 @@ const AdmissionsCTASection = () => {
         </h2>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/#admissions"
+            href="/admissions"
             className="bg-white text-[#001C54] border-2 border-[#001C54] px-8 py-3 rounded-lg font-semibold hover:bg-[#001C54] hover:text-white transition-colors"
           >
             Apply Now
@@ -398,7 +399,7 @@ const ContactFormSection = () => {
                     <option value="bca">BCA (Bachelor of Computer Applications)</option>
                     <option value="bca-aiml">BCA (AI &amp; Machine Learning)</option>
                   </optgroup>
-                  <optgroup label="Postgraduate (PG)">
+                  <optgroup label="Masters Programs">
                     <option value="mcom-acca">M.Com (ACCA)</option>
                   </optgroup>
                 </select>
@@ -448,11 +449,14 @@ const ContactFormSection = () => {
                   Main Office
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  # 91 / 2, Dr. A N Krishna Rao Road
-                  <br />
-                  V V Puram, Bengaluru - 560 004
-                  <br />
-                  Karnataka, India
+                  Jain College CGS,
+                    15, Vasavi Temple St,
+                    <br/>
+                    opposite to Axis Bank
+                    Vishweshwarapura, 
+                    <br/>
+                    Basavangudi,
+                    Bengaluru, Karnataka 560004
                 </p>
               </div>
 
@@ -568,25 +572,7 @@ const ContactFormSection = () => {
                     </svg>
                     jccisglobal@gmail.com
                   </a>
-                  <a
-                    href="mailto:puc.enquiry@jaincollege.ac.in"
-                    className="flex items-center gap-2 text-gray-700 hover:text-[#001C54]"
-                  >
-                    <svg
-                      className="w-4 h-4 text-[#F8C300]"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    puc.enquiry@jaincollege.ac.in
-                  </a>
+
                 </div>
               </div>
 
@@ -663,7 +649,6 @@ export default function ContactPage() {
         <ContactFormSection />
       </main>
       <Footer />
-      <EnquiryPopup />
     </>
   );
 }

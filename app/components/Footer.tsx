@@ -14,7 +14,7 @@ const Footer = () => {
               alt="JAIN College - Centre for International Studies"
               width={260}
               height={54}
-              className="h-24 w-auto mb-4"
+              className="h-28 w-auto mb-4"
             />
             <h3 className="text-[#F8C300] font-bold text-lg mb-4">Address</h3>
             <p className="text-sm leading-relaxed">
@@ -154,7 +154,7 @@ const Footer = () => {
                   href="#pathways"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › 1+2/3 Pathway
+                  › 1+2/3 Pathway Progression
                 </Link>
               </li>
               <li>
@@ -162,7 +162,7 @@ const Footer = () => {
                   href="#pathways"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › 2+1 Pathway
+                  › 2+1 Pathway Progression
                 </Link>
               </li>
               <li>
@@ -170,7 +170,7 @@ const Footer = () => {
                   href="#pathways"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › 2+2 Pathway
+                  › 2+2 Pathway Progression
                 </Link>
               </li>
               <li>
@@ -178,7 +178,7 @@ const Footer = () => {
                   href="#pathways"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › 1+1 PG Pathway
+                  › 1+1 Master&apos;s Pathway Progression
                 </Link>
               </li>
             </ul>

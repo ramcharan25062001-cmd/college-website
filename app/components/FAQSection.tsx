@@ -1,42 +1,78 @@
 "use client";
 
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 
-const faqs = [
+interface FAQ {
+  question: string;
+  answer: ReactNode;
+}
+
+const faqs: FAQ[] = [
   {
     question:
-      "What are the selection criteria for the JAIN College - Centre for International Studies Programme?",
-    answer:
-      "Admission to the Undergraduate (UG) / Postgraduate (PG) Program is purely merit-based and evaluated on the following parameters: Academic performance in Class XII / equivalent (for UG programs), Academic performance during the initial years of study at JAIN College, Student's academic ambition and motivation, Communication skills, Academic credentials, testimonials, and overall profile, and Supportive family background for overseas education.",
+      "What are the selection criteria for the JAIN College - Centre for International Studies Program?",
+    answer: (
+      <div>
+        <p className="mb-2">Admission to the Undergraduate (UG) / Masters (PG) Program is purely merit-based and evaluated on the following parameters:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Academic performance in Class XII / equivalent (for UG programs)</li>
+          <li>Academic performance during the initial years of study at JAIN College</li>
+          <li>Student&apos;s academic ambition and motivation</li>
+          <li>Communication skills</li>
+          <li>Academic credentials, testimonials, and overall profile</li>
+          <li>Supportive family background for overseas education</li>
+        </ul>
+      </div>
+    ),
   },
   {
     question:
       "Is a separate application required for the JAIN College - Centre for International Studies Program?",
-    answer:
-      "Yes. A separate application is required and can be obtained from the Office of International Relations (IR) or downloaded from the JAIN College website.",
+    answer: (
+      <p>Yes. A separate application is required and can be obtained from the Office of International Relations (IR) or downloaded from the JAIN College website.</p>
+    ),
   },
   {
     question: "Is admission to the partner university guaranteed?",
-    answer:
-      "While the Office of International Relations will make every effort to facilitate admission to the preferred partner university, final admission is subject to: Acceptance by the host foreign university, Availability of seats, and Fulfilment of the host university's admission criteria.",
+    answer: (
+      <div>
+        <p className="mb-2">While the Office of International Relations will make every effort to facilitate admission to the preferred partner university, final admission is subject to:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Acceptance by the host foreign university</li>
+          <li>Availability of seats</li>
+          <li>Fulfilment of the host university&apos;s admission criteria</li>
+        </ul>
+      </div>
+    ),
   },
   {
     question:
       "What are the eligibility requirements for the Undergraduate (UG) in this Program?",
-    answer:
-      "Students must: Pass 12th Standard through CBSE / ICSE / 'A' Levels / IB / Higher Secondary Certificate (HSC) / Ontario Secondary School Diploma (OSSD) / American High School Diploma (AHSD) or equivalent examination, and Maintain a minimum CGPA of 8 out of 10 during the first two years of study at JAIN College. Note: Diploma holders (after 10th) are not eligible for the program. Mandatory submission of Statement of Purpose in 250 words.",
+    answer: (
+      <div>
+        <p className="mb-2">Students must:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Pass 12th Standard through CBSE / ICSE / &apos;A&apos; Levels / IB / Higher Secondary Certificate (HSC) / Ontario Secondary School Diploma (OSSD) / American High School Diploma (AHSD) or equivalent examination</li>
+          <li>Maintain a minimum CGPA of 8 out of 10 during the first two years of study at JAIN College</li>
+        </ul>
+        <p className="mt-2 text-sm italic">Note: Diploma holders (after 10th) are not eligible for the program</p>
+        <p className="mt-1">Mandatory submission of <span className="font-semibold">Statement of Purpose</span> in 250 words</p>
+      </div>
+    ),
   },
   {
     question:
-      "What is the eligibility for the Postgraduate (PG) Pathway Program?",
-    answer:
-      "Applicants must hold a Bachelor's degree in a relevant discipline from a recognised university with a minimum of 80% marks or equivalent academic performance, subject to partner university requirements.",
+      "What is the eligibility for the Master's (PG) Pathway Program?",
+    answer: (
+      <p>Applicants must hold a Bachelor&apos;s degree in a relevant discipline from a recognised university with a minimum of 80% marks or equivalent academic performance, subject to partner university requirements.</p>
+    ),
   },
   {
     question:
       "What happens if I am unable to secure admission to the selected overseas university?",
-    answer:
-      "In the unlikely event that a student is unable to secure admission to the chosen overseas university, the student may continue and complete the degree program at JAIN College and be awarded the degree from JAIN College.",
+    answer: (
+      <p>In the unlikely event that a student is unable to secure admission to the chosen overseas university, the student may continue and complete the degree program at JAIN College and be awarded the degree from JAIN College.</p>
+    ),
   },
 ];
 
@@ -104,9 +140,9 @@ const FAQSection = () => {
               </button>
               {openIndex === index && (
                 <div className="px-5 pb-5 border-t border-[#F8C300]/30">
-                  <p className="text-gray-600 pt-4 leading-relaxed text-sm">
+                  <div className="text-gray-600 pt-4 leading-relaxed text-sm">
                     {faq.answer}
-                  </p>
+                  </div>
                 </div>
               )}
             </div>

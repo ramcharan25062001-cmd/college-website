@@ -3,7 +3,6 @@
 import { useState, FormEvent } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import EnquiryPopup from "../components/EnquiryPopup";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,7 +20,7 @@ const programmes = {
     "BCA",
     "BCA (AI & Machine Learning)",
   ],
-  "Postgraduate (PG)": ["M.Com (ACCA)"],
+  "Masters Programs": ["M.Com (ACCA)"],
 };
 
 // Hero Section with Registration Form
@@ -399,7 +398,6 @@ export default function AdmissionsPage() {
         <ProgrammesSection />
       </main>
       <Footer />
-      <EnquiryPopup />
     </>
   );
 }
