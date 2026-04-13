@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Full Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/programmes-hero.jpg"
+          src="/images/Hero page_images-02.jpg"
           alt="Postgraduate Programmes at JAIN College"
           fill
           className="object-cover"
