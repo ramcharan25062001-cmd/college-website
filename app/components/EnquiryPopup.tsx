@@ -21,14 +21,24 @@ const EnquiryPopup = ({ programName }: EnquiryPopupProps) => {
     setIsOpen(false);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Enquiry submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      handleClose();
-      setSubmitted(false);
-    }, 2000);
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong");
+      setSubmitted(true);
+      setTimeout(() => {
+        handleClose();
+        setSubmitted(false);
+      }, 2000);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   if (!isOpen) return null;

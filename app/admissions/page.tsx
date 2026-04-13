@@ -42,9 +42,21 @@ const HeroSection = () => {
     console.log("Login:", loginData);
   };
 
-  const handleRegister = (e: FormEvent) => {
+  const handleRegister = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Register:", registerData);
+    try {
+      const res = await fetch("/api/admission", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(registerData),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong");
+      alert("Registration successful!");
+      setRegisterData({ board: "", name: "", email: "", mobile: "", password: "", confirmPassword: "" });
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Failed to register");
+    }
   };
 
   return (
