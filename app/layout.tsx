@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   description:
     "JAIN College Centre for International Studies - Start your degree in India, graduate with a global degree. International pathways to partner universities in UK, USA, Canada, Europe & Australia.",
   icons: {
-    icon: "/icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" },
+    ],
     apple: "/icon.png",
   },
 };
