@@ -258,7 +258,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-16">
           <p className="text-center text-sm text-white/70">
             © {new Date().getFullYear()} JAIN College — Centre for International Studies.
             All Rights Reserved. | JAIN Group of Institutions

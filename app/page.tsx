@@ -11,9 +11,7 @@ import PartnerUniversitiesSection from "./components/PartnerUniversitiesSection"
 import AdmissionProcedureSection from "./components/AdmissionProcedureSection";
 import FAQSection from "./components/FAQSection";
 import CTASection from "./components/CTASection";
-import EnquirySection from "./components/EnquirySection";
 import Footer from "./components/Footer";
-import EnquiryPopup from "./components/EnquiryPopup";
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -30,9 +28,7 @@ export default function Home() {
       <AdmissionProcedureSection />
       <FAQSection />
       <CTASection />
-      <EnquirySection />
       <Footer />
-      <EnquiryPopup />
     </main>
   );
 }

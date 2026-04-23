@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "./Header";
 import Footer from "./Footer";
-import EnquiryPopup from "./EnquiryPopup";
 import { ProgramData, ProgramLevel } from "../programmes/programmes-data";
 
 // Hero Banner
@@ -353,7 +352,6 @@ export default function ProgramDetailPage({ program, relatedPrograms }: ProgramD
         <InlineEnquiryCTA program={program} />
       </main>
       <Footer />
-      <EnquiryPopup programName={program.programTitle} alwaysShow />
     </>
   );
 }

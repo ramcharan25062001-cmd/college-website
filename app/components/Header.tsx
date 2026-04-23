@@ -300,14 +300,23 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Apply Now Button */}
-          <div className="hidden lg:block">
+          {/* Apply Now Button + Admission Notification */}
+          <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/admissions"
               className="bg-[#F8C300] text-[#001C54] px-5 py-2 rounded-md font-semibold hover:bg-[#dfb82d] transition-colors text-sm"
             >
               Apply Now
             </Link>
+            <div className="relative flex items-center gap-1.5 bg-gradient-to-r from-[#F8C300]/20 to-[#F8C300]/10 backdrop-blur-sm border border-[#F8C300]/40 rounded-full px-3 py-1.5 animate-[pulse_2s_ease-in-out_infinite] shadow-[0_0_12px_rgba(248,195,0,0.3)]">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F8C300] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#F8C300]"></span>
+              </span>
+              <span className="text-xs font-semibold text-[#F8C300] tracking-wide">
+                Admissions Open 2026-27
+              </span>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -469,12 +478,25 @@ const Header = () => {
                 )}
               </div>
             ))}
+            <div className="flex items-center gap-2 mb-3 mt-2">
+              <span className="w-2 h-2 bg-[#F8C300] rounded-full animate-pulse"></span>
+              <span className="text-xs font-medium text-[#F8C300]">
+                Admissions Open 2026-27
+              </span>
+            </div>
             <Link
               href="/admissions"
-              className="inline-block mt-4 bg-[#F8C300] text-[#001C54] px-6 py-2.5 rounded-md font-semibold"
+              className="inline-block bg-[#F8C300] text-[#001C54] px-6 py-2.5 rounded-md font-semibold"
               onClick={() => setIsMenuOpen(false)}
             >
               Apply Now
+            </Link>
+            <Link
+              href="/enquiry"
+              className="inline-block ml-3 bg-white/10 border border-white/30 text-white px-6 py-2.5 rounded-md font-semibold"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Enquiry
             </Link>
           </div>
         )}

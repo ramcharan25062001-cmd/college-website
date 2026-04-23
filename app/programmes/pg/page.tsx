@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import EnquiryPopup from "../../components/EnquiryPopup";
 import Link from "next/link";
 
 // Hero Section
@@ -382,7 +381,6 @@ export default function PGCoursesPage() {
         <CTASection />
       </main>
       <Footer />
-      <EnquiryPopup alwaysShow />
     </>
   );
 }
