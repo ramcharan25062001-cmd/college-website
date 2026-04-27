@@ -4,11 +4,26 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const heroSlides = [
-  "Start Your Degree in India. Graduate with a Global Degree.",
-  "Begin Your International Degree Journey with JAIN",
-  "Experience the JAIN College Global Immersion Program",
-  "Gain International Exposure with Top Partner Universities",
-  "Career-Focused Specialisations for Global Industries",
+  {
+    image: "/images/Hero page_Slides-01.jpg",
+    text: "Start Your Degree in India. Graduate with a Global Degree.",
+  },
+  {
+    image: "/images/Hero page_Slides-02.jpg",
+    text: "Begin Your International Degree Journey with JAIN",
+  },
+  {
+    image: "/images/Hero page_Slides-03.jpg",
+    text: "Experience the JAIN College Global Immersion Program",
+  },
+  {
+    image: "/images/Hero page_Slides-04.jpg",
+    text: "Gain International Exposure with Top Partner Universities",
+  },
+  {
+    image: "/images/Hero page_Slides-05.jpg",
+    text: "Career-Focused Specialisations for Global Industries",
+  },
 ];
 
 const HeroSection = () => {
@@ -22,23 +37,25 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[650px] lg:min-h-[720px] bg-gradient-to-br from-[#001C54] via-[#0a2a6b] to-[#16336e] overflow-hidden flex items-center">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/Hero page_images-01.jpg"
-          alt="Students at JAIN College campus"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#F8C300] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#16336e] rounded-full blur-3xl"></div>
-      </div>
+    <section className="relative min-h-[500px] lg:min-h-[720px] flex items-center pt-16 lg:pt-28">
+      {/* Sliding background images */}
+      {heroSlides.map((slide, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-700 ${
+            currentSlide === index ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Image
+            src={slide.image}
+            alt={slide.text}
+            fill
+            className="object-cover object-right"
+            priority={index === 0}
+          />
+          <div className="absolute inset-0 bg-black/30" />
+        </div>
+      ))}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 relative z-10 w-full">
         <div className="max-w-4xl text-white space-y-6">
@@ -53,7 +70,7 @@ const HeroSection = () => {
                     : "opacity-0 translate-y-8"
                 }`}
               >
-                {slide}
+                {slide.text}
               </h1>
             ))}
           </div>
