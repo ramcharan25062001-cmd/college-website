@@ -37,7 +37,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[500px] lg:min-h-[720px] flex items-center pt-16 lg:pt-28">
+    <section className="relative min-h-[500px] lg:min-h-[720px] overflow-hidden flex items-center pt-16 lg:pt-16">
       {/* Sliding background images */}
       {heroSlides.map((slide, index) => (
         <div

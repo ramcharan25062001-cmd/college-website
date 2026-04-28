@@ -53,7 +53,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom.jpg",
-    programTitle: "B.Com (Bachelor of Commerce)",
+    programTitle: "B.Com Global (Bachelor of Commerce Global)",
     programSubtitle: "International Graduate Programme in Business",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -115,7 +115,7 @@ export const ugPrograms: ProgramData[] = [
       },
     ],
     feesLabel:
-      "B.Com (Bachelor of Commerce)",
+      "B.Com Global (Bachelor of Commerce Global)",
     feesAmount: "₹1.25 Lakhs per year*",
     feesNote:
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
@@ -340,7 +340,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bba.jpg",
-    programTitle: "BBA (Bachelor of Business Administration)",
+    programTitle: "BBA Global(Bachelor of Business Administration Global)",
     programSubtitle: "Business Administration Programme",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -395,7 +395,7 @@ export const ugPrograms: ProgramData[] = [
           "English proficiency required. IELTS minimum 5.5 or equivalent.",
       },
     ],
-    feesLabel: "BBA (Bachelor of Business Administration)",
+    feesLabel: "BBA Global (Bachelor of Business Administration Global)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",

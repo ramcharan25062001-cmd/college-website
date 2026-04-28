@@ -388,11 +388,11 @@ const ContactFormSection = () => {
                     Select a programme
                   </option>
                   <optgroup label="Undergraduate (UG)">
-                    <option value="bcom">B.Com (Bachelor of Commerce)</option>
+                    <option value="bcom">B.Com Global (Bachelor of Commerce Global)</option>
                     <option value="bcom-bda">B.Com (Business Data Analytics)</option>
                     <option value="bcom-acca">B.Com (ACCA)</option>
                     <option value="bcom-lscm">B.Com (Logistics &amp; Supply Chain Management)</option>
-                    <option value="bba">BBA (Bachelor of Business Administration)</option>
+                    <option value="bba">BBA Global(Bachelor of Business Administration Global)</option>
                     <option value="bba-aviation">BBA (Aviation Management)</option>
                     <option value="bba-analytics">BBA (Business Analytics)</option>
                     <option value="bba-digital-marketing">BBA (Digital Marketing)</option>

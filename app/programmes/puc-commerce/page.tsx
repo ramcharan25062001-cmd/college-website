@@ -454,8 +454,8 @@ const SubjectsAccordionSection = () => {
 // Scopes of Studying Commerce Section
 const ScopesSection = () => {
   const degrees = [
-    "Bachelor of Commerce (B.Com)",
-    "Bachelor of Business Administration (BBA)",
+    "Bachelor of Commerce Global (B.Com Global)",
+    "Bachelor of Business Administration Global (BBA Global)",
     "Chartered Accountancy (CA)",
     "Company Secretary (CS)",
     "Cost and Management Accountant (CMA)",

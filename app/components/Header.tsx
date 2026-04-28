@@ -23,7 +23,7 @@ const Header = () => {
                 href="/programmes/ug/bcom"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com 
+                › B.Com Global
               </Link>
             </li>
             <li>
@@ -55,7 +55,7 @@ const Header = () => {
                 href="/programmes/ug/bba"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BBA 
+                › BBA Global
               </Link>
             </li>
             <li>
@@ -302,12 +302,6 @@ const Header = () => {
 
           {/* Apply Now Button + Admission Notification */}
           <div className="hidden lg:flex items-center gap-3">
-            <Link
-              href="/admissions"
-              className="bg-[#F8C300] text-[#001C54] px-5 py-2 rounded-md font-semibold hover:bg-[#dfb82d] transition-colors text-sm"
-            >
-              Apply Now
-            </Link>
             <div className="relative flex items-center gap-1.5 bg-gradient-to-r from-[#F8C300]/20 to-[#F8C300]/10 backdrop-blur-sm border border-[#F8C300]/40 rounded-full px-3 py-1.5 animate-[pulse_2s_ease-in-out_infinite] shadow-[0_0_12px_rgba(248,195,0,0.3)]">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F8C300] opacity-75"></span>
@@ -369,7 +363,7 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › B.Com
+                      › B.Com Global
                     </Link>
                     <Link
                       href="/programmes/ug/bcom-acca"
@@ -397,7 +391,7 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BBA
+                      › BBA Global
                     </Link>
                     <Link
                       href="/programmes/ug/bba-aviation"

@@ -116,7 +116,7 @@ const UGOverviewSection = () => {
 const UGCoursesSection = () => {
   const courses = [
     {
-      name: "B.Com (Bachelor of Commerce)",
+      name: "B.Com Global (Bachelor of Commerce Global)",
       slug: "bcom",
       duration: "3 Years",
       description:
@@ -144,7 +144,7 @@ const UGCoursesSection = () => {
         "Commerce with specialised logistics and supply chain management.",
     },
     {
-      name: "BBA (Bachelor of Business Administration)",
+      name: "BBA Global(Bachelor of Business Administration Global)",
       slug: "bba",
       duration: "3 Years",
       description:
