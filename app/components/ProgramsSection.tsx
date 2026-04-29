@@ -9,7 +9,7 @@ const ProgramsSection = () => {
       programs: [
         "Bachelor of Commerce Global",
         "B.Com (Business Data Analytics – BDA)",
-        "B.Com (ACCA)",
+        "B.Com (International Finance with ACCA, UK)",
         "B.Com (Logistics & Supply Chain Management – LSCM)",
       ],
     },
@@ -105,13 +105,13 @@ const ProgramsSection = () => {
             <div className="relative h-44">
               <Image
                 src="/images/programs/bcom-acca.jpg"
-                alt="M.Com (ACCA) Program"
+                alt="M.Com (International Finance with ACCA, UK) Program"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <h4 className="absolute bottom-4 left-6 text-xl font-bold text-[#F8C300]">
-                M.Com (ACCA) Program
+                M.Com (International Finance with ACCA, UK) Program
               </h4>
             </div>
             <div className="p-6">
@@ -127,7 +127,7 @@ const ProgramsSection = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-white/90">M.Com (ACCA)</span>
+              <span className="text-white/90">M.Com (International Finance with ACCA, UK)</span>
             </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ const programmes = {
   "Undergraduate (UG)": [
     "B.Com",
     "B.Com (Business Data Analytics)",
-    "B.Com (ACCA)",
+    "B.Com (International Finance with ACCA, UK)",
     "B.Com (Logistics & Supply Chain Management)",
     "BBA",
     "BBA (Aviation Management)",
@@ -20,7 +20,7 @@ const programmes = {
     "BCA",
     "BCA (AI & Machine Learning)",
   ],
-  "Masters Programs": ["M.Com (ACCA)"],
+  "Masters Programs": ["M.Com (International Finance with ACCA, UK)"],
 };
 
 // Hero Section with Registration Form

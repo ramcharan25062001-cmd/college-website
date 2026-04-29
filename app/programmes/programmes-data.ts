@@ -200,13 +200,13 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom-acca.jpg",
-    programTitle: "B.Com (ACCA)",
+    programTitle: "B.Com (International Finance with ACCA, UK)",
     programSubtitle: "Commerce with ACCA Integrated Programme",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The B.Com (ACCA) programme integrates the globally recognised ACCA qualification with a Bachelor of Commerce degree. This dual-qualification approach prepares students for international careers in accounting and finance.",
+      "The B.Com (International Finance with ACCA, UK) programme integrates the globally recognised ACCA qualification with a Bachelor of Commerce degree. This dual-qualification approach prepares students for international careers in accounting and finance.",
     overviewDetails:
       "Students receive exemptions from multiple ACCA papers, accelerating their path to becoming globally certified accountants.",
     programStructureIntro:
@@ -255,7 +255,7 @@ export const ugPrograms: ProgramData[] = [
           "Strong English proficiency required as ACCA papers are in English. IELTS 6.0 or equivalent recommended.",
       },
     ],
-    feesLabel: "B.Com (ACCA)",
+    feesLabel: "B.Com (International Finance with ACCA, UK)",
     feesAmount: "₹2.25 Lakhs per year*",
     feesNote:
       "*ACCA registration and exam fees are additional. Scholarship available for meritorious students.",
@@ -763,7 +763,7 @@ export const pgPrograms: ProgramData[] = [
     category: "pg",
     parentCategory: "Masters Courses",
     image: "/images/programs/bcom-acca.jpg",
-    programTitle: "M.Com (ACCA)",
+    programTitle: "M.Com (International Finance with ACCA, UK)",
     programSubtitle: "Masters Programme in Commerce with ACCA",
     duration: "2 Years",
     modeOfStudy: "On-Campus",

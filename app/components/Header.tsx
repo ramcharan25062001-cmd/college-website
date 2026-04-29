@@ -31,7 +31,7 @@ const Header = () => {
                 href="/programmes/ug/bcom-acca"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com (ACCA)
+                › B.Com (Internal Finance with ACCA, UK)
               </Link>
             </li>
              <li>
@@ -370,7 +370,7 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › B.Com (ACCA)
+                      › B.Com (International Finance with ACCA, UK)
                     </Link>
                     <Link
                       href="/programmes/ug/bcom-bda"

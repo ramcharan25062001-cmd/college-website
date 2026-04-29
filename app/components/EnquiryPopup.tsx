@@ -146,7 +146,7 @@ const EnquiryPopup = ({ programName, alwaysShow = false }: EnquiryPopupProps) =>
                 <optgroup label="Undergraduate">
                   <option value="B.Com">B.Com</option>
                   <option value="B.Com (BDA)">B.Com (Business Data Analytics)</option>
-                  <option value="B.Com (ACCA)">B.Com (ACCA)</option>
+                  <option value="B.Com (ACCA)">B.Com (International Finance with ACCA, UK)</option>
                   <option value="B.Com (LSCM)">B.Com (Logistics & Supply Chain)</option>
                   <option value="BBA">BBA</option>
                   <option value="BBA (Aviation)">BBA (Aviation Management)</option>
@@ -156,7 +156,7 @@ const EnquiryPopup = ({ programName, alwaysShow = false }: EnquiryPopupProps) =>
                   <option value="BCA (AI/ML)">BCA (AI & Machine Learning)</option>
                 </optgroup>
                 <optgroup label="Masters Programs">
-                  <option value="M.Com (ACCA)">M.Com (ACCA)</option>
+                  <option value="M.Com (ACCA)">M.Com (International Finance with ACCA, UK)</option>
                 </optgroup>
               </select>
               <textarea

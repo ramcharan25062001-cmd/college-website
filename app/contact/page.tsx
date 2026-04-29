@@ -390,7 +390,7 @@ const ContactFormSection = () => {
                   <optgroup label="Undergraduate (UG)">
                     <option value="bcom">B.Com Global (Bachelor of Commerce Global)</option>
                     <option value="bcom-bda">B.Com (Business Data Analytics)</option>
-                    <option value="bcom-acca">B.Com (ACCA)</option>
+                    <option value="bcom-acca">B.Com (International Finance with ACCA, UK)</option>
                     <option value="bcom-lscm">B.Com (Logistics &amp; Supply Chain Management)</option>
                     <option value="bba">BBA Global(Bachelor of Business Administration Global)</option>
                     <option value="bba-aviation">BBA (Aviation Management)</option>
@@ -400,7 +400,7 @@ const ContactFormSection = () => {
                     <option value="bca-aiml">BCA (AI &amp; Machine Learning)</option>
                   </optgroup>
                   <optgroup label="Masters Programs">
-                    <option value="mcom-acca">M.Com (ACCA)</option>
+                    <option value="mcom-acca">M.Com (International Finance with ACCA, UK)</option>
                   </optgroup>
                 </select>
               </div>

@@ -130,7 +130,7 @@ const UGCoursesSection = () => {
         "Commerce education combined with advanced data analytics skills.",
     },
     {
-      name: "B.Com (ACCA)",
+      name: "B.Com (International Finance with ACCA, UK)",
       slug: "bcom-acca",
       duration: "3 Years",
       description:

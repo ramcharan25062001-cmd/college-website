@@ -205,7 +205,7 @@ const EnquiryPage = () => {
                         <option value="">Select Programme</option>
                         <optgroup label="B.Com Programs">
                           <option value="bcom-regular">B.Com (Regular)</option>
-                          <option value="bcom-acca">B.Com (ACCA)</option>
+                          <option value="bcom-acca">B.Com (International Finance with ACCA, UK)</option>
                           <option value="bcom-bda">B.Com (Business Data Analytics)</option>
                           <option value="bcom-lscm">B.Com (Logistics &amp; Supply Chain Management)</option>
                         </optgroup>
@@ -220,7 +220,7 @@ const EnquiryPage = () => {
                           <option value="bca-aiml">BCA (AI &amp; ML)</option>
                         </optgroup>
                         <optgroup label="Masters Programs">
-                          <option value="mcom-acca">M.Com (ACCA)</option>
+                          <option value="mcom-acca">M.Com (International Finance with ACCA, UK)</option>
                         </optgroup>
                       </select>
                       <textarea

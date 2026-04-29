@@ -2,7 +2,7 @@ const pathways = [
   {
     id: 1,
     label: "Pathway Progression",
-    title: "1 + 2/3 International Pathway",
+    title: "1 + 2 or 3 International Pathway",
     structure: "1 Year – JAIN College → 2–3 Years at a partner university abroad",
     description:
       "Begin with one foundational year at JAIN College, then transfer to a partner university abroad for the remaining two to three years of your degree. This pathway is ideal for students seeking early international exposure.",

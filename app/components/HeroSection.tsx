@@ -98,22 +98,7 @@ const HeroSection = () => {
           </div>
 
           {/* Quick stats row */}
-          <div className="flex items-center gap-8 pt-6">
-            <div>
-              <p className="text-3xl font-bold text-[#F8C300]">70+</p>
-              <p className="text-white/60 text-sm">Institutions</p>
-            </div>
-            <div className="w-px h-12 bg-white/20"></div>
-            <div>
-              <p className="text-3xl font-bold text-[#F8C300]">75,000+</p>
-              <p className="text-white/60 text-sm">Students</p>
-            </div>
-            <div className="w-px h-12 bg-white/20"></div>
-            <div>
-              <p className="text-3xl font-bold text-[#F8C300]">11+</p>
-              <p className="text-white/60 text-sm">Partner Universities</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

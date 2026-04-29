@@ -117,13 +117,13 @@ const AboutSection = () => {
               <p className="text-white/90 leading-relaxed">
                 The program offers a diverse range of Bachelor pathways including{" "}
                 <span className="text-[#F8C300] font-semibold">Global B.Com programs</span>{" "}
-                such as B.Com (Regular), B.Com (ACCA), B.Com (Business Data Analytics – BDA), and B.Com (Logistics &amp; Supply Chain Management – LSCM);{" "}
+                such as B.Com (Regular), B.Com (International Finance with ACCA, UK), B.Com (Business Data Analytics – BDA), and B.Com (Logistics &amp; Supply Chain Management – LSCM);{" "}
                 <span className="text-[#F8C300] font-semibold">Global BBA programs</span>{" "}
                 including BBA (Regular), BBA (Aviation Management), BBA (Business Analytics), and BBA (Digital Marketing);{" "}
                 <span className="text-[#F8C300] font-semibold">Global Computer Science &amp; IT programs</span>{" "}
                 such as BCA and BCA (Artificial Intelligence &amp; Machine Learning); It also includes a{" "}
                 <span className="text-[#F8C300] font-semibold">Master&apos;s</span> pathway,{" "}
-                <span className="text-[#F8C300] font-semibold">M.Com (ACCA)</span>.
+                <span className="text-[#F8C300] font-semibold">M.Com (International Finance with ACCA, UK)</span>.
                 These programs are designed to develop strong business knowledge, analytical thinking, and employability skills required to succeed in a global workplace.
               </p>
             </div>
