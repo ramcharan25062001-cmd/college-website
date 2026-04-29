@@ -326,8 +326,8 @@ const ContactFormSection = () => {
               Send us a Message
             </h2>
             <p className="text-gray-600 mb-8">
-              Have a question? Fill out the form below and we&apos;ll get back
-              to you as soon as possible.
+              Please fill out the form below and our team will get back
+              to you shortly.
             </p>
 
             <form className="space-y-6">

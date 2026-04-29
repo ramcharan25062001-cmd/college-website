@@ -16,7 +16,7 @@ const universities = [
   { name: "University of York", country: "UK", flag: "🇬🇧", logo: "/Partner university logo/University of York.jpeg" },
   { name: "Lincoln University", country: "Malaysia", flag: "🇲🇾", logo: "/Partner university logo/ea-inst-logo-lincoln-uc.png" },
   { name: "University of Limoges", country: "France", flag: "🇫🇷", logo: "/Partner university logo/University of Limoges.png" },
-  { name: "EM Normandie", country: "France", flag: "🇫🇷", logo: "/Partner university logo/EM_Normandie-Logo.jpg" },
+  { name: "EM Normandie Business School", country: "France", flag: "🇫🇷", logo: "/Partner university logo/EM_Normandie-Logo.jpg" },
 ];
 
 const PartnerUniversitiesSection = () => {

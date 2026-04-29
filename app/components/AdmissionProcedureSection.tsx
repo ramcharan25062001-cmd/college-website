@@ -3,7 +3,7 @@ const steps = [
     number: "01",
     title: "Admission to JAIN College Autonomous",
     description:
-      "Secure admission to an equivalent Undergraduate or Masters degree program at JAIN College through the standard admission process.",
+      "Secure admission to an equivalent Undergraduate or Postgraduate (PG) degree programme at JAIN College through the standard admission process.",
   },
   {
     number: "02",

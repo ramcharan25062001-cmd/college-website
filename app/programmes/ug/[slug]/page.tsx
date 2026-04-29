@@ -5,6 +5,7 @@ import { use } from "react";
 import ProgramDetailPage from "../../../components/ProgramDetailPage";
 import { getProgramBySlug, getRelatedPrograms } from "../../programmes-data";
 
+
 export default function UGProgramPage({
   params,
 }: {

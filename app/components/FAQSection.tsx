@@ -13,7 +13,7 @@ const faqs: FAQ[] = [
       "What are the selection criteria for the JAIN College - Centre for International Studies Program?",
     answer: (
       <div>
-        <p className="mb-2">Admission to the Undergraduate (UG) / Masters (PG) Program is purely merit-based and evaluated on the following parameters:</p>
+        <p className="mb-2">Admission to the Undergraduate (UG) / Postgraduate (PG) Programme is purely merit-based and evaluated on the following parameters:</p>
         <ul className="list-disc list-inside space-y-1">
           <li>Academic performance in Class XII / equivalent (for UG programs)</li>
           <li>Academic performance during the initial years of study at JAIN College</li>
@@ -33,21 +33,21 @@ const faqs: FAQ[] = [
     ),
   },
   {
-    question: "Is admission to the partner university guaranteed?",
+    question: "Is admission to a Partner University guaranteed?",
     answer: (
       <div>
-        <p className="mb-2">While the Office of International Relations will make every effort to facilitate admission to the preferred partner university, final admission is subject to:</p>
+        <p className="mb-2">While the Office of International Relations will make every effort to facilitate admission to the preferred Partner University, final admission is subject to:</p>
         <ul className="list-disc list-inside space-y-1">
-          <li>Acceptance by the host foreign university</li>
+          <li>Acceptance by the Partner University</li>
           <li>Availability of seats</li>
-          <li>Fulfilment of the host university&apos;s admission criteria</li>
+          <li>Fulfilment of the Partner University&apos;s admission criteria</li>
         </ul>
       </div>
     ),
   },
   {
     question:
-      "What are the eligibility requirements for the Undergraduate (UG) in this Program?",
+      "What are the eligibility requirements for the Undergraduate (UG) Programme?",
     answer: (
       <div>
         <p className="mb-2">Students must:</p>
@@ -62,7 +62,7 @@ const faqs: FAQ[] = [
   },
   {
     question:
-      "What is the eligibility for the Master's (PG) Pathway Program?",
+      "What is the eligibility for the master's (PG) Pathway Programme?",
     answer: (
       <p>Applicants must hold a Bachelor&apos;s degree in a relevant discipline from a recognised university with a minimum of 80% marks or equivalent academic performance, subject to partner university requirements.</p>
     ),

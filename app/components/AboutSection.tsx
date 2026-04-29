@@ -32,10 +32,10 @@ const AboutSection = () => {
               <span className="font-semibold text-[#001C54]">
                 Sri Bhagawan Mahaveer Jain Educational and Cultural Trust
               </span>
-              , Established in 1990, JAIN College is part of the renowned JAIN Group of Institutions,
+              , established in 1990, JAIN College is part of the renowned JAIN Group of Institutions,
               founded by visionary educator{" "}
               <span className="font-semibold text-[#001C54]">
-                Dr. Chenraj Roychand
+                Dr Chenraj Roychand
               </span>
               . Over the past three decades, the JAIN Group has grown into one
               of India&apos;s most respected educational ecosystems, offering programs
@@ -98,7 +98,7 @@ const AboutSection = () => {
                 career-focused learning
               </span>
               , the Centre prepares students to succeed in an increasingly
-              globalized world. JAIN College also maintains a strong
+              globalised world. JAIN College also maintains a strong
               international student network across the{" "}
               <span className="font-semibold text-[#001C54]">
                 SAARC region and Africa

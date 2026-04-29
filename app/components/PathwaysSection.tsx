@@ -92,6 +92,11 @@ const PathwaysSection = () => {
           from partner universities abroad.
         </p>
 
+        {/* Subheading */}
+        <h3 className="text-center text-xl font-semibold text-[#001C54] mb-8">
+          Choose Your Global Journey
+        </h3>
+
         {/* Pathways Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {pathways.map((pathway) => (

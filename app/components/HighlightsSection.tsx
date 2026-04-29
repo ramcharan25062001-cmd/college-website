@@ -50,6 +50,16 @@ const highlights = [
       </svg>
     ),
   },
+  {
+    title: "Post-Study Work Visa Opportunities",
+    description:
+      "Graduates of partner universities in countries such as the UK, Canada, and Australia may be eligible for post-study work visas, enabling valuable international work experience after graduation.",
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    ),
+  },
 ];
 
 const HighlightsSection = () => {
@@ -69,9 +79,7 @@ const HighlightsSection = () => {
           {highlights.map((item, index) => (
             <div
               key={index}
-              className={`bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-all ${
-                index === 4 ? "md:col-span-2 lg:col-span-1" : ""
-              }`}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/15 transition-all"
             >
               <div className="w-14 h-14 rounded-xl bg-[#F8C300] flex items-center justify-center text-[#001C54] mb-4">
                 {item.icon}

@@ -58,7 +58,7 @@ const VisionMissionSection = () => {
             <p className="text-gray-600 leading-relaxed">
               To deliver holistic, high-quality education that integrates
               academic excellence with global exposure, critical design thinking, and
-              experiential learning. Through our JAIN centre for international
+              experiential learning. Through our JAIN Centre for International
               Studies Programme and student-centric approach, we aim to nurture
               adaptable, ethical, and future-ready professionals equipped for
               international success.
