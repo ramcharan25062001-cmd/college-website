@@ -620,7 +620,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bca.jpg",
-    programTitle: "BCA (Bachelor of Computer Applications)",
+    programTitle: "BCA (Science and IT global program)",
     programSubtitle: "Computer Applications Programme",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -769,11 +769,11 @@ export const pgPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "120",
     overview:
-      "The M.Com (ACCA) programme integrates the globally recognised ACCA qualification with a Master of Commerce degree. It is designed for graduates who want to deepen their understanding of accounting, finance, and business practices while earning an internationally respected professional certification.",
+      "The M.Com (International Finance with ACCA, UK) programme integrates the globally recognised ACCA qualification with a Master of Commerce degree. It is designed for graduates who want to deepen their understanding of accounting, finance, and business practices while earning an internationally respected professional certification.",
     overviewDetails:
       "Students receive exemptions from multiple ACCA papers, accelerating their path to becoming globally certified accountants. The programme encourages research-oriented thinking and provides opportunities for professional growth.",
     programStructureIntro:
-      "The M.Com (ACCA) programme covers advanced accounting, ACCA strategic professional papers, and research methodology across two years.",
+      "The M.Com (International Finance with ACCA, UK) programme covers advanced accounting, ACCA strategic professional papers, and research methodology across two years.",
     levels: [
       {
         name: "Year 1",
@@ -816,7 +816,7 @@ export const pgPrograms: ProgramData[] = [
           "Strong English proficiency required as ACCA papers are in English. IELTS minimum 6.0 or equivalent.",
       },
     ],
-    feesLabel: "M.Com (ACCA)",
+    feesLabel: "M.Com (International Finance with ACCA, UK)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:
       "*ACCA registration and exam fees are additional. Merit-based scholarships available. Applicable for batch 2026/27.",

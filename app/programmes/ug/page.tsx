@@ -172,7 +172,7 @@ const UGCoursesSection = () => {
         "Business administration with digital marketing specialisation.",
     },
     {
-      name: "BCA (Bachelor of Computer Applications)",
+      name: "BCA (Science and IT global program)",
       slug: "bca",
       duration: "3 Years",
       description:
