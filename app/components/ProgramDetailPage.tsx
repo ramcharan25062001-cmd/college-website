@@ -40,12 +40,6 @@ const ProgramHero = ({ program }: { program: ProgramData }) => (
           </p>
           <p className="text-white text-xl font-bold">{program.modeOfStudy}</p>
         </div>
-        <div>
-          <p className="text-[#F8C300] text-xs font-semibold tracking-widest uppercase mb-1">
-            Credits Awarded
-          </p>
-          <p className="text-white text-xl font-bold">{program.creditsAwarded}</p>
-        </div>
         <div className="ml-auto">
           <Link
             href="/admissions"
@@ -93,6 +87,64 @@ const OverviewSection = ({ program }: { program: ProgramData }) => (
   </section>
 );
 
+// Pathway data
+const UG_PATHWAYS = [
+  { name: "1 + 2 Pathway", structure: "1 year at JAIN College → 2 years at a Partner University abroad", advantage: "Begin your international journey early", popular: false },
+  { name: "1 + 3 Pathway", structure: "1 year at JAIN College → 3 years at a Partner University abroad", advantage: "Complete most of your degree internationally", popular: false },
+  { name: "2 + 1 Pathway", structure: "2 years at JAIN College → 1 year at a Partner University abroad", advantage: "Graduate with a global degree after a strong foundation", popular: false },
+  { name: "2 + 2 Pathway", structure: "2 years at JAIN College → 2 years at a Partner University abroad", advantage: "Balanced and cost-effective global education", popular: true },
+  { name: "UG + Master's at Partnered University", structure: "Complete your undergraduate degree at JAIN College → Progress to a Master's degree at a Partner University abroad", advantage: "Complete your degree and specialise globally", popular: false },
+];
+
+const PG_PATHWAYS = [
+  { name: "1 + 1 Pathway", structure: "1 year at JAIN College → 1 year at a Partner University abroad", advantage: "Earn a globally recognised postgraduate degree", popular: false },
+  { name: "UG + Master's at Partner University Abroad", structure: "Complete undergraduate at JAIN College → Master's at Partner University abroad", advantage: "Seamless global academic progression", popular: false },
+];
+
+// International Pathway Section
+const PathwaySection = ({ program }: { program: ProgramData }) => {
+  const pathways = program.category === "ug" ? UG_PATHWAYS : PG_PATHWAYS;
+
+  return (
+    <section className="py-16 bg-[#001C54]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-white mb-2">
+          International Pathway Progression Options
+        </h2>
+        <div className="w-20 h-1 bg-[#F8C300] mb-8" />
+
+        <div className="overflow-x-auto rounded-xl shadow-lg">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-[#F8C300]">
+                <th className="text-left text-[#001C54] py-4 px-5 font-bold">Pathway</th>
+                <th className="text-left text-[#001C54] py-4 px-5 font-bold">Structure</th>
+                <th className="text-left text-[#001C54] py-4 px-5 font-bold">Your Pathway Advantage</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pathways.map((p, i) => (
+                <tr key={p.name} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td className="py-4 px-5 font-semibold text-[#001C54] whitespace-nowrap">
+                    {p.name}
+                    {p.popular && (
+                      <span className="ml-2 inline-block bg-[#F8C300] text-[#001C54] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                        Most Popular
+                      </span>
+                    )}
+                  </td>
+                  <td className="py-4 px-5 text-gray-700">{p.structure}</td>
+                  <td className="py-4 px-5 text-gray-700">{p.advantage}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // Program Structure with tabs
 const ProgramStructureSection = ({ program }: { program: ProgramData }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -128,7 +180,6 @@ const ProgramStructureSection = ({ program }: { program: ProgramData }) => {
             <thead>
               <tr className="bg-[#001C54]">
                 <th className="text-left text-white py-4 px-6 font-semibold">Module Title</th>
-                <th className="text-left text-white py-4 px-6 font-semibold w-40">Credits</th>
               </tr>
             </thead>
             <tbody>
@@ -138,7 +189,6 @@ const ProgramStructureSection = ({ program }: { program: ProgramData }) => {
                   className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
                 >
                   <td className="py-4 px-6 text-gray-700">{mod.title}</td>
-                  <td className="py-4 px-6 text-gray-700">{mod.credits}</td>
                 </tr>
               ))}
             </tbody>
@@ -199,42 +249,58 @@ const EntryRequirementsSection = ({ program }: { program: ProgramData }) => {
   );
 };
 
-// Fees & Funding
-const FeesSection = ({ program }: { program: ProgramData }) => (
-  <section className="py-16 bg-gray-50">
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex items-center gap-4 mb-8">
-        <h2 className="text-3xl font-bold text-[#001C54]">Fees & Funding</h2>
-        <div className="flex-1 h-1 bg-[#F8C300] rounded-full" />
-      </div>
+// Career Opportunities & Higher Education
+const CareerSection = ({ program }: { program: ProgramData }) => {
+  const careers = program.progressionContent.split(",").map((s) => s.trim()).filter(Boolean);
+  const higherEd = program.progressionNote.split(",").map((s) => s.trim()).filter(Boolean);
 
-      <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-        <p className="text-gray-700 mb-2">
-          <span className="font-semibold">{program.feesLabel}</span>:{" "}
-          <span className="font-bold text-[#001C54] text-lg">{program.feesAmount}</span>
-        </p>
-        <p className="text-gray-500 text-sm italic">{program.feesNote}</p>
-      </div>
-    </div>
-  </section>
-);
+  return (
+    <section className="py-16 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Career Opportunities */}
+        <div className="mb-14">
+          <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-3xl font-bold text-[#001C54]">Career Opportunities</h2>
+            <div className="flex-1 h-1 bg-[#F8C300] rounded-full" />
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {careers.map((career) => (
+              <div
+                key={career}
+                className="flex items-start gap-3 bg-[#001C54] rounded-xl p-4 shadow-sm"
+              >
+                <div className="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-[#F8C300] flex items-center justify-center">
+                  <svg className="w-3 h-3 text-[#001C54]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span className="text-white text-sm font-medium leading-snug">{career}</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
-// Progression Opportunities
-const ProgressionSection = ({ program }: { program: ProgramData }) => (
-  <section className="py-16 bg-white">
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex items-center gap-4 mb-8">
-        <h2 className="text-3xl font-bold text-[#001C54]">{program.progressionTitle}</h2>
-        <div className="flex-1 h-1 bg-[#F8C300] rounded-full" />
+        {/* Higher Education */}
+        <div>
+          <div className="flex items-center gap-4 mb-6">
+            <h2 className="text-2xl font-bold text-[#001C54]">Higher Education Pathways</h2>
+            <div className="flex-1 h-1 bg-[#F8C300] rounded-full" />
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {higherEd.map((item) => (
+              <span
+                key={item}
+                className="bg-[#FFF9E6] border border-[#F8C300] text-[#001C54] text-sm font-semibold px-4 py-2 rounded-full"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
-
-      <div className="bg-[#FFF9E6] border-l-4 border-[#F8C300] rounded-r-lg p-6">
-        <p className="text-gray-700 leading-relaxed mb-4">{program.progressionContent}</p>
-        <p className="text-gray-600 text-sm">{program.progressionNote}</p>
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 // Related Programmes
 const RelatedProgramsSection = ({
@@ -344,10 +410,10 @@ export default function ProgramDetailPage({ program, relatedPrograms }: ProgramD
         <ProgramHero program={program} />
         <Breadcrumb program={program} />
         <OverviewSection program={program} />
+        <PathwaySection program={program} />
         <ProgramStructureSection program={program} />
         <EntryRequirementsSection program={program} />
-        <FeesSection program={program} />
-        <ProgressionSection program={program} />
+        <CareerSection program={program} />
         <RelatedProgramsSection programs={relatedPrograms} currentCategory={program.category} />
         <InlineEnquiryCTA program={program} />
       </main>
