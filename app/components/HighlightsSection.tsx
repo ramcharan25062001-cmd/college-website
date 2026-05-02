@@ -32,7 +32,7 @@ const highlights = [
   {
     title: "Career-Focused Learning",
     description:
-      "Students develop critical thinking, problem-solving abilities, leadership qualities, and industry-relevant skills required by global employers.",
+      "Students develop critical thinking, problem-solving abilities, leadership qualitiesand industry-relevant skills required by global employers.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -42,7 +42,7 @@ const highlights = [
   {
     title: "Study in Bengaluru, Graduate Globally",
     description:
-      "Being located in India's technology & startup capital, students gain exposure to multinational companies, startup ecosystems, innovation and entrepreneurship hubs, and global industry networks.",
+      "Being located in India's technology & startup capital, students gain exposure to multinational companies, startup ecosystems, innovation and entrepreneurship hubsand global industry networks.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -53,7 +53,7 @@ const highlights = [
   {
     title: "Post-Study Work Visa Opportunities",
     description:
-      "Graduates of partner universities in countries such as the UK, Canada, and Australia may be eligible for post-study work visas, enabling valuable international work experience after graduation.",
+      "Graduates of partner universities in countries such as the UK, Canadaand Australia may be eligible for post-study work visas, enabling valuable international work experience after graduation.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

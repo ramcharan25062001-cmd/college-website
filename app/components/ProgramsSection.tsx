@@ -45,7 +45,7 @@ const ProgramsSection = () => {
           <p className="mt-6 text-[#001C54]/80 max-w-3xl mx-auto">
             The program offers a diverse range of undergraduate and Masters
             pathways designed to develop strong business knowledge, analytical
-            thinking, and employability skills required to succeed in a global
+            thinkingand employability skills required to succeed in a global
             workplace.
           </p>
         </div>

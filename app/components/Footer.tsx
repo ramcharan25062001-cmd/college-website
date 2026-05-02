@@ -113,7 +113,7 @@ const Footer = () => {
                   href="#programmes"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › B.Com Programs
+                  › B.Com Global Programs
                 </Link>
               </li>
               <li>
@@ -121,7 +121,7 @@ const Footer = () => {
                   href="#programmes"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › BBA Programs
+                  › BBA Global Programs
                 </Link>
               </li>
               <li>
@@ -129,7 +129,7 @@ const Footer = () => {
                   href="#programmes"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › BCA Programs
+                  › BCA Global Programs
                 </Link>
               </li>
               <li>
@@ -154,7 +154,7 @@ const Footer = () => {
                   href="#pathways"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › 1+2/3 Pathway Progression
+                  › 1+2 or 3 Pathway Progression
                 </Link>
               </li>
               <li>

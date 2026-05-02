@@ -3,13 +3,13 @@ const pathways = [
     id: 1,
     label: "Pathway Progression",
     title: "1 + 2 or 3 International Pathway",
-    structure: "1 Year – JAIN College → 2–3 Years at a partner university abroad",
+    structure: "1 Year at JAIN College → 2–3 Years at a partner university abroad",
     description:
       "Begin with one foundational year at JAIN College, then transfer to a partner university abroad for the remaining two to three years of your degree. This pathway is ideal for students seeking early international exposure.",
     benefits: [
       "Early international exposure",
       "Smooth academic transfer",
-      "Cost-effective progression for global education",
+      "Cost-effective progression for global education",  
     ],
     popular: false,
   },
@@ -17,7 +17,7 @@ const pathways = [
     id: 2,
     label: "Pathway Progression",
     title: "2 + 1 International Pathway",
-    structure: "2 Years – JAIN College → 1 Year at a partner university abroad",
+    structure: "2 Years at JAIN College → 1 Year at a partner university abroad",
     description:
       "Complete the majority of your studies at JAIN College for two years, then transfer abroad for the final year to graduate with an internationally recognised degree from the partner university.",
     benefits: [
@@ -31,7 +31,7 @@ const pathways = [
     id: 3,
     label: "Pathway Progression",
     title: "2 + 2 International Pathway",
-    structure: "2 Years – JAIN College → 2 Years at a partner university abroad",
+    structure: "2 Years at JAIN College → 2 Years at a partner university abroad",
     description:
       "One of the most widely recognised global education models. Students spend two years at JAIN College building a strong academic foundation and complete the final two years at a partner university abroad, earning a Bachelor's degree from the international institution.",
     benefits: [
@@ -46,7 +46,7 @@ const pathways = [
     label: "Master's Pathway Progression - I",
     title: "1 + 1 International Pathway",
     structure:
-      "1 Year – JAIN College → 1 Year at a partner university abroad",
+      "1 Year at JAIN College → 1 Year at a partner university abroad",
     description:
       "A Masters pathway where students complete one year of study at JAIN College before transferring to a partner university abroad for the final year to earn an internationally recognised Master's degree.",
     benefits: [
@@ -61,7 +61,7 @@ const pathways = [
     label: "Master's Pathway Progression - II",
     title: "Bachelor's in India + Master's Abroad",
     structure:
-      "Undergraduate – JAIN College → Master's at a partner university abroad",
+      "Undergraduate at JAIN College → Master's at a partner university abroad",
     description:
       "Students complete their undergraduate degree at JAIN College India and then progress to a Masters program abroad at partner universities in the UK, USA, Canada, Europe, or Australia.",
     benefits: [
@@ -87,7 +87,7 @@ const PathwaysSection = () => {
         </div>
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
           JAIN College&apos;s Centre for International Studies offers flexible
-          academic pathways designed to suit different goals, timelines, and
+          academic pathways designed to suit different goals, timelinesand
           financial plans — all leading to internationally recognised degrees
           from partner universities abroad.
         </p>

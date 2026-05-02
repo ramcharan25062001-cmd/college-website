@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us - Jain College Global Campus",
   description:
-    "Learn about Jain College Global Campus, founded in 1999 by Dr. Chenraj Roychand. Discover our vision, mission, leadership, and world-class facilities.",
+    "Learn about Jain College Global Campus, founded in 1999 by Dr. Chenraj Roychand. Discover our vision, mission, leadership and world-class facilities.",
 };
 
 // About Hero Section
@@ -90,13 +90,13 @@ const AboutContent = () => {
                 We provide ample opportunities for developing leadership skills
                 through various student-led activities. Our unique teaching
                 techniques prepare students for the future, shaping them into
-                well-rounded, detail-oriented, and skilled professionals.
+                well-rounded, detail-orientedand skilled professionals.
               </p>
 
               <p className="font-medium text-[#001C54]">
                 Experience limitless possibilities at Jain College Global
                 Campus—where your path to success is shaped by innovation,
-                excellence, and a future-ready education!
+                excellenceand a future-ready education!
               </p>
             </div>
           </div>
@@ -146,7 +146,7 @@ const VisionMission = () => {
               nurtures holistic human development. Our goal is to empower
               students to become capable and responsible global citizens, making
               meaningful contributions to society. Through a diverse range of
-              educational programmes, we provide the best knowledge, skills, and
+              educational programmes, we provide the best knowledge, skillsand
               values essential for success in their chosen fields.
             </p>
           </div>
@@ -181,7 +181,7 @@ const VisionMission = () => {
               create systemic changes and sustainable improvements by developing
               new-generation social entrepreneurs. Our focus is on creating a
               globally networked community of leaders, technocrats, scientists,
-              professionals, sportspersons, and artists. We strive to foster an
+              professionals, sportspersonsand artists. We strive to foster an
               ethical environment founded on human values, where both spirit and
               skills thrive to enrich the quality of life.
             </p>
@@ -299,31 +299,31 @@ const FacilitiesSection = () => {
     {
       title: "Technology Enabled Classrooms",
       description:
-        "Our classrooms are designed with ample space and equipped with cutting-edge technology, including video cameras for video conferencing and recording, screens with projectors, and laptop ports. We have customised these classrooms to accommodate innovative curricula and interactive teaching methods, ensuring comfort and convenience for every student.",
+        "Our classrooms are designed with ample space and equipped with cutting-edge technology, including video cameras for video conferencing and recording, screens with projectorsand laptop ports. We have customised these classrooms to accommodate innovative curricula and interactive teaching methods, ensuring comfort and convenience for every student.",
       imagePosition: "left",
     },
     {
       title: "Computer Labs",
       description:
-        "We are committed to empowering today's students with the technology of tomorrow, shaping future-ready innovators and leaders. Our state-of-the-art computer labs feature sleek 15-inch TFT monitors, high-performance PCs, and round-the-clock internet access, Wi-Fi connectivity, and network data storage.",
+        "We are committed to empowering today's students with the technology of tomorrow, shaping future-ready innovators and leaders. Our state-of-the-art computer labs feature sleek 15-inch TFT monitors, high-performance PCsand round-the-clock internet access, Wi-Fi connectivityand network data storage.",
       imagePosition: "right",
     },
     {
       title: "Seminar Hall",
       description:
-        "Experience the perfect venue for a wide range of events at Jain College Global Campus. Our air-conditioned seminar hall is ideal for engaging seminars, student club activities, and performances. This dynamic space fosters learning, innovation, and meaningful connections.",
+        "Experience the perfect venue for a wide range of events at Jain College Global Campus. Our air-conditioned seminar hall is ideal for engaging seminars, student club activitiesand performances. This dynamic space fosters learning, innovationand meaningful connections.",
       imagePosition: "left",
     },
     {
       title: "Auditoriums",
       description:
-        "Step into our world-class auditoriums, where modern acoustics and state-of-the-art facilities set the stage for impactful seminars, events, and student activities. Our auditoriums offer an extraordinary cultural and educational experience for students, faculty, and visiting executives.",
+        "Step into our world-class auditoriums, where modern acoustics and state-of-the-art facilities set the stage for impactful seminars, eventsand student activities. Our auditoriums offer an extraordinary cultural and educational experience for students, facultyand visiting executives.",
       imagePosition: "right",
     },
     {
       title: "Library",
       description:
-        "At Jain College Global Campus, we believe knowledge is power, and our libraries are the ultimate source of this power! With a vast collection of print materials and online resources, our libraries unlock your full potential. Our expert staff provides personalised research assistance, helping you navigate the digital landscape with ease.",
+        "At Jain College Global Campus, we believe knowledge is powerand our libraries are the ultimate source of this power! With a vast collection of print materials and online resources, our libraries unlock your full potential. Our expert staff provides personalised research assistance, helping you navigate the digital landscape with ease.",
       imagePosition: "left",
     },
     {
@@ -335,13 +335,13 @@ const FacilitiesSection = () => {
     {
       title: "Sports Facilities",
       description:
-        "Our campus features world-class sports facilities including Olympic-sized swimming pool, cricket grounds, football fields, basketball and tennis courts, athletics track, and indoor sports complexes. We believe in nurturing both physical and mental excellence.",
+        "Our campus features world-class sports facilities including Olympic-sized swimming pool, cricket grounds, football fields, basketball and tennis courts, athletics trackand indoor sports complexes. We believe in nurturing both physical and mental excellence.",
       imagePosition: "left",
     },
     {
       title: "Accommodation",
       description:
-        "At Jain College Global Campus, we believe your living space should be as comfortable as your learning space. We provide well-furnished, spacious accommodation for both girls and boys. Our hostels offer a unique opportunity to connect with individuals from diverse backgrounds, fostering growth, community, and lifelong friendships.",
+        "At Jain College Global Campus, we believe your living space should be as comfortable as your learning space. We provide well-furnished, spacious accommodation for both girls and boys. Our hostels offer a unique opportunity to connect with individuals from diverse backgrounds, fostering growth, communityand lifelong friendships.",
       imagePosition: "right",
     },
   ];

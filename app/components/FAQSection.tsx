@@ -19,7 +19,7 @@ const faqs: FAQ[] = [
           <li>Academic performance during the initial years of study at JAIN College</li>
           <li>Student&apos;s academic ambition and motivation</li>
           <li>Communication skills</li>
-          <li>Academic credentials, testimonials, and overall profile</li>
+          <li>Academic credentials, testimonialsand overall profile</li>
           <li>Supportive family background for overseas education</li>
         </ul>
       </div>

@@ -31,7 +31,7 @@ const VisionMissionSection = () => {
             <p className="text-gray-600 leading-relaxed">
               To be a globally recognised academic institution that empowers
               students with internationally aligned education, innovative
-              learning experiences, and transformative global pathways, preparing
+              learning experiencesand transformative global pathways, preparing
               them to thrive as responsible leaders in an evolving world.
             </p>
           </div>
@@ -57,10 +57,10 @@ const VisionMissionSection = () => {
             <div className="w-12 h-1 bg-[#F8C300] mb-4"></div>
             <p className="text-gray-600 leading-relaxed">
               To deliver holistic, high-quality education that integrates
-              academic excellence with global exposure, critical design thinking, and
+              academic excellence with global exposure, critical design thinkingand
               experiential learning. Through our JAIN Centre for International
               Studies Programme and student-centric approach, we aim to nurture
-              adaptable, ethical, and future-ready professionals equipped for
+              adaptable, ethicaland future-ready professionals equipped for
               international success.
             </p>
           </div>

@@ -120,7 +120,7 @@ const UGCoursesSection = () => {
       slug: "bcom",
       duration: "3 Years",
       description:
-        "Comprehensive commerce education with specializations in Accounting, Finance, and Taxation.",
+        "Comprehensive commerce education with specializations in Accounting, Financeand Taxation.",
     },
     {
       name: "B.Com (Business Data Analytics)",
@@ -176,7 +176,7 @@ const UGCoursesSection = () => {
       slug: "bca",
       duration: "3 Years",
       description:
-        "Build expertise in software development, programming, and IT solutions.",
+        "Build expertise in software development, programmingand IT solutions.",
     },
     {
       name: "BCA (AI & Machine Learning)",

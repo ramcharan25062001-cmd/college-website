@@ -141,15 +141,15 @@ const PCMBCollegesSection = () => {
             <p className="text-gray-700 mb-4">
               JAIN PU College in Bangalore is one of the{" "}
               <strong>best PCMB colleges in bangalore</strong>. It excels in
-              PCMB, PCMC, PCME, and PCMS. We are proud to be recognised among
+              PCMB, PCMC, PCMEand PCMS. We are proud to be recognised among
               the Top-ranked PU colleges in Bangalore. Established in 1990 by
               Dr. Chenraj Roychand, a visionary educator and philanthropist.
             </p>
             <p className="text-gray-700">
-              From core subjects such as Physics, Chemistry, Mathematics, and
+              From core subjects such as Physics, Chemistry, Mathematicsand
               Biology to elective courses and interdisciplinary studies,
               students gain a deep understanding of scientific principles
-              through theoretical knowledge, practical applications, and
+              through theoretical knowledge, practical applicationsand
               hands-on experiences.
             </p>
           </div>
@@ -180,9 +180,9 @@ const BestPCMBSection = () => {
             <p className="text-gray-700">
               Renowned institutions, such as JAIN PU College, offer trending
               Science courses, ensuring comprehensive academic development in
-              subjects like Physics, Chemistry, Mathematics, and Biology. These
+              subjects like Physics, Chemistry, Mathematicsand Biology. These
               colleges are known for their high academic standards, experienced
-              faculty, and excellent infrastructure, making them ideal choices
+              facultyand excellent infrastructure, making them ideal choices
               for students aspiring to build strong foundations in the Science
               stream.
             </p>
@@ -620,11 +620,11 @@ const FacilitiesAccordionSection = () => {
           <p>
             At JAIN College, education extends beyond textbooks. We offer a wide
             range of extracurricular activities including sports, cultural
-            events, debates, and community service programs.
+            events, debatesand community service programs.
           </p>
           <p>
             Students have access to well-equipped sports facilities,
-            auditoriums, and clubs that help them develop holistically and
+            auditoriumsand clubs that help them develop holistically and
             discover their passions beyond academics.
           </p>
         </div>
@@ -643,7 +643,7 @@ const FacilitiesAccordionSection = () => {
           </p>
           <p>
             We also offer special coaching for competitive exams like NEET, JEE,
-            KCET, and COMEDK to give our students an edge in their academic
+            KCETand COMEDK to give our students an edge in their academic
             journey.
           </p>
         </div>

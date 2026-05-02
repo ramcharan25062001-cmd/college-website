@@ -141,14 +141,14 @@ const ArtsCollegesSection = () => {
               JAIN PU College in Bangalore is one of the{" "}
               <strong>best Arts and Humanities colleges in Bangalore</strong>.
               Our Arts programme offers comprehensive education in History,
-              Economics, Political Science, Psychology, Sociology, and more. We
+              Economics, Political Science, Psychology, Sociologyand more. We
               are proud to achieve a remarkable 99% pass rate in Humanities.
             </p>
             <p className="text-gray-700">
-              From core subjects such as History, Political Science, and
-              Economics to elective courses in Psychology, Sociology, and
+              From core subjects such as History, Political Scienceand
+              Economics to elective courses in Psychology, Sociologyand
               Languages, students gain a deep understanding of human society,
-              culture, and thought through engaging discussions, research, and
+              cultureand thought through engaging discussions, researchand
               practical applications.
             </p>
           </div>
@@ -179,9 +179,9 @@ const BestArtsSection = () => {
             <p className="text-gray-700">
               Renowned institutions, such as JAIN PU College, offer
               comprehensive Arts courses with diverse subject combinations
-              including History, Economics, Political Science, Psychology, and
+              including History, Economics, Political Science, Psychologyand
               Sociology. These colleges are known for their holistic education
-              approach, experienced faculty, and focus on developing critical
+              approach, experienced facultyand focus on developing critical
               thinking and communication skills.
             </p>
           </div>
@@ -343,7 +343,7 @@ const SubjectsAccordionSection = () => {
         <p className="text-gray-700 p-4">
           The PUC Arts/Humanities programme is a 2-year course covering classes
           11th and 12th. Students undergo comprehensive training in their chosen
-          subject combination, with regular assessments, seminars, and board
+          subject combination, with regular assessments, seminarsand board
           exam preparation.
         </p>
       ),
@@ -608,7 +608,7 @@ const FacilitiesAccordionSection = () => {
           </p>
           <p>
             Our state-of-the-art facilities include well-stocked libraries with
-            extensive collections of literature, history, and social science
+            extensive collections of literature, historyand social science
             books. Students have access to digital archives, research databases,
             and dedicated reading rooms for focused study.
           </p>
@@ -622,7 +622,7 @@ const FacilitiesAccordionSection = () => {
         <div className="p-4 text-gray-700 space-y-4">
           <p>
             At JAIN College, education extends beyond textbooks. We organize
-            debates, Model United Nations, literary festivals, and cultural
+            debates, Model United Nations, literary festivalsand cultural
             events that help students develop their personality and
             communication skills.
           </p>
@@ -642,7 +642,7 @@ const FacilitiesAccordionSection = () => {
           <p>
             Our dedicated counseling team provides academic and career guidance
             to help students explore diverse career paths in humanities, law,
-            civil services, and media.
+            civil servicesand media.
           </p>
           <p>
             We offer specialized coaching for UPSC, KPSC, law entrance exams,

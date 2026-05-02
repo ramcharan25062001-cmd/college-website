@@ -111,7 +111,7 @@ export const ugPrograms: ProgramData[] = [
         id: "documents",
         title: "Required Documents",
         content:
-          "10+2 mark sheets, transfer certificate, migration certificate (if applicable), passport-size photographs, and government-issued ID proof.",
+          "10+2 mark sheets, transfer certificate, migration certificate (if applicable), passport-size photographsand government-issued ID proof.",
       },
     ],
     feesLabel:
@@ -121,7 +121,7 @@ export const ugPrograms: ProgramData[] = [
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Pursuing the B.Com programme from JAIN College will enable you to gain direct entry into Masters programmes such as M.Com, MBA, or professional certifications like CA, CMA, and ACCA, providing you with a host of benefits such as high academic standards, global exposure, and a vast network of industry contacts.",
+      "Pursuing the B.Com programme from JAIN College will enable you to gain direct entry into Masters programmes such as M.Com, MBA, or professional certifications like CA, CMAand ACCA, providing you with a host of benefits such as high academic standards, global exposureand a vast network of industry contacts.",
     progressionNote:
       "Upon successful graduation, the learner will be eligible for campus placement opportunities with leading companies.",
   },
@@ -136,7 +136,7 @@ export const ugPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The B.Com (Business Data Analytics) programme combines core commerce education with advanced data analytics skills. Students learn to analyse business data, create insights, and make data-driven decisions using modern tools and technologies.",
+      "The B.Com (Business Data Analytics) programme combines core commerce education with advanced data analytics skills. Students learn to analyse business data, create insightsand make data-driven decisions using modern tools and technologies.",
     overviewDetails:
       "This unique programme bridges the gap between traditional commerce education and the growing demand for data analytics professionals in the business world.",
     programStructureIntro:
@@ -261,7 +261,7 @@ export const ugPrograms: ProgramData[] = [
       "*ACCA registration and exam fees are additional. Scholarship available for meritorious students.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can complete remaining ACCA papers to become fully qualified ACCA members. Career paths include chartered accountancy, financial consulting, audit, and global finance roles.",
+      "Graduates can complete remaining ACCA papers to become fully qualified ACCA members. Career paths include chartered accountancy, financial consulting, auditand global finance roles.",
     progressionNote:
       "ACCA qualification is recognised in over 180 countries, opening doors to international career opportunities.",
   },
@@ -276,9 +276,9 @@ export const ugPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The B.Com (LSCM) programme prepares students for careers in the rapidly growing logistics and supply chain industry. The curriculum combines commerce fundamentals with specialised knowledge in logistics, warehousing, and supply chain operations.",
+      "The B.Com (LSCM) programme prepares students for careers in the rapidly growing logistics and supply chain industry. The curriculum combines commerce fundamentals with specialised knowledge in logistics, warehousingand supply chain operations.",
     overviewDetails:
-      "With India's logistics sector growing rapidly, this programme offers excellent career prospects in e-commerce, manufacturing, and international trade.",
+      "With India's logistics sector growing rapidly, this programme offers excellent career prospects in e-commerce, manufacturingand international trade.",
     programStructureIntro:
       "Students study core commerce subjects alongside specialised logistics and supply chain modules.",
     levels: [
@@ -331,7 +331,7 @@ export const ugPrograms: ProgramData[] = [
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can pursue careers in supply chain management, logistics coordination, procurement, warehousing, and international shipping. Further studies in MBA (Operations/SCM) are also popular choices.",
+      "Graduates can pursue careers in supply chain management, logistics coordination, procurement, warehousingand international shipping. Further studies in MBA (Operations/SCM) are also popular choices.",
     progressionNote:
       "Industry tie-ups with leading logistics companies ensure strong placement opportunities.",
   },
@@ -346,9 +346,9 @@ export const ugPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The BBA programme at JAIN College develops management and leadership skills for a successful business career. Students gain comprehensive knowledge in marketing, finance, HR, and operations management.",
+      "The BBA programme at JAIN College develops management and leadership skills for a successful business career. Students gain comprehensive knowledge in marketing, finance, HRand operations management.",
     overviewDetails:
-      "The programme emphasises practical learning through case studies, industry visits, internships, and live projects with corporate partners.",
+      "The programme emphasises practical learning through case studies, industry visits, internshipsand live projects with corporate partners.",
     programStructureIntro:
       "The BBA curriculum covers all major functional areas of business management across three years.",
     levels: [
@@ -401,7 +401,7 @@ export const ugPrograms: ProgramData[] = [
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "BBA graduates can pursue MBA, PGDM, or enter the workforce in roles such as business analyst, marketing executive, HR coordinator, and operations manager.",
+      "BBA graduates can pursue MBA, PGDM, or enter the workforce in roles such as business analyst, marketing executive, HR coordinatorand operations manager.",
     progressionNote:
       "Over 95% of BBA graduates secure placements through campus recruitment drives.",
   },
@@ -416,7 +416,7 @@ export const ugPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The BBA (Aviation Management) programme is designed for students aspiring to build careers in the aviation industry. It covers airport management, airline operations, aviation safety, and airline marketing.",
+      "The BBA (Aviation Management) programme is designed for students aspiring to build careers in the aviation industry. It covers airport management, airline operations, aviation safetyand airline marketing.",
     overviewDetails:
       "With India's aviation sector experiencing rapid growth, this programme offers unique career opportunities in both domestic and international markets.",
     programStructureIntro:
@@ -471,7 +471,7 @@ export const ugPrograms: ProgramData[] = [
       "*Includes industry exposure visits. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can pursue careers in airport management, airline operations, ground handling, cargo management, and travel companies. Further studies in MBA (Aviation) are also available.",
+      "Graduates can pursue careers in airport management, airline operations, ground handling, cargo managementand travel companies. Further studies in MBA (Aviation) are also available.",
     progressionNote:
       "Industry partnerships with airlines and airports provide excellent internship and placement opportunities.",
   },
@@ -488,7 +488,7 @@ export const ugPrograms: ProgramData[] = [
     overview:
       "The BBA (Business Analytics) programme equips students with both business acumen and analytical skills. Students learn to leverage data for strategic decision-making in modern organisations.",
     overviewDetails:
-      "This programme combines management education with hands-on analytics tools like Python, R, Tableau, and Power BI.",
+      "This programme combines management education with hands-on analytics tools like Python, R, Tableauand Power BI.",
     programStructureIntro:
       "The curriculum covers business fundamentals alongside advanced analytics and data science techniques.",
     levels: [
@@ -541,7 +541,7 @@ export const ugPrograms: ProgramData[] = [
       "*Includes software licenses and analytics lab access. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can pursue careers in business analytics, data science, consulting, and management. MBA (Business Analytics) is a popular Masters choice.",
+      "Graduates can pursue careers in business analytics, data science, consultingand management. MBA (Business Analytics) is a popular Masters choice.",
     progressionNote:
       "High demand for analytics professionals ensures excellent placement rates.",
   },
@@ -556,7 +556,7 @@ export const ugPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The BBA (Digital Marketing) programme prepares students for the fast-evolving world of digital marketing. Students gain expertise in SEO, social media marketing, content strategy, and performance marketing.",
+      "The BBA (Digital Marketing) programme prepares students for the fast-evolving world of digital marketing. Students gain expertise in SEO, social media marketing, content strategyand performance marketing.",
     overviewDetails:
       "With digital transformation reshaping industries, this programme produces marketing professionals who understand both strategy and technology.",
     programStructureIntro:
@@ -611,9 +611,9 @@ export const ugPrograms: ProgramData[] = [
       "*Includes access to marketing tools and platforms. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can work as digital marketing managers, social media strategists, SEO specialists, content managers, and marketing analysts. MBA (Marketing) is a popular progression.",
+      "Graduates can work as digital marketing managers, social media strategists, SEO specialists, content managersand marketing analysts. MBA (Marketing) is a popular progression.",
     progressionNote:
-      "Industry certifications from Google, Meta, and HubSpot are integrated into the programme.",
+      "Industry certifications from Google, Metaand HubSpot are integrated into the programme.",
   },
   {
     slug: "bca",
@@ -626,9 +626,9 @@ export const ugPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
-      "The BCA programme builds expertise in software development, programming, and IT solutions. Students gain hands-on experience with modern technologies and programming languages.",
+      "The BCA programme builds expertise in software development, programmingand IT solutions. Students gain hands-on experience with modern technologies and programming languages.",
     overviewDetails:
-      "The programme focuses on practical skills development through lab sessions, industry projects, and internships with leading IT companies.",
+      "The programme focuses on practical skills development through lab sessions, industry projectsand internships with leading IT companies.",
     programStructureIntro:
       "The curriculum covers core computer science subjects along with software development and emerging technology modules.",
     levels: [
@@ -698,7 +698,7 @@ export const ugPrograms: ProgramData[] = [
     overview:
       "The BCA (AI & ML) programme is designed for students passionate about artificial intelligence and machine learning. The curriculum covers core computing along with specialised AI/ML techniques and applications.",
     overviewDetails:
-      "Students work on real-world AI projects using frameworks like TensorFlow, PyTorch, and scikit-learn, preparing them for cutting-edge technology careers.",
+      "Students work on real-world AI projects using frameworks like TensorFlow, PyTorchand scikit-learn, preparing them for cutting-edge technology careers.",
     programStructureIntro:
       "The programme combines computer science fundamentals with progressive AI and machine learning specialisation.",
     levels: [
@@ -769,11 +769,11 @@ export const pgPrograms: ProgramData[] = [
     modeOfStudy: "On-Campus",
     creditsAwarded: "120",
     overview:
-      "The M.Com (International Finance with ACCA, UK) programme integrates the globally recognised ACCA qualification with a Master of Commerce degree. It is designed for graduates who want to deepen their understanding of accounting, finance, and business practices while earning an internationally respected professional certification.",
+      "The M.Com (International Finance with ACCA, UK) programme integrates the globally recognised ACCA qualification with a Master of Commerce degree. It is designed for graduates who want to deepen their understanding of accounting, financeand business practices while earning an internationally respected professional certification.",
     overviewDetails:
       "Students receive exemptions from multiple ACCA papers, accelerating their path to becoming globally certified accountants. The programme encourages research-oriented thinking and provides opportunities for professional growth.",
     programStructureIntro:
-      "The M.Com (International Finance with ACCA, UK) programme covers advanced accounting, ACCA strategic professional papers, and research methodology across two years.",
+      "The M.Com (International Finance with ACCA, UK) programme covers advanced accounting, ACCA strategic professional papersand research methodology across two years.",
     levels: [
       {
         name: "Year 1",
@@ -822,7 +822,7 @@ export const pgPrograms: ProgramData[] = [
       "*ACCA registration and exam fees are additional. Merit-based scholarships available. Applicable for batch 2026/27.",
     progressionTitle: "Progression Opportunities",
     progressionContent:
-      "Graduates can complete remaining ACCA papers to become fully qualified ACCA members. Career paths include chartered accountancy, financial consulting, audit, corporate finance, and global leadership roles in accounting and finance.",
+      "Graduates can complete remaining ACCA papers to become fully qualified ACCA members. Career paths include chartered accountancy, financial consulting, audit, corporate financeand global leadership roles in accounting and finance.",
     progressionNote:
       "ACCA qualification is recognised in over 180 countries, opening doors to international career opportunities.",
   },

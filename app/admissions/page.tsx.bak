@@ -249,7 +249,7 @@ const AdmissionsHero = () => {
                   <span className="text-[#F8C300] mt-1">→</span>
                   <span>
                     Become part of a distinguished community of scholars,
-                    innovators, and leaders, shaping the future with knowledge
+                    innovatorsand leaders, shaping the future with knowledge
                     and vision.
                   </span>
                 </li>
@@ -597,7 +597,7 @@ const AchievementsSection = () => {
           <p className="text-white">
             Visit{" "}
             <span className="font-bold text-[#F8C300]">jaincollege.ac.in</span>{" "}
-            to explore JAIN College's academic programmes, student life, and the
+            to explore JAIN College's academic programmes, student lifeand the
             opportunities that await you.
           </p>
         </div>
@@ -634,7 +634,7 @@ const AdmissionProcessSection = () => {
       number: "02",
       title: "Document Submission",
       description:
-        "Upload required documents including mark sheets, ID proof, and photographs.",
+        "Upload required documents including mark sheets, ID proofand photographs.",
       icon: (
         <svg
           className="w-8 h-8"
@@ -857,17 +857,17 @@ const FAQSection = () => {
     {
       question: "What are the eligibility criteria for I PUC admission?",
       answer:
-        "Students who have passed 10th standard (SSLC/CBSE/ICSE or equivalent) from a recognized board are eligible for I PUC admission. The minimum percentage requirement varies by stream - Science (75%), Commerce (65%), and Arts (55%).",
+        "Students who have passed 10th standard (SSLC/CBSE/ICSE or equivalent) from a recognized board are eligible for I PUC admission. The minimum percentage requirement varies by stream - Science (75%), Commerce (65%)and Arts (55%).",
     },
     {
       question: "What documents are required for admission?",
       answer:
-        "Required documents include: 10th standard marks card, Transfer Certificate, Migration Certificate (if applicable), Caste/Category certificate (if applicable), Aadhar card, 4 passport-size photographs, and parent/guardian ID proof.",
+        "Required documents include: 10th standard marks card, Transfer Certificate, Migration Certificate (if applicable), Caste/Category certificate (if applicable), Aadhar card, 4 passport-size photographsand parent/guardian ID proof.",
     },
     {
       question: "Is hostel facility available?",
       answer:
-        "Yes, JAIN College provides separate hostel facilities for boys and girls. The hostels are well-equipped with modern amenities, study rooms, mess facilities, and round-the-clock security.",
+        "Yes, JAIN College provides separate hostel facilities for boys and girls. The hostels are well-equipped with modern amenities, study rooms, mess facilitiesand round-the-clock security.",
     },
     {
       question: "What is the fee structure for 2026-27?",
@@ -877,7 +877,7 @@ const FAQSection = () => {
     {
       question: "Are there any scholarship programs available?",
       answer:
-        "Yes, we offer various scholarships including Merit Scholarships (for academic excellence), Sports Scholarships, and need-based Financial Aid. Students scoring above 90% in 10th standard are eligible for special scholarships.",
+        "Yes, we offer various scholarships including Merit Scholarships (for academic excellence), Sports Scholarshipsand need-based Financial Aid. Students scoring above 90% in 10th standard are eligible for special scholarships.",
     },
   ];
 

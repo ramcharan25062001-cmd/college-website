@@ -40,16 +40,16 @@ const AboutSection = () => {
               . Over the past three decades, the JAIN Group has grown into one
               of India&apos;s most respected educational ecosystems, offering programs
               across schools, pre-university colleges, undergraduate
-              institutions, universities, and research centres.
+              institutions, universities and research centres.
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed">
               The JAIN Group operates a large academic network that includes{" "}
               <span className="font-semibold text-[#001C54]">
                 70+ educational institutions, 60+ campuses and centres, 75,000+
-                students, and 10,000+ faculty and staff
+                studentsand 10,000+ faculty and staff
               </span>{" "}
-              across India. JAIN institutions are widely recognised for their commitment to academic excellence, innovation in education, and holistic student development.
+              across India. JAIN institutions are widely recognised for their commitment to academic excellence, innovation in education and holistic student development.
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -58,7 +58,7 @@ const AboutSection = () => {
                 Bengaluru — the Silicon Valley &amp; Startup capital of India
               </span>
               , JAIN College provides students with access to one of the
-              world&apos;s fastest-growing technology, startup, and innovation
+              world&apos;s fastest-growing technology, startup and innovation
               ecosystems, offering valuable industry exposure and global career
               opportunities alongside their academic studies.
             </p>
@@ -76,7 +76,7 @@ const AboutSection = () => {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-lg text-gray-600 leading-relaxed text-center">
+            <p className="text-lg text-gray-600 leading-relaxed text-left mid:text-center">
               The{" "}
               <span className="font-semibold text-[#001C54]">
                 Centre for International Studies at JAIN College
@@ -91,10 +91,10 @@ const AboutSection = () => {
               .
             </p>
 
-            <p className="text-lg text-gray-600 leading-relaxed text-center">
+            <p className="text-lg text-gray-600 leading-relaxed text-left mid:text-center">
               With a strong focus on{" "}
               <span className="font-semibold text-[#001C54]">
-                global academic partnerships, international mobility, and
+                global academic partnerships, international mobility and
                 career-focused learning
               </span>
               , the Centre prepares students to succeed in an increasingly
@@ -107,25 +107,14 @@ const AboutSection = () => {
             </p>
 
             {/* Highlight Box */}
-            <div className="bg-[#001C54] rounded-2xl p-8 text-center">
+            <div className="bg-[#001C54] rounded-2xl p-8 text-left mid:text-center">
               <h3 className="text-[#F8C300] font-bold text-xl mb-4">
                 Program Overview
               </h3>
               <p className="text-white/90 leading-relaxed mb-4">
                 JAIN College&apos;s Centre for International Studies is a globally focused learning program designed to support students who aspire to pursue international education. Students start their academic journey at JAIN College, building a strong foundational curriculum before transferring approved academic credits to a recognised partner university abroad to complete their (UG/PG) degree and gain valuable global exposure.
               </p>
-              <p className="text-white/90 leading-relaxed">
-                The program offers a diverse range of Bachelor pathways including{" "}
-                <span className="text-[#F8C300] font-semibold">Global B.Com programs</span>{" "}
-                such as B.Com (Regular), B.Com (International Finance with ACCA, UK), B.Com (Business Data Analytics – BDA), and B.Com (Logistics &amp; Supply Chain Management – LSCM);{" "}
-                <span className="text-[#F8C300] font-semibold">Global BBA programs</span>{" "}
-                including BBA (Regular), BBA (Aviation Management), BBA (Business Analytics), and BBA (Digital Marketing);{" "}
-                <span className="text-[#F8C300] font-semibold">Global Computer Science &amp; IT programs</span>{" "}
-                such as BCA and BCA (Artificial Intelligence &amp; Machine Learning); It also includes a{" "}
-                <span className="text-[#F8C300] font-semibold">Master&apos;s</span> pathway,{" "}
-                <span className="text-[#F8C300] font-semibold">M.Com (International Finance with ACCA, UK)</span>.
-                These programs are designed to develop strong business knowledge, analytical thinking, and employability skills required to succeed in a global workplace.
-              </p>
+              
             </div>
           </div>
         </div>

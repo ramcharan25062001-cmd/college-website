@@ -9,17 +9,17 @@ const WhyJainSection = () => {
     {
       title: "Holistic Development",
       content:
-        "At Jain College Global Campus, we nurture every aspect of a student's growth. Our programs extend beyond textbooks, focusing on intellectual, emotional, social, and physical development.",
+        "At Jain College Global Campus, we nurture every aspect of a student's growth. Our programs extend beyond textbooks, focusing on intellectual, emotional, socialand physical development.",
     },
     {
       title: "World-Class Infrastructure",
       content:
-        "Our 100+ acre campus features state-of-the-art facilities including smart classrooms, science labs, sports complexes, auditoriums, and comfortable boarding houses.",
+        "Our 100+ acre campus features state-of-the-art facilities including smart classrooms, science labs, sports complexes, auditoriumsand comfortable boarding houses.",
     },
     {
       title: "International Curriculum",
       content:
-        "We offer globally recognized curricula including IGCSE, IBDP, and CBSE, preparing students for admission to top universities worldwide.",
+        "We offer globally recognized curricula including IGCSE, IBDPand CBSE, preparing students for admission to top universities worldwide.",
     },
     {
       title: "Experienced Faculty",

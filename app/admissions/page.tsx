@@ -112,7 +112,7 @@ const HeroSection = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-[#F8C300] mt-0.5">→</span>
                   Become part of a distinguished community of scholars,
-                  innovators, and leaders, shaping the future with knowledge and
+                  innovatorsand leaders, shaping the future with knowledge and
                   vision.
                 </li>
               </ul>

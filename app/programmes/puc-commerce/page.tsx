@@ -141,14 +141,14 @@ const CommerceCollegesSection = () => {
               JAIN PU College in Bangalore is one of the{" "}
               <strong>best Commerce colleges in Bangalore</strong>. Our Commerce
               programme offers comprehensive education in Accountancy, Business
-              Studies, Economics, and more. We are proud to be recognised among
+              Studies, Economicsand more. We are proud to be recognised among
               the Top-ranked PU colleges in Bangalore.
             </p>
             <p className="text-gray-700">
-              From core subjects such as Accountancy, Business Studies, and
+              From core subjects such as Accountancy, Business Studiesand
               Economics to elective courses, students gain a deep understanding
               of business principles through theoretical knowledge, practical
-              applications, and industry exposure.
+              applicationsand industry exposure.
             </p>
           </div>
         </div>
@@ -178,9 +178,9 @@ const BestCommerceSection = () => {
             <p className="text-gray-700">
               Renowned institutions, such as JAIN PU College, offer
               comprehensive Commerce courses with specializations in
-              Accountancy, Business Management, and Economics. These colleges
+              Accountancy, Business Managementand Economics. These colleges
               are known for their industry-aligned curriculum, experienced
-              faculty, and excellent placement records, making them ideal
+              facultyand excellent placement records, making them ideal
               choices for students aspiring to build successful careers in
               business and finance.
             </p>
@@ -603,7 +603,7 @@ const FacilitiesAccordionSection = () => {
           </p>
           <p>
             Our state-of-the-art facilities include modern computer labs,
-            well-stocked libraries, and dedicated study spaces. Students have
+            well-stocked librariesand dedicated study spaces. Students have
             access to the latest accounting software and business simulation
             tools for practical learning.
           </p>
@@ -617,12 +617,12 @@ const FacilitiesAccordionSection = () => {
         <div className="p-4 text-gray-700 space-y-4">
           <p>
             At JAIN College, education extends beyond textbooks. We organize
-            industry visits, guest lectures from business leaders, and
+            industry visits, guest lectures from business leadersand
             entrepreneurship workshops.
           </p>
           <p>
             Students participate in business plan competitions, stock market
-            simulations, and commerce fests that help them apply theoretical
+            simulationsand commerce fests that help them apply theoretical
             knowledge in real-world scenarios.
           </p>
         </div>
@@ -639,7 +639,7 @@ const FacilitiesAccordionSection = () => {
             commerce and business.
           </p>
           <p>
-            We offer specialized coaching for CA Foundation, CS Foundation, and
+            We offer specialized coaching for CA Foundation, CS Foundationand
             other professional courses to give our students a competitive edge
             in their career pursuits.
           </p>
