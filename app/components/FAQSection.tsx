@@ -13,9 +13,9 @@ const faqs: FAQ[] = [
       "What are the selection criteria for the JAIN College - Centre for International Studies Program?",
     answer: (
       <div>
-        <p className="mb-2">Admission to the Undergraduate (UG) / Postgraduate (PG) Programme is purely merit-based and evaluated on the following parameters:</p>
+        <p className="mb-2">Admission to the Undergraduate (UG) / Postgraduate (PG) Program is purely merit-based and evaluated on the following parameters:</p>
         <ul className="list-disc list-inside space-y-1">
-          <li>Academic performance in Class XII / equivalent (for UG programs)</li>
+          <li>Academic performance in Class XII / A Level equivalent (for UG programs)</li>
           <li>Academic performance during the initial years of study at JAIN College</li>
           <li>Student&apos;s academic ambition and motivation</li>
           <li>Communication skills</li>
@@ -47,7 +47,7 @@ const faqs: FAQ[] = [
   },
   {
     question:
-      "What are the eligibility requirements for the Undergraduate (UG) Programme?",
+      "What are the eligibility requirements for the Undergraduate (UG) Program?",
     answer: (
       <div>
         <p className="mb-2">Students must:</p>
@@ -62,7 +62,7 @@ const faqs: FAQ[] = [
   },
   {
     question:
-      "What is the eligibility for the master's (PG) Pathway Programme?",
+      "What is the eligibility for the master's (PG) Pathway Program?",
     answer: (
       <p>Applicants must hold a Bachelor&apos;s degree in a relevant discipline from a recognised university with a minimum of 80% marks or equivalent academic performance, subject to partner university requirements.</p>
     ),

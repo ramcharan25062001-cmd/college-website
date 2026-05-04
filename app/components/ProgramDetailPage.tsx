@@ -254,7 +254,7 @@ const CareerSection = ({ program }: { program: ProgramData }) => {
   );
 };
 
-// Related Programmes
+// Related Programs
 const RelatedProgramsSection = ({
   programs,
   currentCategory,
@@ -265,7 +265,7 @@ const RelatedProgramsSection = ({
   <section className="py-16 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-[#001C54] text-center mb-2">
-        Explore Other Programmes
+        Explore Other Programs
       </h2>
       <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12" />
 

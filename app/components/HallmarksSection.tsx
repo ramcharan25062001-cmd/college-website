@@ -110,7 +110,7 @@ const HallmarksSection = () => {
                 </div>
               </div>
 
-              <h3 className="text-[#001C54] font-semibold text-sm lg:text-base leading-tight">
+              <h3 className="text-[#001C54] font-bold text-sm lg:text-base leading-tight">
                 {item.title}
               </h3>
             </div>

@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { name, email, phone, programme, message } = body;
+    const { name, email, phone, program, message } = body;
 
     // Validate required fields
     if (!name || !email || !phone) {
@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
       sanitize(name),
       cleanEmail,
       cleanPhone,
-      sanitize(programme || ""),
+      sanitize(program || ""),
       sanitize(message || ""),
     ]);
 

@@ -14,13 +14,13 @@ const EnquiryPopup = ({ programName, alwaysShow = false }: EnquiryPopupProps) =>
     name: "",
     email: "",
     phone: "",
-    programme: programName || "",
+    program: programName || "",
     message: "",
   });
 
   useEffect(() => {
     if (alwaysShow) {
-      // Programme pages: always show
+      // Program pages: always show
       setIsOpen(true);
       return;
     }
@@ -86,7 +86,7 @@ const EnquiryPopup = ({ programName, alwaysShow = false }: EnquiryPopupProps) =>
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-bold">Interested in this Programme?</h3>
+              <h3 className="text-xl font-bold">Interested in this Program?</h3>
               <p className="text-white/80 text-sm">Admissions Open for 2026-27</p>
             </div>
           </div>
@@ -138,11 +138,11 @@ const EnquiryPopup = ({ programName, alwaysShow = false }: EnquiryPopupProps) =>
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all"
               />
               <select
-                value={formData.programme}
-                onChange={(e) => setFormData({ ...formData, programme: e.target.value })}
+                value={formData.program}
+                onChange={(e) => setFormData({ ...formData, program: e.target.value })}
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all"
               >
-                <option value="">Select Programme</option>
+                <option value="">Select Program</option>
                 <optgroup label="Undergraduate">
                   <option value="B.Com">B.Com</option>
                   <option value="B.Com (BDA)">B.Com (Business Data Analytics)</option>

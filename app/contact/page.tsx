@@ -11,7 +11,7 @@ const campusData = {
   "Vasavi Road": {
     name: "Vasavi Road (UG / PG)",
     address: "#15, Vasavi Temple Road\nV V Puram, Bengaluru – 560004",
-    phone: "080 4650 1738",
+    phone: "9035166090",
     mapEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0094573891656!2d77.5715!3d12.9502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15891e9f0a03%3A0xbc2c5c9c2c5c5c5c!2sV%20V%20Puram%2C%20Bengaluru%2C%20Karnataka%20560004!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin",
     courses: ["B.Com", "BBA", "BCA", "BBA Aviation", "M.Com", "MA Economics"],
@@ -135,7 +135,7 @@ const GetInTouchSection = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  +91 7337879681
+                  +91 9035166090
                 </a>
               </div>
 
@@ -385,14 +385,14 @@ const ContactFormSection = () => {
                   defaultValue=""
                 >
                   <option value="" disabled>
-                    Select a programme
+                    Select a program
                   </option>
                   <optgroup label="Undergraduate (UG)">
-                    <option value="bcom">B.Com Global (Bachelor of Commerce Global)</option>
+                    <option value="bcom">B.Com Global (Bachelor of Commerce)</option>
                     <option value="bcom-bda">B.Com (Business Data Analytics)</option>
                     <option value="bcom-acca">B.Com (International Finance with ACCA, UK)</option>
                     <option value="bcom-lscm">B.Com (Logistics &amp; Supply Chain Management)</option>
-                    <option value="bba">BBA Global(Bachelor of Business Administration Global)</option>
+                    <option value="bba">BBA Global(Bachelor of Business Administration)</option>
                     <option value="bba-aviation">BBA (Aviation Management)</option>
                     <option value="bba-analytics">BBA (Business Analytics)</option>
                     <option value="bba-digital-marketing">BBA (Digital Marketing)</option>

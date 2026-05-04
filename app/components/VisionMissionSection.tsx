@@ -26,7 +26,7 @@ const VisionMissionSection = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-bold text-[#001C54] mb-2">Vision</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#001C54] mb-2">Vision</h2>
             <div className="w-12 h-1 bg-[#F8C300] mb-4"></div>
             <p className="text-gray-600 leading-relaxed">
               To be a globally recognised academic institution that empowers
@@ -53,13 +53,13 @@ const VisionMissionSection = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-bold text-[#001C54] mb-2">Mission</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#001C54] mb-2">Mission</h2>
             <div className="w-12 h-1 bg-[#F8C300] mb-4"></div>
             <p className="text-gray-600 leading-relaxed">
               To deliver holistic, high-quality education that integrates
               academic excellence with global exposure, critical design thinkingand
               experiential learning. Through our JAIN Centre for International
-              Studies Programme and student-centric approach, we aim to nurture
+              Studies Program and student-centric approach, we aim to nurture
               adaptable, ethicaland future-ready professionals equipped for
               international success.
             </p>

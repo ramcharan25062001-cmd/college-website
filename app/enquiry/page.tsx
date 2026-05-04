@@ -10,7 +10,7 @@ const EnquiryPage = () => {
     name: "",
     email: "",
     phone: "",
-    programme: "",
+    program: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,7 +30,7 @@ const EnquiryPage = () => {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong");
       setSubmitted(true);
-      setFormData({ name: "", email: "", phone: "", programme: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", program: "", message: "" });
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to submit");
@@ -78,7 +78,7 @@ const EnquiryPage = () => {
                     Get in <span className="text-[#F8C300]">Touch</span>
                   </h2>
                   <p className="text-gray-600 leading-relaxed">
-                    Take the first step towards a world-class education. Our admissions team is ready to help you explore the right programme for your career goals.
+                    Take the first step towards a world-class education. Our admissions team is ready to help you explore the right program for your career goals.
                   </p>
                 </div>
 
@@ -198,11 +198,11 @@ const EnquiryPage = () => {
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all"
                       />
                       <select
-                        value={formData.programme}
-                        onChange={(e) => setFormData({ ...formData, programme: e.target.value })}
+                        value={formData.program}
+                        onChange={(e) => setFormData({ ...formData, program: e.target.value })}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all appearance-none bg-white"
                       >
-                        <option value="">Select Programme</option>
+                        <option value="">Select Program</option>
                         <optgroup label="B.Com Programs">
                           <option value="bcom-regular">B.Com (Regular)</option>
                           <option value="bcom-acca">B.Com (International Finance with ACCA, UK)</option>

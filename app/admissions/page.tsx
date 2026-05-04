@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
-// Vasavi Road Campus Programmes
+// Vasavi Road Campus Programs
 const programmes = {
   "Undergraduate (UG)": [
     "B.Com Global",
@@ -321,12 +321,12 @@ const HeroSection = () => {
   );
 };
 
-// Our Programmes Section
+// Our Programs Section
 const ProgrammesSection = () => (
   <section className="py-16 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-        Our Programmes
+        Our Programs
       </h2>
       <p className="text-center text-gray-500 mb-12">
         Vasavi Road Campus (VV Puram, Bengaluru)
@@ -349,7 +349,7 @@ const ProgrammesSection = () => (
             </div>
           </div>
 
-          {/* Programmes List */}
+          {/* Programs List */}
           <div className="p-6 md:p-8">
             {Object.entries(programmes).map(([category, courses]) => (
               <div key={category} className="mb-6 last:mb-0">
@@ -378,7 +378,7 @@ const ProgrammesSection = () => (
                 href="/programmes/ug"
                 className="inline-block bg-[#001C54] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#16336e] transition-colors text-sm"
               >
-                Explore All Programmes
+                Explore All Programs
               </Link>
             </div>
           </div>

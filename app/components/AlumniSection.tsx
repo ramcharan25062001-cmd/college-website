@@ -48,7 +48,7 @@ const AlumniSection = () => {
 
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-[#F8C300] rounded-lg opacity-0 group-hover:opacity-90 transition-opacity flex items-center justify-center">
-                <p className="text-[#001C54] font-semibold text-sm text-center px-2">
+                <p className="text-[#001C54] font-bold text-sm text-center px-2">
                   {person.name}
                   <br />
                   <span className="text-xs font-normal">{person.field}</span>

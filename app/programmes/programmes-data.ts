@@ -52,8 +52,8 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom.jpg",
-    programTitle: "B.Com Global (Bachelor of Commerce Global)",
-    programSubtitle: "International Graduate Programme in Business",
+    programTitle: "B.Com Global (Bachelor of Commerce)",
+    programSubtitle: "International Graduate Program in Business",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
@@ -88,7 +88,7 @@ export const ugPrograms: ProgramData[] = [
       },
     ],
     feesLabel:
-      "B.Com Global (Bachelor of Commerce Global)",
+      "B.Com Global (Bachelor of Commerce)",
     feesAmount: "₹1.25 Lakhs per year*",
     feesNote:
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
@@ -154,7 +154,7 @@ export const ugPrograms: ProgramData[] = [
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom-acca.jpg",
     programTitle: "B.Com Global (International Finance with ACCA, UK)",
-    programSubtitle: "Commerce with ACCA Integrated Programme",
+    programSubtitle: "Commerce with ACCA Integrated Program",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
@@ -253,8 +253,8 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bba.jpg",
-    programTitle: "BBA Global(Bachelor of Business Administration Global)",
-    programSubtitle: "Business Administration Programme",
+    programTitle: "BBA Global(Bachelor of Business Administration)",
+    programSubtitle: "Business Administration Program",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
@@ -288,7 +288,7 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    feesLabel: "BBA Global (Bachelor of Business Administration Global)",
+    feesLabel: "BBA Global (Bachelor of Business Administration)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:
       "*Applicants opting for one-time fee remittance will receive an exclusive Scholarship. Applicable for batch 2026/27.",
@@ -311,7 +311,7 @@ export const ugPrograms: ProgramData[] = [
     overview:
       "The BBA Global Program in Aviation Management combines business education with specialised training in aviation operations, preparing students for careers in airlines, airports and travel industries.",
     overviewDetails:
-      "With India's aviation sector experiencing rapid growth, this programme offers unique career opportunities in both domestic and international markets.",
+      "With India's aviation sector experiencing rapid growth, this program offers unique career opportunities in both domestic and international markets.",
     programStructureIntro:
       "Airline Operations, Airport Management, Aviation Safety, Customer Service, Logistics.",
     levels: [
@@ -361,7 +361,7 @@ export const ugPrograms: ProgramData[] = [
     overview:
       "BBA Global Program in Business Analytics integrates business management with analytics, enabling students to make data driven decisions in modern organisations.",
     overviewDetails:
-      "This programme combines management education with hands-on analytics tools like Python, R, Tableau and Power BI.",
+      "This program combines management education with hands-on analytics tools like Python, R, Tableau and Power BI.",
     programStructureIntro:
       "Business Analytics, Data Visualization, Statistics, Predictive Analytics, Business Intelligence.",
     levels: [
@@ -456,14 +456,14 @@ export const ugPrograms: ProgramData[] = [
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bca.jpg",
     programTitle: "BCA Global (Science and IT Global program)",
-    programSubtitle: "Computer Applications Programme",
+    programSubtitle: "Computer Applications Program",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "240",
     overview:
       "The BCA Global Program provides a strong foundation in computer science, software development, and IT systems, supported by hands on learning through projects and labs.",
     overviewDetails:
-      "The programme focuses on practical skills development through lab sessions, industry projects and internships with leading IT companies.",
+      "The program focuses on practical skills development through lab sessions, industry projects and internships with leading IT companies.",
     programStructureIntro:
       "Programming, Data Structures, Databases, Web Development, Cloud Computing.",
     levels: [
@@ -561,14 +561,14 @@ export const pgPrograms: ProgramData[] = [
     parentCategory: "Masters Courses",
     image: "/images/programs/bcom-acca.jpg",
     programTitle: "M.Com Global (International Finance with ACCA, UK)",
-    programSubtitle: "Masters Programme in Commerce with ACCA",
+    programSubtitle: "Masters Program in Commerce with ACCA",
     duration: "2 Years",
     modeOfStudy: "On-Campus",
     creditsAwarded: "120",
     overview:
       "This postgraduate program combines advanced finance education with the globally recognised International Finance with ACCA qualification, preparing students for leadership roles in accounting and finance.",
     overviewDetails:
-      "Students receive exemptions from multiple ACCA papers, accelerating their path to becoming globally certified accountants. The programme encourages research-oriented thinking and provides opportunities for professional growth.",
+      "Students receive exemptions from multiple ACCA papers, accelerating their path to becoming globally certified accountants. The program encourages research-oriented thinking and provides opportunities for professional growth.",
     programStructureIntro:
       "Advanced Accounting, Financial Management, Audit, Taxation, ACCA curriculum.",
     levels: [

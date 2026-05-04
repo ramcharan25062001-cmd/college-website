@@ -10,12 +10,12 @@ const Header = () => {
 
   // Mega menu data structure
   const megaMenus: Record<string, React.ReactNode> = {
-    Programmes: (
+    Programs: (
       <div className="flex gap-8 p-6">
-        {/* UG Programmes */}
+        {/* UG Programs */}
         <div className="min-w-48">
           <h3 className="font-bold text-[#001C54] mb-3">
-            UG Programmes
+            UG Programs
           </h3>
           <ul className="space-y-2 text-sm text-gray-600">
              <li>
@@ -101,9 +101,9 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Master's Programme */}
+        {/* Master's Program */}
         <div className="min-w-48">
-          <h3 className="font-bold text-[#001C54] mb-3">Master&apos;s Programme</h3>
+          <h3 className="font-bold text-[#001C54] mb-3">Master&apos;s Program</h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
               <Link
@@ -121,7 +121,7 @@ const Header = () => {
                 href="/programmes/ug"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › All UG Programmes
+                › All UG Programs
               </Link>
             </li>
             <li>
@@ -129,7 +129,7 @@ const Header = () => {
                 href="/programmes/pg"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › All Master&apos;s Programmes
+                › All Master&apos;s Programs
               </Link>
             </li>
           </ul>
@@ -216,7 +216,7 @@ const Header = () => {
   const navItems = [
     { name: "Home", href: "/", icon: "home" },
     { name: "About", href: "/#about" },
-    { name: "Programmes", href: "/programmes/ug", hasMegaMenu: true },
+    { name: "Programs", href: "/programmes/ug", hasMegaMenu: true },
     { name: "Pathways", href: "/#pathways", hasMegaMenu: true },
     { name: "Admissions", href: "/admissions" },
     { name: "FAQ", href: "/#faq" },
@@ -355,9 +355,9 @@ const Header = () => {
                 >
                   {item.icon === "home" ? "Home" : item.name}
                 </Link>
-                {item.hasMegaMenu && item.name === "Programmes" && (
+                {item.hasMegaMenu && item.name === "Programs" && (
                   <div className="pl-4 mt-2 space-y-2 text-sm">
-                    <p className="text-[#F8C300] font-semibold">UG Programmes</p>
+                    <p className="text-[#F8C300] font-semibold">UG Programs</p>
                     <Link
                       href="/programmes/ug/bcom"
                       className="block text-white/70"
@@ -428,7 +428,7 @@ const Header = () => {
                     >
                       › BCA Global (AI & Machine Learning)
                     </Link>
-                    <p className="text-[#F8C300] font-semibold mt-3">Master&apos;s Programme</p>
+                    <p className="text-[#F8C300] font-semibold mt-3">Master&apos;s Program</p>
                     <Link
                       href="/programmes/pg/mcom-acca"
                       className="block text-white/70"

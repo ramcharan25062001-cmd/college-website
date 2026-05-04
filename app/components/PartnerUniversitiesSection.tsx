@@ -11,6 +11,7 @@ interface University {
   description: string;
   offerings: string[];
   highlight: string;
+  continent: string;
 }
 
 const universities: University[] = [
@@ -18,6 +19,7 @@ const universities: University[] = [
     name: "Bangkok University",
     country: "Thailand",
     flag: "🇹🇭",
+    continent: "Asia",
     logo: "/Partner university logo/Bangkok_University_(logo).png",
     description:
       "Bangkok University is one of Thailand's leading private universities, known for its international outlook and strong industry connections across Southeast Asia.",
@@ -32,9 +34,64 @@ const universities: University[] = [
     highlight: "Top-ranked private university in Thailand with global partnerships.",
   },
   {
+    name: "Taylor's University",
+    country: "Malaysia",
+    flag: "🇲🇾",
+    continent: "Asia",
+    logo: "/Partner university logo/Taylor's_University.png",
+    description:
+      "Taylor's University is one of Malaysia's top private universities, consistently ranked among the best in Asia. It is known for its vibrant campus and industry-relevant programmes.",
+    offerings: [
+      "Business & Management",
+      "Hospitality & Tourism",
+      "Architecture & Built Environment",
+      "Media & Communication",
+      "Law",
+      "Engineering & Technology",
+    ],
+    highlight: "Malaysia's #1 private university — QS World University Rankings.",
+  },
+  {
+    name: "University of Economics and Finance",
+    country: "Vietnam",
+    flag: "🇻🇳",
+    continent: "Asia",
+    logo: "/Partner university logo/Ho_Chi_Minh_City_University_of_Economics_and_Finance_UEF_Logo.png",
+    description:
+      "Ho Chi Minh City University of Economics and Finance (UEF) is a dynamic institution in Vietnam known for its international education standards and strong ties to ASEAN business networks.",
+    offerings: [
+      "Economics",
+      "Finance & Banking",
+      "International Business",
+      "Accounting & Auditing",
+      "Marketing",
+      "Tourism & Hospitality",
+    ],
+    highlight: "Leading international-standard university in Vietnam's economic hub.",
+  },
+  {
+    name: "Lincoln University",
+    country: "Malaysia",
+    flag: "🇲🇾",
+    continent: "Asia",
+    logo: "/Partner university logo/ea-inst-logo-lincoln-uc.png",
+    description:
+      "Lincoln University College is a leading Malaysian private university offering internationally recognised programmes with a strong focus on professional development and industry readiness.",
+    offerings: [
+      "Business & Management",
+      "Computing & IT",
+      "Engineering",
+      "Tourism & Hospitality",
+      "Mass Communication",
+      "Health Sciences",
+    ],
+    highlight: "ISO-certified institution with globally recognised degree programmes.",
+  },
+  {
     name: "VIC University",
     country: "Spain",
     flag: "🇪🇸",
+    continent: "Europe",
     logo: "/Partner university logo/logo_3linies_uvic_color.jpg",
     description:
       "Universitat de Vic – Universitat Central de Catalunya is a public university in Spain offering a wide range of programmes with a focus on research, health, and social sciences.",
@@ -52,6 +109,7 @@ const universities: University[] = [
     name: "Frankfurt School",
     country: "Germany",
     flag: "🇩🇪",
+    continent: "Europe",
     logo: "/Partner university logo/Logo_der_Frankfurt_School_of_Finance_&_Management.jpg",
     description:
       "Frankfurt School of Finance & Management is a globally ranked business school specialising in finance, management, and FinTech education, based in Germany's financial capital.",
@@ -60,7 +118,7 @@ const universities: University[] = [
       "Banking & Investment",
       "FinTech & Digital Finance",
       "Management",
-      "MBA Programmes",
+      "MBA Programs",
       "Executive Education",
     ],
     highlight: "Triple-accredited (AACSB, EQUIS, AMBA) — among the world's top business schools.",
@@ -69,6 +127,7 @@ const universities: University[] = [
     name: "Bordeaux Montaigne University",
     country: "France",
     flag: "🇫🇷",
+    continent: "Europe",
     logo: "/Partner university logo/Université_Bordeaux_Montaigne_Logo.svg.png",
     description:
       "Université Bordeaux Montaigne is a prestigious French public university renowned for its programmes in arts, humanities, and social sciences situated in the heart of Bordeaux.",
@@ -83,60 +142,10 @@ const universities: University[] = [
     highlight: "One of France's most respected institutions for humanities and arts.",
   },
   {
-    name: "Taylor's University",
-    country: "Malaysia",
-    flag: "🇲🇾",
-    logo: "/Partner university logo/Taylor's_University.png",
-    description:
-      "Taylor's University is one of Malaysia's top private universities, consistently ranked among the best in Asia. It is known for its vibrant campus and industry-relevant programmes.",
-    offerings: [
-      "Business & Management",
-      "Hospitality & Tourism",
-      "Architecture & Built Environment",
-      "Media & Communication",
-      "Law",
-      "Engineering & Technology",
-    ],
-    highlight: "Malaysia's #1 private university — QS World University Rankings.",
-  },
-  {
-    name: "Charles Sturt University",
-    country: "Australia",
-    flag: "🇦🇺",
-    logo: "/Partner university logo/Charles Sturt University.png",
-    description:
-      "Charles Sturt University is an Australian public university with a strong focus on practical learning and professional outcomes, serving students across regional and global campuses.",
-    offerings: [
-      "Business & Commerce",
-      "Information Technology",
-      "Health & Nursing",
-      "Education",
-      "Environmental Science",
-      "Agriculture",
-    ],
-    highlight: "Australia's leading university for practical, career-focused education.",
-  },
-  {
-    name: "University of Economics and Finance",
-    country: "Vietnam",
-    flag: "🇻🇳",
-    logo: "/Partner university logo/Ho_Chi_Minh_City_University_of_Economics_and_Finance_UEF_Logo.png",
-    description:
-      "Ho Chi Minh City University of Economics and Finance (UEF) is a dynamic institution in Vietnam known for its international education standards and strong ties to ASEAN business networks.",
-    offerings: [
-      "Economics",
-      "Finance & Banking",
-      "International Business",
-      "Accounting & Auditing",
-      "Marketing",
-      "Tourism & Hospitality",
-    ],
-    highlight: "Leading international-standard university in Vietnam's economic hub.",
-  },
-  {
     name: "University of York",
     country: "UK",
     flag: "🇬🇧",
+    continent: "Europe",
     logo: "/Partner university logo/University of York.jpeg",
     description:
       "The University of York is a prestigious Russell Group university in the United Kingdom, consistently ranked among the world's top 150 universities for research and teaching excellence.",
@@ -151,26 +160,10 @@ const universities: University[] = [
     highlight: "Russell Group university — top 150 globally in QS World Rankings.",
   },
   {
-    name: "Lincoln University",
-    country: "Malaysia",
-    flag: "🇲🇾",
-    logo: "/Partner university logo/ea-inst-logo-lincoln-uc.png",
-    description:
-      "Lincoln University College is a leading Malaysian private university offering internationally recognised programmes with a strong focus on professional development and industry readiness.",
-    offerings: [
-      "Business & Management",
-      "Computing & IT",
-      "Engineering",
-      "Tourism & Hospitality",
-      "Mass Communication",
-      "Health Sciences",
-    ],
-    highlight: "ISO-certified institution with globally recognised degree programmes.",
-  },
-  {
     name: "University of Limoges",
     country: "France",
     flag: "🇫🇷",
+    continent: "Europe",
     logo: "/Partner university logo/University of Limoges.png",
     description:
       "The University of Limoges is a French public university offering a broad spectrum of disciplines, known for its research-driven approach and strong European academic networks.",
@@ -188,6 +181,7 @@ const universities: University[] = [
     name: "EM Normandie Business School",
     country: "France",
     flag: "🇫🇷",
+    continent: "Europe",
     logo: "/Partner university logo/EM_Normandie-Logo.jpg",
     description:
       "EM Normandie is a leading French Grande École business school with campuses across France and the UK, specialising in management, international business, and logistics.",
@@ -201,7 +195,36 @@ const universities: University[] = [
     ],
     highlight: "AACSB & EQUIS accredited — among France's top Grande École business schools.",
   },
+  {
+    name: "Charles Sturt University",
+    country: "Australia",
+    flag: "🇦🇺",
+    continent: "Oceania",
+    logo: "/Partner university logo/Charles Sturt University.png",
+    description:
+      "Charles Sturt University is an Australian public university with a strong focus on practical learning and professional outcomes, serving students across regional and global campuses.",
+    offerings: [
+      "Business & Commerce",
+      "Information Technology",
+      "Health & Nursing",
+      "Education",
+      "Environmental Science",
+      "Agriculture",
+    ],
+    highlight: "Australia's leading university for practical, career-focused education.",
+  },
 ];
+
+const continentOrder = ["Asia", "Europe", "Oceania"];
+
+const continentIcons: Record<string, string> = {
+  Asia: "",
+  Europe: "",
+  Oceania: "",
+  Africa: "",
+  "North America": "",
+  "South America": "",
+};
 
 // Modal Component
 const UniversityModal = ({
@@ -312,34 +335,56 @@ const PartnerUniversitiesSection = () => {
           <p className="mt-2 text-white/50 text-sm">(Proposed Universities)</p>
         </div>
 
-        {/* Universities Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
-          {universities.map((uni, index) => (
-            <button
-              key={index}
-              onClick={() => setSelected(uni)}
-              className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/20 transition-all hover:-translate-y-1 text-center flex flex-col items-center"
-            >
-              <div className="w-full h-16 mb-3 flex items-center justify-center">
-                <Image
-                  src={uni.logo}
-                  alt={uni.name}
-                  width={120}
-                  height={64}
-                  className="max-h-16 w-auto object-contain rounded bg-white/90 p-1"
-                />
-              </div>
-              <h3 className="text-white font-semibold text-sm lg:text-base mb-1 leading-tight">
-                {uni.name}
-              </h3>
-              <p className="text-[#F8C300] text-xs font-medium mb-3">
-                {uni.country}
-              </p>
-              <span className="mt-auto text-[10px] font-bold tracking-widest uppercase text-[#001C54] bg-[#F8C300] px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn More
-              </span>
-            </button>
-          ))}
+        {/* Universities grouped by Continent */}
+        <div className="space-y-14">
+          {continentOrder
+            .filter((continent) => universities.some((u) => u.continent === continent))
+            .map((continent) => {
+              const group = universities.filter((u) => u.continent === continent);
+              return (
+                <div key={continent}>
+                  {/* Continent Header */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">{continentIcons[continent]}</span>
+                    <h3 className="text-xl font-bold text-white">{continent}</h3>
+                    <div className="flex-1 h-px bg-white/20 ml-2" />
+                    <span className="text-white/50 text-sm shrink-0">
+                      {group.length} {group.length === 1 ? "University" : "Universities"}
+                    </span>
+                  </div>
+
+                  {/* Grid for this continent */}
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+                    {group.map((uni, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setSelected(uni)}
+                        className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/20 transition-all hover:-translate-y-1 text-center flex flex-col items-center"
+                      >
+                        <div className="w-full h-16 mb-3 flex items-center justify-center">
+                          <Image
+                            src={uni.logo}
+                            alt={uni.name}
+                            width={120}
+                            height={64}
+                            className="max-h-16 w-auto object-contain rounded bg-white/90 p-1"
+                          />
+                        </div>
+                        <h3 className="text-white font-bold text-sm lg:text-base mb-1 leading-tight">
+                          {uni.name}
+                        </h3>
+                        <p className="text-[#F8C300] text-xs font-medium mb-3">
+                          {uni.country}
+                        </p>
+                        <span className="mt-auto text-[10px] font-bold tracking-widest uppercase text-[#001C54] bg-[#F8C300] px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                          Learn More
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
 

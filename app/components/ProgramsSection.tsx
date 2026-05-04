@@ -3,22 +3,22 @@ import Image from "next/image";
 const ProgramsSection = () => {
   const ugPrograms = [
     {
-      category: "B.Com Programs",
+      category: "B.Com Global Programs",
       color: "bg-[#001C54]",
       image: "/images/programs/bcom.jpg",
       programs: [
-        "Bachelor of Commerce Global",
+        "Bachelor of Commerce",
         "B.Com Global (Business Data Analytics – BDA)",
         "B.Com Global (International Finance with ACCA, UK)",
         "B.Com Global (Logistics & Supply Chain Management – LSCM)",
       ],
     },
     {
-      category: "BBA Programs",
+      category: "BBA Global Programs",
       color: "bg-[#16336e]",
       image: "/images/programs/bba.jpg",
       programs: [
-        "Bachelor of Business Administration Global ",
+        "Bachelor of Business Administration ",
         "BBA Global (Aviation Management)",
         "BBA Global (Business Analytics)",
         "BBA Global (Digital Marketing)",
@@ -37,15 +37,15 @@ const ProgramsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-[#001C54] font-medium mb-2">Academic Excellence</p>
+          <p className="text-[#001C54] text-sm font-medium mb-2">Academic Excellence</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#001C54] mb-4">
             Our Academic Programs
           </h2>
           <div className="w-24 h-1 bg-[#001C54] mx-auto rounded-full"></div>
           <p className="mt-6 text-[#001C54]/80 max-w-3xl mx-auto">
-            The program offers a diverse range of undergraduate and Masters
+            The program offers a diverse range of Undergraduate and Masters
             pathways designed to develop strong business knowledge, analytical
-            thinkingand employability skills required to succeed in a global
+            thinking and employability skills required to succeed in a global
             workplace.
           </p>
         </div>
@@ -111,7 +111,7 @@ const ProgramsSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <h4 className="absolute bottom-4 left-6 text-xl font-bold text-[#F8C300]">
-                M.Com Global (International Finance with ACCA, UK) Program
+                M.Com Global Program
               </h4>
             </div>
             <div className="p-6">

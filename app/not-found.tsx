@@ -67,14 +67,14 @@ export default function NotFound() {
               href="/programmes/ug"
               className="text-[#F8C300] hover:text-[#dfb82d] text-sm font-medium transition-colors"
             >
-              UG Programmes
+              UG Programs
             </Link>
             <span className="text-white/20">|</span>
             <Link
               href="/programmes/pg"
               className="text-[#F8C300] hover:text-[#dfb82d] text-sm font-medium transition-colors"
             >
-              Master&apos;s Programmes
+              Master&apos;s Programs
             </Link>
             <span className="text-white/20">|</span>
             <Link

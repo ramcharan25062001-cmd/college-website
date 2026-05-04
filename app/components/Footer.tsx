@@ -104,9 +104,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Programmes */}
+          {/* Programs */}
           <div>
-            <h3 className="text-[#F8C300] font-bold text-lg mb-4">Programmes</h3>
+            <h3 className="text-[#F8C300] font-bold text-lg mb-4">Programs</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -137,7 +137,7 @@ const Footer = () => {
                   href="#programmes"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › M.Com Global Program (International Finance with ACCA, UK) Program
+                  › M.Com Global Program (International Finance with ACCA, UK) 
                 </Link>
               </li>
             </ul>

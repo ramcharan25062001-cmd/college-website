@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <Image
           src="/images/Hero page_images-02.jpg"
-          alt="Undergraduate Programmes at JAIN College"
+          alt="Undergraduate Programs at JAIN College"
           fill
           className="object-cover"
           priority
@@ -67,7 +67,7 @@ const UGOverviewSection = () => {
           DISCOVER EXCELLENCE AT JAIN COLLEGE
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
-          Undergraduate Programmes
+          Undergraduate Programs
         </h2>
         <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12"></div>
 
@@ -76,7 +76,7 @@ const UGOverviewSection = () => {
           <div className="aspect-[4/3] rounded-lg overflow-hidden border-4 border-[#001C54] relative">
             <Image
               src="/images/about-us.jpg"
-              alt="Undergraduate Programmes at JAIN College"
+              alt="Undergraduate Programs at JAIN College"
               fill
               className="object-cover"
             />
@@ -116,7 +116,7 @@ const UGOverviewSection = () => {
 const UGCoursesSection = () => {
   const courses = [
     {
-      name: "B.Com Global (Bachelor of Commerce Global)",
+      name: "B.Com Global (Bachelor of Commerce)",
       slug: "bcom",
       duration: "3 Years",
       description:
@@ -144,7 +144,7 @@ const UGCoursesSection = () => {
         "Commerce with specialised logistics and supply chain management.",
     },
     {
-      name: "BBA Global(Bachelor of Business Administration Global)",
+      name: "BBA Global(Bachelor of Business Administration)",
       slug: "bba",
       duration: "3 Years",
       description:
@@ -155,7 +155,7 @@ const UGCoursesSection = () => {
       slug: "bba-aviation",
       duration: "3 Years",
       description:
-        "Specialized programme for careers in airport management and aviation industry.",
+        "Specialized program for careers in airport management and aviation industry.",
     },
     {
       name: "BBA Global (Business Analytics)",
@@ -276,7 +276,7 @@ const EligibilitySection = () => {
           Fee structure varies based on the course selected. Contact our
           admission office at{" "}
           <a href="tel:+917337879681" className="text-blue-600 hover:underline">
-            +91 7337879681
+            +91 9035166090
           </a>{" "}
           or email us at{" "}
           <a

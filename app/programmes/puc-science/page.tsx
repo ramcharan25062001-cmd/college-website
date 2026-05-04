@@ -213,7 +213,7 @@ const BestPCMBSection = () => {
   );
 };
 
-// Integrated Programmes Section
+// Integrated Programs Section
 const IntegratedProgrammesSection = () => {
   const programmes = [
     { name: "COMEDK", href: "#" },
@@ -227,7 +227,7 @@ const IntegratedProgrammesSection = () => {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
-          An edge with the JAIN College Integrated Programmes
+          An edge with the JAIN College Integrated Programs
         </h2>
         <div className="w-24 h-1 bg-[#F8C300] mx-auto mb-12"></div>
 
@@ -340,7 +340,7 @@ const SubjectsAccordionSection = () => {
       title: "Course Duration",
       content: (
         <p className="text-gray-700 p-4">
-          The PUC Science programme is a 2-year course covering classes 11th and
+          The PUC Science program is a 2-year course covering classes 11th and
           12th. Students undergo comprehensive training in their chosen subject
           combination, with regular assessments and board exam preparation.
         </p>
