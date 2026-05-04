@@ -116,7 +116,7 @@ const PGOverviewSection = () => {
 const PGCoursesSection = () => {
   const courses = [
     {
-      name: "M.Com (International Finance with ACCA, UK)",
+      name: "M.Com Global (International Finance with ACCA, UK)",
       slug: "mcom-acca",
       duration: "2 Years",
       description:

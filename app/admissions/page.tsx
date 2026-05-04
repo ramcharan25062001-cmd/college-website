@@ -9,18 +9,18 @@ import Image from "next/image";
 // Vasavi Road Campus Programmes
 const programmes = {
   "Undergraduate (UG)": [
-    "B.Com",
-    "B.Com (Business Data Analytics)",
-    "B.Com (International Finance with ACCA, UK)",
-    "B.Com (Logistics & Supply Chain Management)",
-    "BBA",
-    "BBA (Aviation Management)",
-    "BBA (Business Analytics)",
-    "BBA (Digital Marketing)",
-    "BCA",
-    "BCA (AI & Machine Learning)",
+    "B.Com Global",
+    "B.Com Global (Business Data Analytics)",
+    "B.Com Global (International Finance with ACCA, UK)",
+    "B.Com Global (Logistics & Supply Chain Management)",
+    "BBA Global",
+    "BBA Global (Aviation Management)",
+    "BBA Global (Business Analytics)",
+    "BBA Global (Digital Marketing)",
+    "BCA Global",
+    "BCA Global (AI & Machine Learning)",
   ],
-  "Masters Programs": ["M.Com (International Finance with ACCA, UK)"],
+  "Masters Programs": ["M.Com Global (International Finance with ACCA, UK)"],
 };
 
 // Hero Section with Registration Form

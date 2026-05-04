@@ -123,21 +123,21 @@ const UGCoursesSection = () => {
         "Comprehensive commerce education with specializations in Accounting, Financeand Taxation.",
     },
     {
-      name: "B.Com (Business Data Analytics)",
+      name: "B.Com Global (Business Data Analytics)",
       slug: "bcom-bda",
       duration: "3 Years",
       description:
         "Commerce education combined with advanced data analytics skills.",
     },
     {
-      name: "B.Com (International Finance with ACCA, UK)",
+      name: "B.Com Global (International Finance with ACCA, UK)",
       slug: "bcom-acca",
       duration: "3 Years",
       description:
         "Integrated ACCA qualification with a Bachelor of Commerce degree.",
     },
     {
-      name: "B.Com (Logistics & Supply Chain)",
+      name: "B.Com Global (Logistics & Supply Chain)",
       slug: "bcom-lscm",
       duration: "3 Years",
       description:
@@ -151,35 +151,35 @@ const UGCoursesSection = () => {
         "Develop management and leadership skills for a successful business career.",
     },
     {
-      name: "BBA (Aviation Management)",
+      name: "BBA Global(Aviation Management)",
       slug: "bba-aviation",
       duration: "3 Years",
       description:
         "Specialized programme for careers in airport management and aviation industry.",
     },
     {
-      name: "BBA (Business Analytics)",
+      name: "BBA Global (Business Analytics)",
       slug: "bba-analytics",
       duration: "3 Years",
       description:
         "Business administration with data analytics and decision-making skills.",
     },
     {
-      name: "BBA (Digital Marketing)",
+      name: "BBA Global (Digital Marketing)",
       slug: "bba-digital-marketing",
       duration: "3 Years",
       description:
         "Business administration with digital marketing specialisation.",
     },
     {
-      name: "BCA (Science and IT global program)",
+      name: "BCA Global (Science and IT Global program)",
       slug: "bca",
       duration: "3 Years",
       description:
         "Build expertise in software development, programmingand IT solutions.",
     },
     {
-      name: "BCA (AI & Machine Learning)",
+      name: "BCA Global (AI & Machine Learning)",
       slug: "bca-aiml",
       duration: "3 Years",
       description:

@@ -137,7 +137,7 @@ const Footer = () => {
                   href="#programmes"
                   className="hover:text-[#F8C300] transition-colors"
                 >
-                  › M.Com (International Finance with ACCA, UK) Program
+                  › M.Com Global Program (International Finance with ACCA, UK) Program
                 </Link>
               </li>
             </ul>

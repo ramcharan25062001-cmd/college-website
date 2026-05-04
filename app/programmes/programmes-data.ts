@@ -38,7 +38,6 @@ export interface ProgramData {
   overviewDetails: string;
   programStructureIntro: string;
   levels: ProgramLevel[];
-  entryRequirements: EntryRequirement[];
   feesLabel: string;
   feesAmount: string;
   feesNote: string;
@@ -88,32 +87,6 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have successfully completed A-Level / GCE / GCSE / 10+2 / 12 years of formal education.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students who do not meet the direct entry requirements may be considered on a case-by-case basis. Relevant work experience and prior learning will be taken into account.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Applicants must demonstrate proficiency in English. Acceptable evidence includes IELTS (minimum 5.5), TOEFL, or equivalent.",
-      },
-      {
-        id: "documents",
-        title: "Required Documents",
-        content:
-          "10+2 mark sheets, transfer certificate, migration certificate (if applicable), passport-size photographsand government-issued ID proof.",
-      },
-    ],
     feesLabel:
       "B.Com Global (Bachelor of Commerce Global)",
     feesAmount: "₹1.25 Lakhs per year*",
@@ -130,7 +103,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom-bda.jpg",
-    programTitle: "B.Com (Business Data Analytics)",
+    programTitle: "B.Com Global (Business Data Analytics)",
     programSubtitle: "Commerce with Data Analytics Specialisation",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -165,26 +138,6 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have successfully completed 10+2 with Mathematics/Statistics as a subject.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students without Mathematics in 10+2 may be considered on a case-by-case basis with relevant aptitude assessment.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Proficiency in English is required. IELTS minimum 5.5 or equivalent.",
-      },
-    ],
     feesLabel: "B.Com (Business Data Analytics)",
     feesAmount: "₹1.75 Lakhs per year*",
     feesNote:
@@ -200,7 +153,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom-acca.jpg",
-    programTitle: "B.Com (International Finance with ACCA, UK)",
+    programTitle: "B.Com Global (International Finance with ACCA, UK)",
     programSubtitle: "Commerce with ACCA Integrated Programme",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -235,26 +188,6 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have successfully completed 10+2 or equivalent with minimum 60% aggregate.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students with slightly lower percentages may be considered based on aptitude and interview.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Strong English proficiency required as ACCA papers are in English. IELTS 6.0 or equivalent recommended.",
-      },
-    ],
     feesLabel: "B.Com (International Finance with ACCA, UK)",
     feesAmount: "₹2.25 Lakhs per year*",
     feesNote:
@@ -270,7 +203,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bcom-lscm.jpg",
-    programTitle: "B.Com (Logistics & Supply Chain Management)",
+    programTitle: "B.Com Global (Logistics & Supply Chain Management)",
     programSubtitle: "Commerce with Logistics Specialisation",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -303,26 +236,6 @@ export const ugPrograms: ProgramData[] = [
           { title: "E-Commerce & Last Mile Delivery", credits: 20 },
           { title: "Supply Chain Analytics", credits: 20 },
         ],
-      },
-    ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have successfully completed 10+2 from any stream.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Mature students with relevant industry experience in logistics may also apply.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 5.5 or equivalent.",
       },
     ],
     feesLabel: "B.Com (Logistics & Supply Chain Management)",
@@ -375,26 +288,6 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have successfully completed 10+2 or equivalent from any stream.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students with relevant work experience may be considered on a case-by-case basis.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 5.5 or equivalent.",
-      },
-    ],
     feesLabel: "BBA Global (Bachelor of Business Administration Global)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:
@@ -410,7 +303,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bba-aviation.jpg",
-    programTitle: "BBA (Aviation Management)",
+    programTitle: "BBA Global(Aviation Management)",
     programSubtitle: "Business Administration in Aviation",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -445,26 +338,6 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have successfully completed 10+2 or equivalent from any stream.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Candidates with relevant experience in the travel/aviation industry may be considered.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Strong English communication skills are essential. IELTS minimum 6.0 recommended due to industry requirements.",
-      },
-    ],
     feesLabel: "BBA (Aviation Management)",
     feesAmount: "₹2.00 Lakhs per year*",
     feesNote:
@@ -480,7 +353,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bba-analytics.jpg",
-    programTitle: "BBA (Business Analytics)",
+    programTitle: "BBA Global (Business Analytics)",
     programSubtitle: "Business Administration with Analytics",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -515,26 +388,7 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have completed 10+2 with Mathematics/Statistics.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students without Mathematics may be considered after an aptitude test.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 5.5 or equivalent.",
-      },
-    ],
+    
     feesLabel: "BBA (Business Analytics)",
     feesAmount: "₹1.75 Lakhs per year*",
     feesNote:
@@ -550,7 +404,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bba-digital-marketing.jpg",
-    programTitle: "BBA (Digital Marketing)",
+    programTitle: "BBA Global (Digital Marketing)",
     programSubtitle: "Business Administration in Digital Marketing",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -585,26 +439,7 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have completed 10+2 from any stream.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students with digital marketing certifications or portfolio may be considered.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Strong English written and verbal communication skills. IELTS minimum 5.5.",
-      },
-    ],
+   
     feesLabel: "BBA (Digital Marketing)",
     feesAmount: "₹1.75 Lakhs per year*",
     feesNote:
@@ -620,7 +455,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bca.jpg",
-    programTitle: "BCA (Science and IT global program)",
+    programTitle: "BCA Global (Science and IT Global program)",
     programSubtitle: "Computer Applications Programme",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -655,26 +490,7 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have completed 10+2 with Mathematics as a subject.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students without Mathematics but with strong aptitude may be considered after a screening test.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 5.5 or equivalent.",
-      },
-    ],
+    
     feesLabel: "BCA (Bachelor of Computer Applications)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:
@@ -690,7 +506,7 @@ export const ugPrograms: ProgramData[] = [
     category: "ug",
     parentCategory: "Undergraduate Courses",
     image: "/images/programs/bca-aiml.jpg",
-    programTitle: "BCA (Artificial Intelligence & Machine Learning)",
+    programTitle: "BCA Global (Artificial Intelligence & Machine Learning)",
     programSubtitle: "Computer Applications with AI/ML Specialisation",
     duration: "3 Years",
     modeOfStudy: "On-Campus",
@@ -725,26 +541,7 @@ export const ugPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to Students who have completed 10+2 with Mathematics as a subject. Minimum 55% aggregate preferred.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Students with coding experience or relevant certifications may be considered without Mathematics background.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "English proficiency required. IELTS minimum 5.5 or equivalent.",
-      },
-    ],
+    
     feesLabel: "BCA (AI & Machine Learning)",
     feesAmount: "₹2.00 Lakhs per year*",
     feesNote:
@@ -763,7 +560,7 @@ export const pgPrograms: ProgramData[] = [
     category: "pg",
     parentCategory: "Masters Courses",
     image: "/images/programs/bcom-acca.jpg",
-    programTitle: "M.Com (International Finance with ACCA, UK)",
+    programTitle: "M.Com Global (International Finance with ACCA, UK)",
     programSubtitle: "Masters Programme in Commerce with ACCA",
     duration: "2 Years",
     modeOfStudy: "On-Campus",
@@ -796,26 +593,7 @@ export const pgPrograms: ProgramData[] = [
         ],
       },
     ],
-    entryRequirements: [
-      {
-        id: "direct",
-        title: "Direct Entry",
-        content:
-          "Entry is open to students who have completed B.Com or equivalent Bachelor's degree with minimum 50% aggregate. ACCA Fundamentals level completion is preferred.",
-      },
-      {
-        id: "case-basis",
-        title: "Case by Case Basis Entry",
-        content:
-          "Graduates from other disciplines with relevant work experience or partial ACCA qualification may be considered.",
-      },
-      {
-        id: "language",
-        title: "Language Requirement",
-        content:
-          "Strong English proficiency required as ACCA papers are in English. IELTS minimum 6.0 or equivalent.",
-      },
-    ],
+   
     feesLabel: "M.Com (International Finance with ACCA, UK)",
     feesAmount: "₹1.50 Lakhs per year*",
     feesNote:

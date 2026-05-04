@@ -199,55 +199,7 @@ const ProgramStructureSection = ({ program }: { program: ProgramData }) => {
   );
 };
 
-// Entry Requirements with accordion
-const EntryRequirementsSection = ({ program }: { program: ProgramData }) => {
-  const [openId, setOpenId] = useState<string | null>(program.entryRequirements[0]?.id || null);
 
-  return (
-    <section className="py-16 bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-4 mb-8">
-          <h2 className="text-3xl font-bold text-[#001C54]">Entry Requirements</h2>
-          <div className="flex-1 h-1 bg-[#F8C300] rounded-full" />
-        </div>
-
-        <div className="space-y-3">
-          {program.entryRequirements.map((req) => (
-            <div key={req.id} className="border-b border-gray-200">
-              <button
-                onClick={() => setOpenId(openId === req.id ? null : req.id)}
-                className="w-full flex items-center justify-between py-4 text-left"
-              >
-                <span
-                  className={`font-semibold ${
-                    openId === req.id ? "text-red-500" : "text-[#001C54]"
-                  }`}
-                >
-                  {req.title}
-                </span>
-                <svg
-                  className={`w-5 h-5 text-gray-400 transition-transform ${
-                    openId === req.id ? "rotate-180" : ""
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {openId === req.id && (
-                <div className="pb-4 pl-4">
-                  <p className="text-gray-700">{req.content}</p>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 // Career Opportunities & Higher Education
 const CareerSection = ({ program }: { program: ProgramData }) => {
@@ -411,8 +363,7 @@ export default function ProgramDetailPage({ program, relatedPrograms }: ProgramD
         <Breadcrumb program={program} />
         <OverviewSection program={program} />
         <PathwaySection program={program} />
-        <ProgramStructureSection program={program} />
-        <EntryRequirementsSection program={program} />
+        {/* <ProgramStructureSection program={program} /> */}
         <CareerSection program={program} />
         <RelatedProgramsSection programs={relatedPrograms} currentCategory={program.category} />
         <InlineEnquiryCTA program={program} />

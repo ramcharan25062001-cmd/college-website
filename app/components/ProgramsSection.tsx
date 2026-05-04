@@ -8,9 +8,9 @@ const ProgramsSection = () => {
       image: "/images/programs/bcom.jpg",
       programs: [
         "Bachelor of Commerce Global",
-        "B.Com (Business Data Analytics – BDA)",
-        "B.Com (International Finance with ACCA, UK)",
-        "B.Com (Logistics & Supply Chain Management – LSCM)",
+        "B.Com Global (Business Data Analytics – BDA)",
+        "B.Com Global (International Finance with ACCA, UK)",
+        "B.Com Global (Logistics & Supply Chain Management – LSCM)",
       ],
     },
     {
@@ -19,16 +19,16 @@ const ProgramsSection = () => {
       image: "/images/programs/bba.jpg",
       programs: [
         "Bachelor of Business Administration Global ",
-        "BBA (Aviation Management)",
-        "BBA (Business Analytics)",
-        "BBA (Digital Marketing)",
+        "BBA Global (Aviation Management)",
+        "BBA Global (Business Analytics)",
+        "BBA Global (Digital Marketing)",
       ],
     },
     {
-      category: "Computer Applications",
+      category: "Science & IT Global Programs",
       color: "bg-[#001C54]",
       image: "/images/programs/bca.jpg",
-      programs: ["Bachelor of Computer Applications ", "BCA (Artificial Intelligence & Machine Learning)"],
+      programs: ["BCA Global ", "BCA Global (Artificial Intelligence & Machine Learning)"],
     },
   ];
 
@@ -105,13 +105,13 @@ const ProgramsSection = () => {
             <div className="relative h-44">
               <Image
                 src="/images/programs/bcom-acca.jpg"
-                alt="M.com (International Finance with ACCA, UK) Program"
+                alt="M.Com Global (International Finance with ACCA, UK) Program"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <h4 className="absolute bottom-4 left-6 text-xl font-bold text-[#F8C300]">
-                M.com (International Finance with ACCA, UK) Program
+                M.Com Global (International Finance with ACCA, UK) Program
               </h4>
             </div>
             <div className="p-6">
@@ -127,7 +127,7 @@ const ProgramsSection = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-white/90">M.com (International Finance with ACCA, UK)</span>
+              <span className="text-white/90">M.Com Global (International Finance with ACCA, UK)</span>
             </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ const Header = () => {
                 href="/programmes/ug/bcom-acca"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com (Internal Finance with ACCA, UK)
+                › B.Com Global (Internal Finance with ACCA, UK)
               </Link>
             </li>
              <li>
@@ -39,7 +39,7 @@ const Header = () => {
                 href="/programmes/ug/bcom-bda"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com (Business Data Analytics)
+                › B.Com Global (Business Data Analytics)
               </Link>
             </li>
             <li>
@@ -47,7 +47,7 @@ const Header = () => {
                 href="/programmes/ug/bcom-lscm"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › B.Com (Logistics & Supply Chain Management)
+                › B.Com Global (Logistics & Supply Chain Management)
               </Link>
             </li>
             <li>
@@ -63,7 +63,7 @@ const Header = () => {
                 href="/programmes/ug/bba-aviation"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BBA (Aviation Management)
+                › BBA Global (Aviation Management)
               </Link>
             </li>
             <li>
@@ -71,7 +71,7 @@ const Header = () => {
                 href="/programmes/ug/bba-analytics"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BBA (Business Analytics)
+                › BBA Global (Business Analytics)
               </Link>
             </li>
             <li>
@@ -79,7 +79,7 @@ const Header = () => {
                 href="/programmes/ug/bba-digital-marketing"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BBA (Digital Marketing)
+                › BBA Global (Digital Marketing)
               </Link>
             </li>
             <li>
@@ -87,7 +87,7 @@ const Header = () => {
                 href="/programmes/ug/bca"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BCA 
+                › BCA Global
               </Link>
             </li>
             <li>
@@ -95,7 +95,7 @@ const Header = () => {
                 href="/programmes/ug/bca-aiml"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › BCA (Artificial Intelligence & Machine Learning)
+                › BCA Global (Artificial Intelligence & Machine Learning)
               </Link>
             </li>
           </ul>
@@ -110,7 +110,7 @@ const Header = () => {
                 href="/programmes/pg/mcom-acca"
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
-                › M.Com (International Finance with ACCA, UK)
+                › M.Com Global (International Finance with ACCA, UK)
               </Link>
             </li>
           </ul>
@@ -147,7 +147,7 @@ const Header = () => {
                 className="hover:text-[#F8C300] flex items-center gap-1"
               >
                 <span className="bg-[#001C54] text-white text-xs px-2 py-0.5 rounded mr-2">1+2/3</span>
-                Study 1 year in India + 2/3 years abroad
+                Study 1 year in India + 2 or 3 years abroad
               </Link>
             </li>
             <li>
