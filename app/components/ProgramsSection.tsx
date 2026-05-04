@@ -7,7 +7,7 @@ const ProgramsSection = () => {
       color: "bg-[#001C54]",
       image: "/images/programs/bcom.jpg",
       programs: [
-        "Bachelor of Commerce",
+        "Bachelor of Commerce Global",
         "B.Com Global (Business Data Analytics – BDA)",
         "B.Com Global (International Finance with ACCA, UK)",
         "B.Com Global (Logistics & Supply Chain Management – LSCM)",
@@ -18,7 +18,7 @@ const ProgramsSection = () => {
       color: "bg-[#16336e]",
       image: "/images/programs/bba.jpg",
       programs: [
-        "Bachelor of Business Administration ",
+        "Bachelor of Business Administration Global",
         "BBA Global (Aviation Management)",
         "BBA Global (Business Analytics)",
         "BBA Global (Digital Marketing)",

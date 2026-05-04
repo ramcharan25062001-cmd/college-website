@@ -47,7 +47,7 @@ const AboutSection = () => {
               The JAIN Group operates a large academic network that includes{" "}
               <span className="font-semibold text-[#001C54]">
                 70+ educational institutions, 60+ campuses and centres, 75,000+
-                studentsand 10,000+ faculty and staff
+                students and 10,000+ faculty and staff
               </span>{" "}
               across India. JAIN institutions are widely recognised for their commitment to academic excellence, innovation in education and holistic student development.
             </p>
