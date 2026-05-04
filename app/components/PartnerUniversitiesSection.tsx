@@ -340,7 +340,6 @@ const PartnerUniversitiesSection = () => {
             Graduate with internationally recognised degrees from our esteemed
             partner universities across the globe.
           </p>
-          <p className="mt-2 text-white/50 text-sm">(Proposed Universities)</p>
         </div>
 
         {/* Continent Tabs */}
