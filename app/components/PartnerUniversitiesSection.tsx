@@ -313,6 +313,14 @@ const UniversityModal = ({
 
 const PartnerUniversitiesSection = () => {
   const [selected, setSelected] = useState<University | null>(null);
+  const activeContients = continentOrder.filter((c) =>
+    universities.some((u) => u.continent === c)
+  );
+  const [activeContinent, setActiveContinent] = useState<string>(activeContients[0]);
+
+  const visibleUniversities = universities.filter(
+    (u) => u.continent === activeContinent
+  );
 
   return (
     <section id="partners" className="py-20 bg-gradient-to-br from-[#001C54] to-[#16336e] relative overflow-hidden">
@@ -323,7 +331,7 @@ const PartnerUniversitiesSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Partner Universities
           </h2>
@@ -335,56 +343,67 @@ const PartnerUniversitiesSection = () => {
           <p className="mt-2 text-white/50 text-sm">(Proposed Universities)</p>
         </div>
 
-        {/* Universities grouped by Continent */}
-        <div className="space-y-14">
-          {continentOrder
-            .filter((continent) => universities.some((u) => u.continent === continent))
-            .map((continent) => {
-              const group = universities.filter((u) => u.continent === continent);
-              return (
-                <div key={continent}>
-                  {/* Continent Header */}
-                  <div className="flex items-center gap-3 mb-6">
-                    <span className="text-2xl">{continentIcons[continent]}</span>
-                    <h3 className="text-xl font-bold text-white">{continent}</h3>
-                    <div className="flex-1 h-px bg-white/20 ml-2" />
-                    <span className="text-white/50 text-sm shrink-0">
-                      {group.length} {group.length === 1 ? "University" : "Universities"}
-                    </span>
-                  </div>
+        {/* Continent Tabs */}
+        <div className="flex justify-center gap-3 flex-wrap mb-10">
+          {activeContients.map((continent) => {
+            const count = universities.filter((u) => u.continent === continent).length;
+            const isActive = activeContinent === continent;
+            return (
+              <button
+                key={continent}
+                onClick={() => setActiveContinent(continent)}
+                className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm transition-all border-2 ${
+                  isActive
+                    ? "bg-[#F8C300] text-[#001C54] border-[#F8C300] shadow-lg scale-105"
+                    : "bg-transparent text-white border-white/30 hover:border-white/70 hover:bg-white/10"
+                }`}
+              >
+                <span>{continentIcons[continent]}</span>
+                <span>{continent}</span>
+                <span
+                  className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                    isActive ? "bg-[#001C54] text-[#F8C300]" : "bg-white/20 text-white"
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
 
-                  {/* Grid for this continent */}
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
-                    {group.map((uni, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setSelected(uni)}
-                        className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/20 transition-all hover:-translate-y-1 text-center flex flex-col items-center"
-                      >
-                        <div className="w-full h-16 mb-3 flex items-center justify-center">
-                          <Image
-                            src={uni.logo}
-                            alt={uni.name}
-                            width={120}
-                            height={64}
-                            className="max-h-16 w-auto object-contain rounded bg-white/90 p-1"
-                          />
-                        </div>
-                        <h3 className="text-white font-bold text-sm lg:text-base mb-1 leading-tight">
-                          {uni.name}
-                        </h3>
-                        <p className="text-[#F8C300] text-xs font-medium mb-3">
-                          {uni.country}
-                        </p>
-                        <span className="mt-auto text-[10px] font-bold tracking-widest uppercase text-[#001C54] bg-[#F8C300] px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                          Learn More
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
+        {/* Universities Grid */}
+        <div className={`grid gap-4 lg:gap-6 ${
+          visibleUniversities.length === 1
+            ? "grid-cols-1 max-w-xs mx-auto"
+            : "grid-cols-2 md:grid-cols-4"
+        }`}>
+          {visibleUniversities.map((uni, index) => (
+            <button
+              key={index}
+              onClick={() => setSelected(uni)}
+              className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/20 transition-all hover:-translate-y-1 text-center flex flex-col items-center"
+            >
+              <div className="w-full h-16 mb-3 flex items-center justify-center">
+                <Image
+                  src={uni.logo}
+                  alt={uni.name}
+                  width={120}
+                  height={64}
+                  className="max-h-16 w-auto object-contain rounded bg-white/90 p-1"
+                />
+              </div>
+              <h3 className="text-white font-bold text-sm lg:text-base mb-1 leading-tight">
+                {uni.name}
+              </h3>
+              <p className="text-[#F8C300] text-xs font-medium mb-3">
+                {uni.country}
+              </p>
+              <span className="mt-auto text-[10px] font-bold tracking-widest uppercase text-[#001C54] bg-[#F8C300] px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                Learn More
+              </span>
+            </button>
+          ))}
         </div>
       </div>
 
