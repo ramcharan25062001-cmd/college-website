@@ -20,9 +20,9 @@ export default function Home() {
       <StatsSection />
       <AboutSection />
       <VisionMissionSection />
+      <HighlightsSection />
       <ProgramsSection />
       <PathwaysSection />
-      <HighlightsSection />
       <WhyJAINSection />
       <PartnerUniversitiesSection />
       <AdmissionProcedureSection />
