@@ -370,21 +370,21 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › B.Com (International Finance with ACCA, UK)
+                      › B.Com Global (International Finance with ACCA, UK)
                     </Link>
                     <Link
                       href="/programmes/ug/bcom-bda"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › B.Com (Business Data Analytics)
+                      › B.Com Global (Business Data Analytics)
                     </Link>
                     <Link
                       href="/programmes/ug/bcom-lscm"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › B.Com (Logistics & Supply Chain Management)
+                      › B.Com Global (Logistics & Supply Chain Management)
                     </Link>
                     <Link
                       href="/programmes/ug/bba"
@@ -398,35 +398,35 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BBA (Aviation Management)
+                      › BBA Global (Aviation Management)
                     </Link>
                     <Link
                       href="/programmes/ug/bba-analytics"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BBA (Business Analytics)
+                      › BBA Global (Business Analytics)
                     </Link>
                     <Link
                       href="/programmes/ug/bba-digital-marketing"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BBA (Digital Marketing)
+                      › BBA Global (Digital Marketing)
                     </Link>
                     <Link
                       href="/programmes/ug/bca"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BCA
+                      › BCA Global
                     </Link>
                     <Link
                       href="/programmes/ug/bca-aiml"
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › BCA (AI & Machine Learning)
+                      › BCA Global (AI & Machine Learning)
                     </Link>
                     <p className="text-[#F8C300] font-semibold mt-3">Master&apos;s Programme</p>
                     <Link
@@ -434,7 +434,7 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › M.Com (International Finance with ACCA, UK)
+                      › M.Com Global (International Finance with ACCA, UK)
                     </Link>
                   </div>
                 )}
@@ -445,7 +445,7 @@ const Header = () => {
                       className="block text-white/70"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      › 1+2/3 Pathway Progression
+                      › 1+ 2 or 3 Pathway Progression
                     </Link>
                     <Link
                       href="/#pathways"
