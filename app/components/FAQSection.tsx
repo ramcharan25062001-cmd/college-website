@@ -62,7 +62,7 @@ const faqs: FAQ[] = [
   },
   {
     question:
-      "What is the eligibility for the master's (PG) Pathway Program?",
+      "What is the eligibility for the Master's (PG) Pathway Program?",
     answer: (
       <p>Applicants must hold a Bachelor&apos;s degree in a relevant discipline from a recognised university with a minimum of 80% marks or equivalent academic performance, subject to partner university requirements.</p>
     ),

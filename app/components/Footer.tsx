@@ -251,6 +251,12 @@ const Footer = () => {
               <li className="text-white/80">› Taylor&apos;s University, Malaysia</li>
               <li className="text-white/80">› Charles Sturt University, Australia</li>
               <li className="text-white/80">› University of York, UK</li>
+              <li className="text-white/80">› University of Economics and Finance, Vietnam</li>
+              <li className="text-white/80">› Lincoln University, Malaysia</li>
+              <li className="text-white/80">› Bordeaux Montaigne University, France</li>
+              <li className="text-white/80">› Univeristy of Limoges, France</li>
+              <li className="text-white/80">› EM Normandie Business School, France</li>
+
             </ul>
           </div>
         </div>

@@ -76,7 +76,7 @@ const AboutSection = () => {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-lg text-gray-600 leading-relaxed text-left mid:text-center">
+            <p className="text-lg text-gray-600 leading-relaxed text-justify ">
               The{" "}
               <span className="font-semibold text-[#001C54]">
                 Centre for International Studies at JAIN College
@@ -91,7 +91,7 @@ const AboutSection = () => {
               .
             </p>
 
-            <p className="text-lg text-gray-600 leading-relaxed text-left mid:text-center">
+            <p className="text-lg text-gray-600 leading-relaxed text-justify ">
               With a strong focus on{" "}
               <span className="font-semibold text-[#001C54]">
                 global academic partnerships, international mobility and
@@ -107,11 +107,11 @@ const AboutSection = () => {
             </p>
 
             {/* Highlight Box */}
-            <div className="bg-[#001C54] rounded-2xl p-8 text-left mid:text-center">
+            <div className="bg-[#001C54] rounded-2xl p-8 text-center">
               <h3 className="text-[#F8C300] font-bold text-xl mb-4">
                 Program Overview
               </h3>
-              <p className="text-white/90 leading-relaxed mb-4">
+              <p className="text-white/90 leading-relaxed mb-4 text-justify">
                 JAIN College&apos;s Centre for International Studies is a globally focused learning program designed to support students who aspire to pursue international education. Students start their academic journey at JAIN College, building a strong foundational curriculum before transferring approved academic credits to a recognised partner university abroad to complete their (UG/PG) degree and gain valuable global exposure.
               </p>
               
