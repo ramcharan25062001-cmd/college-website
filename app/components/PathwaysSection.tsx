@@ -87,7 +87,7 @@ const PathwaysSection = () => {
         </div>
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
           JAIN College&apos;s Centre for International Studies offers flexible
-          academic pathways designed to suit different goals, timelinesand
+          academic pathways designed to suit different goals, timelines and
           financial plans — all leading to internationally recognised degrees
           from Partner Universities Abroad.
         </p>
