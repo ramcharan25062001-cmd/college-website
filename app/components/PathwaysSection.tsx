@@ -5,9 +5,9 @@ const pathways = [
     title: "1 + 2 or 3 International Pathway",
     structure: "1 Year at JAIN College → 2 or 3 Years at a Partner University Abroad",
     description:
-      "Begin with one foundational year at JAIN College, then transfer to a Partner University Abroad for the remaining two or three years of your degree. This pathway is ideal for students seeking early international exposure.",
+      "Begin with one foundational year at JAIN College, then transfer to a Partner University Abroad for the remaining two or three years of your degree. This pathway is ideal for students seeking early International exposure.",
     benefits: [
-      "Early international exposure",
+      "Early International exposure",
       "Smooth academic transfer",
       "Cost-effective progression for global education",  
     ],
@@ -19,11 +19,11 @@ const pathways = [
     title: "2 + 1 International Pathway",
     structure: "2 Years at JAIN College → 1 Year at a Partner University Abroad",
     description:
-      "Complete the majority of your studies at JAIN College for two years, then transfer Abroad for the final year to graduate with an internationally recognised degree from the Partner University.",
+      "Complete the majority of your studies at JAIN College for two years, then transfer Abroad for the final year to graduate with an Internationally recognised degree from the Partner University.",
     benefits: [
       "Strong academic foundation in India",
-      "Cost-effective international degree",
-      "Final year international experience",
+      "Cost-effective International degree",
+      "Final year International experience",
     ],
     popular: false,
   },
@@ -33,11 +33,11 @@ const pathways = [
     title: "2 + 2 International Pathway",
     structure: "2 Years at JAIN College → 2 Years at a Partner University Abroad",
     description:
-      "One of the most widely recognised global education models. Students spend two years at JAIN College building a strong academic foundation and complete the final two years at a Partner University Abroad, earning a Bachelor's degree from the international institution.",
+      "One of the most widely recognised global education models. Students spend two years at JAIN College building a strong academic foundation and complete the final two years at a Partner University Abroad, earning a Bachelor's degree from the International institution.",
     benefits: [
       "Most recognised global model",
-      "Balanced India & international experience",
-      "Bachelor's from international institution",
+      "Balanced India & International experience",
+      "Bachelor's from International institution",
     ],
     popular: true,
   },
@@ -48,7 +48,7 @@ const pathways = [
     structure:
       "1 Year at JAIN College → 1 Year at a Partner University Abroad",
     description:
-      "A Masters pathway where students complete one year of study at JAIN College before transferring to a Partner University Abroad for the final year to earn an internationally recognised Master's degree.",
+      "A Masters pathway where students complete one year of study at JAIN College before transferring to a Partner University Abroad for the final year to earn an Internationally recognised Master's degree.",
     benefits: [
       "Accelerated Master's pathway",
       "International Masters degree",
@@ -88,7 +88,7 @@ const PathwaysSection = () => {
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
           JAIN College&apos;s Centre for International Studies offers flexible
           academic pathways designed to suit different goals, timelines and
-          financial plans — all leading to internationally recognised degrees
+          financial plans — all leading to Internationally recognised degrees
           from Partner Universities Abroad.
         </p>
 

@@ -21,7 +21,7 @@ const steps = [
     number: "04",
     title: "Counselling & Partner University Selection",
     description:
-      "Receive personalised academic guidance to select the most suitable international partner university based on your academic performance, career aspirationsand financial considerations.",
+      "Receive personalised academic guidance to select the most suitable international partner university based on your academic performance, career aspirations and financial considerations.",
   },
 ];
 

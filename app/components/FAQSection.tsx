@@ -15,11 +15,11 @@ const faqs: FAQ[] = [
       <div>
         <p className="mb-2">Admission to the Undergraduate (UG) / Postgraduate (PG) Program is purely merit-based and evaluated on the following parameters:</p>
         <ul className="list-disc list-inside space-y-1">
-          <li>Academic performance in Class XII / A Level equivalent (for UG programs)</li>
+          <li>Academic performance in Class XII / &apos;A&apos; Level equivalent (for UG programs)</li>
           <li>Academic performance during the initial years of study at JAIN College</li>
           <li>Student&apos;s academic ambition and motivation</li>
           <li>Communication skills</li>
-          <li>Academic credentials, testimonialsand overall profile</li>
+          <li>Academic credentials, testimonials and overall profile</li>
           <li>Supportive family background for overseas education</li>
         </ul>
       </div>
