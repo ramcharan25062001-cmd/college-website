@@ -5,9 +5,18 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us - Jain College Global Campus",
+  title: "About Us",
   description:
     "Learn about Jain College Global Campus, founded in 1999 by Dr. Chenraj Roychand. Discover our vision, mission, leadership and world-class facilities.",
+  keywords: [
+    "about JAIN College",
+    "Jain College history",
+    "Dr Chenraj Roychand",
+    "JAIN Group education",
+    "international college Bangalore",
+    "global campus Bengaluru",
+  ],
+  alternates: { canonical: "/about" },
 };
 
 // About Hero Section

@@ -1,49 +1,27 @@
-"use client";
-
-import { useState, FormEvent } from "react";
+import { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import EnquiryForm from "./EnquiryForm";
 
-const EnquiryPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    program: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
+export const metadata: Metadata = {
+  title: "Enquire Now",
+  description:
+    "Submit an enquiry to JAIN College Centre for International Studies. Ask about our B.Com, BBA, BCA and M.Com Global programmes. Our team responds within 24 hours.",
+  keywords: [
+    "JAIN College enquiry",
+    "international studies enquiry",
+    "college enquiry Bangalore",
+    "BBA BCA B.Com enquiry",
+  ],
+  alternates: { canonical: "/enquiry" },
+};
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError("");
-    try {
-      const res = await fetch("/api/enquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Something went wrong");
-      setSubmitted(true);
-      setFormData({ name: "", email: "", phone: "", program: "", message: "" });
-      setTimeout(() => setSubmitted(false), 5000);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to submit");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
+export default function EnquiryPage() {
   return (
     <>
       <Header />
       <main>
-        {/* Hero Banner */}
         <section className="relative min-h-[350px] lg:min-h-[400px] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <Image
@@ -67,11 +45,9 @@ const EnquiryPage = () => {
           </div>
         </section>
 
-        {/* Enquiry Form Section */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Left - Contact Info */}
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl lg:text-3xl font-bold text-[#001C54] mb-4">
@@ -83,175 +59,50 @@ const EnquiryPage = () => {
                 </div>
 
                 <div className="space-y-5">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#001C54]/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-[#001C54]" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
+                  {[
+                    { label: "Call Us", value: "+91 80 4343 2500", iconPath: "M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" },
+                    { label: "Email Us", value: "jccisglobal@gmail.com", iconPath: "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" },
+                    { label: "Visit Us", value: "Jain College CGS, Basavangudi, Bengaluru", iconPath: "M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" },
+                  ].map(({ label, value, iconPath }) => (
+                    <div key={label} className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-full bg-[#001C54]/10 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 text-[#001C54]" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d={iconPath} clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="text-gray-500 text-sm">{label}</p>
+                        <p className="text-[#001C54] font-semibold">{value}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-gray-500 text-sm">Call Us</p>
-                      <p className="text-[#001C54] font-semibold">+91 80 4343 2500</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#001C54]/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-[#001C54]" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-gray-500 text-sm">Email Us</p>
-                      <p className="text-[#001C54] font-semibold">jccisglobal@gmail.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#001C54]/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-[#001C54]" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-gray-500 text-sm">Visit Us</p>
-                      <p className="text-[#001C54] font-semibold">Jain College CGS, Basavangudi, Bengaluru</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
 
-                {/* Why Enquire */}
                 <div className="bg-[#001C54] rounded-2xl p-6 text-white">
                   <h3 className="font-bold text-lg mb-4 text-[#F8C300]">Why Choose JAIN College?</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-[#F8C300] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-white/90 text-sm">70+ Institutions under the JAIN Group</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-[#F8C300] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-white/90 text-sm">11+ International Partner Universities</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-[#F8C300] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-white/90 text-sm">Global Degree Pathways (1+2, 2+1, 2+2)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-[#F8C300] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-white/90 text-sm">75,000+ Students across all campuses</span>
-                    </li>
+                    {[
+                      "70+ Institutions under the JAIN Group",
+                      "11+ International Partner Universities",
+                      "Global Degree Pathways (1+2, 2+1, 2+2)",
+                      "75,000+ Students across all campuses",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <svg className="w-5 h-5 text-[#F8C300] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-white/90 text-sm">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
 
-              {/* Right - Enquiry Form */}
               <div>
                 <div className="bg-white rounded-2xl shadow-xl p-6 lg:p-8 border border-gray-100">
-                  <h3 className="text-[#001C54] font-bold text-xl lg:text-2xl mb-1">
-                    Enquiry Form
-                  </h3>
-                  <p className="text-gray-500 text-sm mb-6">
-                    Admissions Open for 2026-27
-                  </p>
-
-                  {submitted ? (
-                    <div className="text-center py-12">
-                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <h4 className="text-[#001C54] font-bold text-lg mb-2">Thank You!</h4>
-                      <p className="text-gray-500 text-sm">We&apos;ll get back to you within 24 hours.</p>
-                    </div>
-                  ) : (
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                      <input
-                        type="text"
-                        placeholder="Full Name *"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all"
-                      />
-                      <input
-                        type="email"
-                        placeholder="Email Address *"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all"
-                      />
-                      <input
-                        type="tel"
-                        placeholder="Phone Number *"
-                        required
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all"
-                      />
-                      <select
-                        value={formData.program}
-                        onChange={(e) => setFormData({ ...formData, program: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all appearance-none bg-white"
-                      >
-                        <option value="">Select Program</option>
-                        <optgroup label="B.Com Programs">
-                          <option value="bcom-regular">B.Com (Regular)</option>
-                          <option value="bcom-acca">B.Com (International Finance with ACCA, UK)</option>
-                          <option value="bcom-bda">B.Com (Business Data Analytics)</option>
-                          <option value="bcom-lscm">B.Com (Logistics &amp; Supply Chain Management)</option>
-                        </optgroup>
-                        <optgroup label="BBA Programs">
-                          <option value="bba-regular">BBA (Regular)</option>
-                          <option value="bba-aviation">BBA (Aviation Management)</option>
-                          <option value="bba-analytics">BBA (Business Analytics)</option>
-                          <option value="bba-digital-marketing">BBA (Digital Marketing)</option>
-                        </optgroup>
-                        <optgroup label="BCA Programs">
-                          <option value="bca">BCA</option>
-                          <option value="bca-aiml">BCA (AI &amp; ML)</option>
-                        </optgroup>
-                        <optgroup label="Masters Programs">
-                          <option value="mcom-acca">M.Com (International Finance with ACCA, UK)</option>
-                        </optgroup>
-                      </select>
-                      <textarea
-                        placeholder="Your Message (optional)"
-                        rows={4}
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F8C300] focus:ring-2 focus:ring-[#F8C300]/20 outline-none text-gray-700 text-sm transition-all resize-none"
-                      />
-                      {error && (
-                        <p className="text-red-500 text-sm">{error}</p>
-                      )}
-                      <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="w-full bg-[#F8C300] text-[#001C54] py-3.5 rounded-lg font-bold hover:bg-[#dfb82d] transition-all hover:shadow-lg text-sm disabled:opacity-60 disabled:cursor-not-allowed"
-                      >
-                        {isSubmitting ? (
-                          <span className="flex items-center justify-center gap-2">
-                            <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
-                            </svg>
-                            Submitting...
-                          </span>
-                        ) : (
-                          "Submit Enquiry"
-                        )}
-                      </button>
-                    </form>
-                  )}
+                  <h3 className="text-[#001C54] font-bold text-xl lg:text-2xl mb-1">Enquiry Form</h3>
+                  <p className="text-gray-500 text-sm mb-6">Admissions Open for 2026-27</p>
+                  <EnquiryForm />
                   <p className="text-gray-400 text-xs mt-3 text-center">
                     We&apos;ll get back to you within 24 hours
                   </p>
@@ -264,6 +115,4 @@ const EnquiryPage = () => {
       <Footer />
     </>
   );
-};
-
-export default EnquiryPage;
+}
